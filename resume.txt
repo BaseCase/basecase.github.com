@@ -38,7 +38,7 @@ Objective C, Cocoa Touch, Xcode
 
 **State Farm Insurance, April 2010**
 
-A workflow management program that uses Business Rules to claims processing work amongst multiple employees, based on location, availability, qualifications, and several other factors. I was responsible for writing the business rules and the Java code to connect the main program with the rules engine.
+A workflow management program that distributes claims processing work amongst multiple employees, based on location, availability, qualifications, and several other factors. I was responsible for writing the business rules and the Java code to connect the main program with the rules engine.
 
 **Skills Involved**  
 Java, JBoss Rules (formerly known as Drools)
