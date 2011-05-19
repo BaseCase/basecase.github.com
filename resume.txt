@@ -1,0 +1,92 @@
+# Casey Brant #
+
+* <casey.brant@gmail.com>
+* (312) 798-9140
+* <http://github.com/BaseCase/>
+
+---------------
+
+# Skills
+
+**Languages**  
+JavaScript, HTML, CSS, Java, Objective C, some Python, some Ruby
+
+**Tools and Libraries**  
+JQuery, Git, Cocoa Touch, JUnit, JRules, JBoss Rules, Unix, OS X, Eclipse, Emacs
+
+For a writing sample, see <http://blog.caseybrant.com/>
+
+----------------
+
+# Work Experience
+
+
+## Raincoat
+
+**Personal project, in progress**
+
+Project website: <https://github.com/BaseCase/Raincoat>
+
+An iOS app that recommends clothing based on today's weather forecast.
+
+**Skills Involved**  
+Objective C, Cocoa Touch, Xcode
+
+
+
+## Human Task Assignment
+
+**State Farm Insurance, April 2010**
+
+A workflow management program that uses Business Rules to claims processing work amongst multiple employees, based on location, availability, qualifications, and several other factors. I was responsible for writing the business rules and the Java code to connect the main program with the rules engine.
+
+**Skills Involved**  
+Java, JBoss Rules (formerly known as Drools)
+
+
+## Rules Engine Sudoku
+
+**State Farm Insurance, February 2010**
+
+A web application that uses a Business Rules Engine to offer suggestions and corrections to a Sudoku player. I created the user interface and a middle layer which enabled rules engines to be swapped out at will.
+
+**Skills Involved**  
+JavaScript, JQuery, HTML, CSS, Java
+
+
+
+## JRules Build and Deploy Manager
+
+**State Farm Insurance, December 2009**
+
+A desktop GUI application that manages and simplifies the (rather complicated) deployment process for projects using multiple versioned JRules rulesets on WebSphere servers. Prior to the Manager, users had to take the server offline and edit XML files in order to switch ruleset versions.
+
+**Skills Involved**  
+Java, JRules, Swing, XML
+
+
+
+## Hack Day entry, "ESPass"
+
+**State Farm Insurance, June 2009**
+
+My team's entry in State Farm's first Hack Day event. A simple secure desktop password manager. I created the user interface.
+
+**Skills Involved**  
+Python, wxPython
+
+
+
+---------------------------------------
+
+# Education
+
+*Master of Arts in Vocal Performance*  
+University of Iowa, May 2012 (expected)
+
+*Bachelor of Arts, Computer Science and Trumpet Performance*  
+Illinois Wesleyan University, May 2007
+
+
+---------------------------------------
+
