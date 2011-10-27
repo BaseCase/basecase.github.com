@@ -4,14 +4,19 @@ function rotate(array_in) {
 }
 
 var current = "";
+var input = "";
+var counter = 1;
 
 $(function() {
     $('#clickit').click(function() {
-        if (!current) {
-            current = rotate($('#array_in').val());
-        } else {
-            current = rotate(current);
+        if (input !== $('#array_in').val()) {
+            input = $('#array_in').val();
+            current = input;
+            $('#rotations').html('');
+            counter = 1;
         }
-        $('#rotations').append(current + "<br/>");
+
+        current = rotate(current);
+        $('#rotations').append((counter++ % 6) + ": " +  current + "<br/>");
     });
 });
