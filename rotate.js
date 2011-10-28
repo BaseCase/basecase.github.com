@@ -17,6 +17,6 @@ $(function() {
         }
 
         current = rotate(current);
-        $('#rotations').append((counter++ % 6) + ": " +  current + "<br/>");
+        $('#rotations').append(current + "<br/>");
     });
 });
