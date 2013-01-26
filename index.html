@@ -1,13 +1,18 @@
 ---
-layout: default
-title: Home
 ---
 
-Home!
-<ul>
-  {% for post in site.posts %}
-  <li>
-    {{ post.title }}
-  </li>
-  {% endfor %}
-</ul>
+<html>
+  <head>
+    <title>Casey Brant</title>
+  </head>
+  <body>
+    Welcome to my site! I'm working on converting it to Jekyll, so it's ugly atm.
+    <ul>
+      {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
