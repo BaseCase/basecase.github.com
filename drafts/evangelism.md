@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Evangelism
 post_date: December 19, 2008
+title: Evangelism
 ---
 
 I recently gave a talk at work extolling the virtues of the text editor Emacs. If you've talked to me for more than like 40 minutes, you probably know what a huge Emacs fan I am. I'm not going to get into any of the details of the talk here (like how awesome Emacs is, how much happier you'll be using it, how much fuller and more beautiful your beard will become, how others will envy your newfound charm and charisma, etc. etc.); that's not the point of this post. My presentation met with a pretty lukewarm reception, and I want to get into why, and how to fix it. I want to talk about successful evangelism.
