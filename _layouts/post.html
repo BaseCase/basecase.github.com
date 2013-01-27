@@ -1,9 +1,26 @@
 <html>
   <head>
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} - Casey Brant's blog</title>
   </head>
   <body>
-    A post!
-    {{ content }}
+
+    <div id="blog_header">
+      Header stuff goes here.
+    </div>
+    <hr />
+
+    <div id="blog_post">
+      <h2>{{ page.title }}</h2>
+      <div id="post_date">{{ page.post_date }}</div>
+
+      <div id="post_content">
+        {{ content }}
+      </div>
+    </div>
+    <hr/>
+
+    <div id="blog_footer">
+      footer stuff goes here, i unno.
+    </div>
   </body>
 </html>
