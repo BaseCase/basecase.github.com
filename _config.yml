@@ -1,2 +1,2 @@
 pygments: true
-exclude: CNAME, README.md, old_stuff/, drafts/
+exclude: CNAME, README.md, old_stuff/, drafts/, todo.org

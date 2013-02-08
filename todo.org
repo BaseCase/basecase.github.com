@@ -1,0 +1,18 @@
+caseybrant.com ToDo
+* Content [0/7]
+- [ ] extremely short bio
+- [ ] link to github
+- [ ] link to twitter
+- [ ] resume
+- [ ] link to blog
+- [ ] (?)top blog posts(?)
+- [ ] photo
+
+* Styling [0/3]
+- [ ] main page CSS
+- [ ] blog post CSS
+- [ ] blog main CSS
+
+* Features [0/2]
+- [ ] RSS Feed
+- [ ] blog post comments (using Disqus?)
