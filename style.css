@@ -46,10 +46,9 @@ li {
 
 li:before { content: "\25B5"; }
 
-ul a {
-    color: blue;
-    padding-left: 0.4em;
-}
+a { color: blue; }
+
+ul a, table a { padding-left: 0.4em; }
 
 table {
     margin-top: 1em;
