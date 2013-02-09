@@ -1,20 +1,14 @@
-#container {
-    width: 700px;
-    margin: 1.6em;
-}
-
 body {
     background: white;
     font-family: Calibri, Optima, "Nimbus Sans", "Trebuchet MS", sans-serif ;
 }
 
-#header {
-    margin-bottom: 1em;
+#container {
+    width: 700px;
+    margin: 1.6em;
 }
 
-#bio {
-    margin-bottom: 2em;
-}
+#header { margin-bottom: 1em; }
 
 h1 {
     font-size: 2.5em;
@@ -26,13 +20,13 @@ h1 {
     padding-bottom: 0.2em;
 }
 
-#container {}
-
 img {
     float: left;
     width: 4em;
     margin-right: 1.3em;
 }
+
+#bio { margin-bottom: 2em; }
 
 h2 {
     font-size: 1.8em;
@@ -50,13 +44,11 @@ li {
     font-size: 1.2em;
 }
 
-a {
+li:before { content: "\25B5"; }
+
+ul a {
     color: blue;
     padding-left: 0.4em;
-}
-
-li:before {
-    content: "\25B5";
 }
 
 table {
@@ -64,27 +56,17 @@ table {
     font-size: 1.2em;
 }
 
-th {
-    color: rgb(200,200,200);
-}
+th { color: rgb(200,200,200); }
 
-th.date {
-    text-align: center;
-}
+th.date { text-align: center; }
 
 th.title {
     text-align: left;
     padding-left: 1em;
 }
 
-td {
-    padding: 0.4em;
-}
+td { padding: 0.4em; }
 
-td.title {
-    text-align: left;
-}
+td.title { text-align: left; }
 
-td.date {
-    text-align: right;
-}
+td.date { text-align: right; }
