@@ -58,3 +58,33 @@ a {
 li:before {
     content: "\25B5";
 }
+
+table {
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+th {
+    color: rgb(200,200,200);
+}
+
+th.date {
+    text-align: center;
+}
+
+th.title {
+    text-align: left;
+    padding-left: 1em;
+}
+
+td {
+    padding: 0.4em;
+}
+
+td.title {
+    text-align: left;
+}
+
+td.date {
+    text-align: right;
+}

@@ -4,15 +4,21 @@
 <html>
   <head>
     <title>Casey Brant's blog</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Blorg posts</h1>
-    <ul>
-      {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
+    <div id="container">
+      <h1>Casey Brant's Blog</h1>
+      <table>
+        <tr><th class="date">Date</th><th class="title">Title</th></tr>
+        {% for post in site.posts %}
+        <tr>
+          <td class="date">{{ post.post_date }}</td>
+          <td class="title"><a href="{{ post.url }}">{{ post.title }}</a></td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
   </body>
 </html>
