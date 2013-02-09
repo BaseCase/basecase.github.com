@@ -1,15 +1,16 @@
 caseybrant.com ToDo
-* Content [4/7]
-- [ ] resume
-- [ ] link to blog
+* Content [5/8]
 - [ ] (?)top blog posts(?)
+- [ ] links to projects
+- [ ] resume
+- [X] link to blog
 - [X] link to github
 - [X] link to twitter
 - [X] extremely short bio
 - [X] photo
 
-* Styling [0/3]
-- [ ] main page CSS
+* Styling [1/3]
+- [X] main page CSS
 - [ ] blog post CSS
 - [ ] blog main CSS
 
