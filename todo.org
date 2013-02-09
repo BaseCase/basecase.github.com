@@ -1,11 +1,11 @@
 caseybrant.com ToDo
-* Content [2/7]
-- [X] extremely short bio
-- [ ] link to github
-- [ ] link to twitter
+* Content [4/7]
 - [ ] resume
 - [ ] link to blog
 - [ ] (?)top blog posts(?)
+- [X] link to github
+- [X] link to twitter
+- [X] extremely short bio
 - [X] photo
 
 * Styling [0/3]
