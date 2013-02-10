@@ -1,6 +1,7 @@
 caseybrant.com ToDo
-* Content [6/11]
+* Content [5/11]
 - [ ] contact me page
+- [ ] diclaimer about the lameness of stuff written prior to 2011
 - [ ] links to projects
 - [ ] resume
 - [ ] link back to main from blog
