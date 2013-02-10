@@ -1,26 +1,23 @@
 <html>
   <head>
     <title>{{ page.title }} - Casey Brant's blog</title>
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/post.css" />
   </head>
   <body>
 
-    <div id="blog_header">
-      Header stuff goes here.
-    </div>
-    <hr />
+    <div id="container">
 
-    <div id="blog_post">
-      <h2>{{ page.title }}</h2>
-      <div id="post_date">{{ page.post_date }}</div>
+      <div id="blog_post">
+        <h2>{{ page.title }}</h2>
+        <div id="post_date">{{ page.post_date }}</div>
 
-      <div id="post_content">
-        {{ content }}
+        <div id="post_content">
+          {{ content }}
+        </div>
       </div>
-    </div>
-    <hr/>
 
-    <div id="blog_footer">
-      footer stuff goes here, i unno.
     </div>
   </body>
 </html>
