@@ -42,13 +42,14 @@ img {
 li {
     margin-bottom: 0.6em;
     font-size: 1.2em;
+    padding-left: 0.4em;
 }
 
 li:before { content: "\25B5"; }
 
 a { color: blue; }
 
-ul a, table a { padding-left: 0.4em; }
+table a { padding-left: 0.4em; }
 
 table {
     margin-top: 1em;
