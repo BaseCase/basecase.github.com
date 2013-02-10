@@ -1,6 +1,6 @@
 caseybrant.com ToDo
-* Content [5/10]
-- [ ] (?)top blog posts(?)
+* Content [6/11]
+- [ ] contact me page
 - [ ] links to projects
 - [ ] resume
 - [ ] link back to main from blog
@@ -11,7 +11,10 @@ caseybrant.com ToDo
 - [X] extremely short bio
 - [X] photo
 
-* Styling [3/3]
+* Styling [3/6]
+- [ ] post styling on posts with more headers, and code snippets
+- [ ] add emphasis to key words in links on main page
+- [ ] that link blue is a little too blue. maybe grey it up a bit.
 - [X] blog post CSS
 - [X] main page CSS
 - [X] blog main CSS
