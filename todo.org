@@ -11,10 +11,10 @@ caseybrant.com ToDo
 - [X] extremely short bio
 - [X] photo
 
-* Styling [3/6]
-- [ ] post styling on posts with more headers, and code snippets
+* Styling [4/6]
 - [ ] add emphasis to key words in links on main page
 - [ ] that link blue is a little too blue. maybe grey it up a bit.
+- [X] styling on posts with more headers, and code snippets
 - [X] blog post CSS
 - [X] main page CSS
 - [X] blog main CSS
@@ -22,3 +22,8 @@ caseybrant.com ToDo
 * Features [0/2]
 - [ ] RSS Feed
 - [ ] blog post comments (using Disqus?)
+
+* Misc [0/3]
+- [ ] check Safari
+- [ ] check Firefox
+- [ ] check IE9+

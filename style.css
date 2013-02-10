@@ -1,5 +1,5 @@
 body {
-    background: white;
+    background-color: white;
     font-family: Calibri, Optima, "Nimbus Sans", "Trebuchet MS", sans-serif ;
 }
 
@@ -28,7 +28,7 @@ img {
 
 #bio { margin-bottom: 2em; }
 
-h2 {
+#links h2 {
     font-size: 1.8em;
     color: rgb(217,218,21);
     text-shadow: 1px 2px 4px black;
