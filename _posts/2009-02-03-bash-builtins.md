@@ -38,7 +38,7 @@ Bash control characters and output redirection are beyond the scope of this post
 
 ## job control
 
-Unix was one of the first multitasking operating systems, and it remains very strong in that area today. My favorite way to run multiple programs at once is with [screen](http://caseybrant.blogspot.com/2009/01/52in09-week-1-screen.html), but a simpler method is to simply send a process to the background. If you're about to run something that you know will take a while, append the `'&amp;'` symbol to the command line and it will start in the background. It will run there until it is finished. The jargon for this technique is called "amping out" a process (from a shortening of "ampsersand").
+Unix was one of the first multitasking operating systems, and it remains very strong in that area today. My favorite way to run multiple programs at once is with [screen](/2009/01/11/52in09-week-1-screen.html), but a simpler method is to simply send a process to the background. If you're about to run something that you know will take a while, append the `'&amp;'` symbol to the command line and it will start in the background. It will run there until it is finished. The jargon for this technique is called "amping out" a process (from a shortening of "ampsersand").
 
 Type `fg` at the command line to bring a background process back to the front. If you've got more than one thing running in the background, use `fg <NUM>` where `<NUM>` is the background process number.
 
