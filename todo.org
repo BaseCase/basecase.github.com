@@ -24,7 +24,8 @@ caseybrant.com ToDo
 - [ ] RSS Feed
 - [ ] blog post comments (using Disqus?)
 
-* Misc [0/3]
+* Misc [0/4]
 - [ ] check Safari
 - [ ] check Firefox
 - [ ] check IE9+
+- [ ] do one big final review/proofread
