@@ -44,11 +44,7 @@ li {
     font-size: 1.2em;
 }
 
-li span {
-    padding-left: 0.4em;
-}
-
-li:before { content: "\25B5"; }
+li:before { content: "\25B5 &nbsp;&nbsp;"; }
 
 a { color: blue; }
 

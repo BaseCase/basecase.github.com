@@ -60,7 +60,7 @@ We've just scratched the surface here. There are several more builtins available
 
 Bash is an incredibly complex piece of software, but it's easy to be productive with just the basics. Once you're comfortable, though, you'll want to start seeing what other kinds of damage you can cause. The hallmark of a good Unix user is that they are always coming up with new ways to break things.
 
-* <span>[Official Bash Reference Manual](http://www.gnu.org/software/bash/manual/bashref.html")</span>
-* <span>[Bash Guide for Beginners](http://tldp.org/LDP/Bash-Beginners-Guide/html/index.html)</span>
-* <span>[Learning the bash Shell](http://oreilly.com/catalog/9780596009656/index.html)</span>
-* <span>And of course, the man pages!</span>
+* [Official Bash Reference Manual](http://www.gnu.org/software/bash/manual/bashref.html")
+* [Bash Guide for Beginners](http://tldp.org/LDP/Bash-Beginners-Guide/html/index.html)
+* [Learning the bash Shell](http://oreilly.com/catalog/9780596009656/index.html)
+* And of course, the man pages!
