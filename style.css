@@ -69,3 +69,9 @@ td { padding: 0.4em; }
 td.title { text-align: left; }
 
 td.date { text-align: right; }
+
+em {
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(133, 0, 0);
+}

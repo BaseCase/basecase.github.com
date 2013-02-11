@@ -21,11 +21,13 @@ Because text plays such an important role in computing, it only makes sense to h
 ## why you should know it
 
 *It's Everywhere*
+
 With so many text editors available, why did I pick vi for this article? The reason is that it's everywhere. If you're on a Unix system, you have access to vi. This matters because if you're efficient in vi, you can quickly and effectively edit text on any system, even one you aren't used to.
 
 It's perfectly fine to focus on a different editor for daily use, but without some vi fundamentals under your belt, you're liable to end up lost and confused on an unfamiliar system.
 
 *Common Keybindings*
+
 Because vi has been around for so long and is so popular, lots of other programs copy some of its shortcut keys for similar functions. The next 52in09 post is actually going to be talking about one of the most common of these: less.
 
 ## Modes
@@ -109,12 +111,15 @@ The important thing to remember about editors isn't which one is best, it's that
 ## other choices
 
 *Vim*
+
 vi is very old, and there are lots of clones/improvements of it. Vim is the most popular of these. It offers much more power than basic vi, but it still retains the flavor and most of the keybindings of the original. If you enjoy working with vi, I strongly recommend upgrading to Vim and learning some of its more modern and powerful features.
 
 *Emacs*
+
 Emacs is considered by many to be the only other editor worth mentioning alongside vi, and there is a classic holy war about which one is superior. I personally am a big Emacs fan, and I use it for several hours daily. It really fits the way I think. After you check out vi for a while, I'd recommend spending a few weeks with Emacs to see if it's more your style.
 
 *Others*
+
 While Vim and Emacs are the big players today, there are still lots of other popular choices. TextMate is huge in the Mac community, but unfortunately it's only available for that platform.
 
 Pico (and its clone, nano) is a Notepad-esque basic editor that's good if you get hit in the head and can't remember how to use vi.
