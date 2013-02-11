@@ -6,6 +6,7 @@ caseybrant.com ToDo
 - [ ] resume
 - [ ] link back to main from blog
 - [ ] blog post header and footer
+- [ ] fix links in 'vi' post
 - [X] link to blog
 - [X] link to github
 - [X] link to twitter
@@ -15,6 +16,7 @@ caseybrant.com ToDo
 * Styling [4/6]
 - [ ] add emphasis to key words in links on main page
 - [ ] that link blue is a little too blue. maybe grey it up a bit.
+- [ ] letter-spacing on code snippets is too wide. tighten it.
 - [X] styling on posts with more headers, and code snippets
 - [X] blog post CSS
 - [X] main page CSS
