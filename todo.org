@@ -7,6 +7,7 @@ caseybrant.com ToDo
 - [ ] link back to main from blog
 - [ ] blog post header and footer
 - [ ] fix links in 'vi' post
+- [ ] would be nice to give a 'year' header for each year in posts -- probably needs JS, since it's Jekyll/GitHub
 - [X] link to blog
 - [X] link to github
 - [X] link to twitter
@@ -17,6 +18,7 @@ caseybrant.com ToDo
 - [ ] add emphasis to key words in links on main page
 - [ ] that link blue is a little too blue. maybe grey it up a bit.
 - [ ] letter-spacing on code snippets is too wide. tighten it.
+- [ ] some hover style for links, maybe a very subtle shadow.
 - [X] styling on posts with more headers, and code snippets
 - [X] blog post CSS
 - [X] main page CSS
