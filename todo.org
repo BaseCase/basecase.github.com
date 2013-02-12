@@ -1,6 +1,7 @@
 caseybrant.com ToDo
-* Content [5/11]
+* Content [5/14]
 - [ ] contact me page
+- [ ] rework intro on main page
 - [ ] diclaimer about the lameness of stuff written prior to 2011
 - [ ] links to projects
 - [ ] resume
@@ -14,7 +15,7 @@ caseybrant.com ToDo
 - [X] extremely short bio
 - [X] photo
 
-* Styling [4/6]
+* Styling [4/8]
 - [ ] add emphasis to key words in links on main page
 - [ ] that link blue is a little too blue. maybe grey it up a bit.
 - [ ] letter-spacing on code snippets is too wide. tighten it.
