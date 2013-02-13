@@ -1,6 +1,5 @@
 caseybrant.com ToDo
-* Content [8/17]
-- [ ] **rework intro on main page
+* Content [9/17]
 - [ ] *copy blog posts from posterous blog
 - [ ] diclaimer about the lameness of stuff written prior to 2011
 - [ ] links to projects
@@ -9,6 +8,7 @@ caseybrant.com ToDo
 - [ ] fix links in 'vi' post
 - [ ] post pimping out my GitHub issues snippet
 - [ ] post pimping out my Year Grouping Coffeescript
+- [X] rework intro on main page
 - [X] would be nice to give a 'year' header for each year in posts -- probably needs JS, since it's Jekyll/GitHub
 - [X] resume
 - [X] contact me page
