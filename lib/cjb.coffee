@@ -16,13 +16,28 @@ class DateLabeler
   parse: (date) ->
     date.split(",").pop().trim()
 
-exports.DateLabeler = DateLabeler
+# uncomment this to run tests
+# exports.DateLabeler = DateLabeler
 
+generateYearLabels = ->
+  dl = new DateLabeler
+  rows = getAllDates()
+  dl.markFirstInstanceOfEachYear rows
+  rows.map writeLabel
 
+getAllDates = ->
+  ($ 'td.date').map ->
+    datestring: ($ this).html()
+    element: this
 
-# This jQuery makes a list of objects that are
-# {"date string":"corresponding DOM Element"} pairs, in order
-# $('td.date').map(function() {
-#   return {
-#     datestring: $(this).html(),
-#     element: this}});
+writeLabel = ->
+  element = this.element
+  if this.label_before?
+    ($ element).parent().before makeYearLabel(this.label_before)
+
+makeYearLabel = (year) ->
+  "<div class=\"year_label\">#{year}</div>"
+
+($ ->
+  generateYearLabels()
+)
