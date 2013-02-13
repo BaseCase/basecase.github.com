@@ -1,6 +1,5 @@
 caseybrant.com ToDo
-* Content [5/14]
-- [ ] contact me page
+* Content [6/14]
 - [ ] rework intro on main page
 - [ ] diclaimer about the lameness of stuff written prior to 2011
 - [ ] links to projects
@@ -9,6 +8,7 @@ caseybrant.com ToDo
 - [ ] blog post header and footer
 - [ ] fix links in 'vi' post
 - [ ] would be nice to give a 'year' header for each year in posts -- probably needs JS, since it's Jekyll/GitHub
+- [X] contact me page
 - [X] link to blog
 - [X] link to github
 - [X] link to twitter
