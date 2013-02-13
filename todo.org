@@ -1,6 +1,5 @@
 caseybrant.com ToDo
-* Content [7/15]
-- [ ] **would be nice to give a 'year' header for each year in posts -- probably needs JS, since it's Jekyll/GitHub
+* Content [8/15]
 - [ ] rework intro on main page
 - [ ] diclaimer about the lameness of stuff written prior to 2011
 - [ ] links to projects
@@ -8,6 +7,7 @@ caseybrant.com ToDo
 - [ ] blog post header and footer
 - [ ] fix links in 'vi' post
 - [ ] copy blog posts from posterous blog
+- [X] would be nice to give a 'year' header for each year in posts -- probably needs JS, since it's Jekyll/GitHub
 - [X] resume
 - [X] contact me page
 - [X] link to blog

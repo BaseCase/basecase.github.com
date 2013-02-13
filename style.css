@@ -77,3 +77,13 @@ em {
     font-style: italic;
     color: rgb(133, 0, 0);
 }
+
+.year_label {
+    font-size: 1.4em;
+    color: rgb(200,200,200);
+    margin-top: 0.6em;
+    float: right;
+    padding-right: 0.2em;
+}
+
+.year_label:first-of-type { margin-top: 0em; }
