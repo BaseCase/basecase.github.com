@@ -16,10 +16,10 @@ caseybrant.com ToDo
 - [X] extremely short bio
 - [X] photo
 
-* Styling [5/8]
+* Styling [6/8]
 - [ ] that link blue is a little too blue. maybe grey it up a bit.
 - [ ] letter-spacing on code snippets is too wide. tighten it.
-- [ ] some hover style for links, maybe a very subtle shadow.
+- [X] some hover style for links, maybe a very subtle shadow.
 - [X] add emphasis to key words in links on main page
 - [X] styling on posts with more headers, and code snippets
 - [X] blog post CSS

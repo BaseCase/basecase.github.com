@@ -48,6 +48,8 @@ li:before { content: "\25B5 \a0 \a0"; }
 
 a { color: blue; }
 
+a:hover { text-shadow: 0px 0px 25px black; }
+
 table a { padding-left: 0.4em; }
 
 table {
