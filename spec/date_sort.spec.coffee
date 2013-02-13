@@ -8,7 +8,9 @@ describe "a date labeler", ->
     date = "January 18, 2009"
     expect(@dl.parse(date)).toEqual "2009"
 
-  it "can mark an element for labeling with given year", ->
-    element = "January 18, 2009":{}
-    @dl.mark(element)
-    expect(element.label_before).toBe "2009"
+  it "can mark a row for labeling with given year", ->
+    row =
+      datestring: "January 18, 2009"
+      element: {}
+    @dl.mark(row)
+    expect(row.label_before).toBe "2009"
