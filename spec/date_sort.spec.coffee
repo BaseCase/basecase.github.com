@@ -1,4 +1,4 @@
-DateLabeler = require('./cjb').DateLabeler
+DateLabeler = require('../lib/cjb').DateLabeler
 
 describe "a date labeler", ->
   beforeEach ->
@@ -8,4 +8,7 @@ describe "a date labeler", ->
     date = "January 18, 2009"
     expect(@dl.parse(date)).toEqual "2009"
 
-  it "gets a list of DOM elements with dates in them", ->
+  it "can mark an element for labeling with given year", ->
+    element = "January 18, 2009":{}
+    @dl.mark(element)
+    expect(element.label_before).toBe "2009"
