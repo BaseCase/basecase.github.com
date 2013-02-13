@@ -1,23 +1,5 @@
-class DateLabeler
-  markFirstInstanceOfEachYear: (row_list) ->
-    first = row_list[0]
-    @mark first
-    newest_label = first.label_before
-    for row in row_list
-      date = @parse(row.datestring)
-      if date isnt newest_label
-        newest_label = date
-        @mark row
-
-  mark: (row) ->
-    year = @parse row.datestring
-    row.label_before = year
-
-  parse: (date) ->
-    date.split(",").pop().trim()
-
-# uncomment this to run tests
-# exports.DateLabeler = DateLabeler
+$ ->
+  generateYearLabels()
 
 generateYearLabels = ->
   dl = new DateLabeler
@@ -38,6 +20,21 @@ writeLabel = ->
 makeYearLabel = (year) ->
   "<div class=\"year_label\">#{year}</div>"
 
-($ ->
-  generateYearLabels()
-)
+
+class DateLabeler
+  markFirstInstanceOfEachYear: (row_list) ->
+    first = row_list[0]
+    @mark first
+    newest_label = first.label_before
+    for row in row_list
+      date = @parse(row.datestring)
+      if date isnt newest_label
+        newest_label = date
+        @mark row
+
+  mark: (row) ->
+    year = @parse row.datestring
+    row.label_before = year
+
+  parse: (date) ->
+    date.split(",").pop().trim()

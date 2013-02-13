@@ -1,3 +1,7 @@
+# This is gross, and I'll try to fix it when I learn how
+# To run these specs, you have to comment out the jQuery
+# code in cjb.coffee, and add an exports line. Yuck!
+
 DateLabeler = require('../lib/cjb').DateLabeler
 
 describe "a date labeler", ->
