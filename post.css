@@ -44,3 +44,11 @@ code {
     letter-spacing: 0.2em;
     padding-top: 0.2em;
 }
+
+blockquote {
+    margin-left: 4em;
+    margin-right: 8em;
+    background-color: rgb(240, 240, 240);
+}
+
+blockquote p { text-indent: 0; }
