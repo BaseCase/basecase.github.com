@@ -3,9 +3,9 @@ $ ->
 
 generateYearLabels = ->
   dl = new DateLabeler
-  rows = getAllDates()
-  dl.markFirstInstanceOfEachYear rows
-  rows.map writeLabel
+  all_rows = getAllDates()
+  rows_to_label = dl.firstInstanceOfEachYear all_rows
+  rows_to_label.map writeLabel
 
 getAllDates = ->
   ($ 'td.date').map ->
@@ -14,27 +14,31 @@ getAllDates = ->
 
 writeLabel = ->
   element = this.element
-  if this.label_before?
-    ($ element).parent().before makeYearLabel(this.label_before)
+  ($ element).parent().before makeYearLabel(this.label_before)
 
 makeYearLabel = (year) ->
   "<div class=\"year_label\">#{year}</div>"
 
 
 class DateLabeler
-  markFirstInstanceOfEachYear: (row_list) ->
-    first = row_list[0]
-    @mark first
-    newest_label = first.label_before
-    for row in row_list
+  firstInstanceOfEachYear: (rows) ->
+    newest_label = ""
+    labeled_rows = []
+    for row in rows
       date = @parse(row.datestring)
       if date isnt newest_label
         newest_label = date
-        @mark row
+        labeled_rows.push(@labeled row)
+    labeled_rows
 
-  mark: (row) ->
+  labeled: (row) ->
     year = @parse row.datestring
-    row.label_before = year
+    {
+      element: row.element
+      label_before: year
+    }
 
   parse: (date) ->
     date.split(",").pop().trim()
+
+#exports.DateLabeler = DateLabeler

@@ -7,11 +7,11 @@
   });
 
   generateYearLabels = function() {
-    var dl, rows;
+    var all_rows, dl, rows_to_label;
     dl = new DateLabeler;
-    rows = getAllDates();
-    dl.markFirstInstanceOfEachYear(rows);
-    return rows.map(writeLabel);
+    all_rows = getAllDates();
+    rows_to_label = dl.firstInstanceOfEachYear(all_rows);
+    return rows_to_label.map(writeLabel);
   };
 
   getAllDates = function() {
@@ -26,9 +26,7 @@
   writeLabel = function() {
     var element;
     element = this.element;
-    if (this.label_before != null) {
-      return ($(element)).parent().before(makeYearLabel(this.label_before));
-    }
+    return ($(element)).parent().before(makeYearLabel(this.label_before));
   };
 
   makeYearLabel = function(year) {
@@ -39,29 +37,28 @@
 
     function DateLabeler() {}
 
-    DateLabeler.prototype.markFirstInstanceOfEachYear = function(row_list) {
-      var date, first, newest_label, row, _i, _len, _results;
-      first = row_list[0];
-      this.mark(first);
-      newest_label = first.label_before;
-      _results = [];
-      for (_i = 0, _len = row_list.length; _i < _len; _i++) {
-        row = row_list[_i];
+    DateLabeler.prototype.firstInstanceOfEachYear = function(rows) {
+      var date, labeled_rows, newest_label, row, _i, _len;
+      newest_label = "";
+      labeled_rows = [];
+      for (_i = 0, _len = rows.length; _i < _len; _i++) {
+        row = rows[_i];
         date = this.parse(row.datestring);
         if (date !== newest_label) {
           newest_label = date;
-          _results.push(this.mark(row));
-        } else {
-          _results.push(void 0);
+          labeled_rows.push(this.labeled(row));
         }
       }
-      return _results;
+      return labeled_rows;
     };
 
-    DateLabeler.prototype.mark = function(row) {
+    DateLabeler.prototype.labeled = function(row) {
       var year;
       year = this.parse(row.datestring);
-      return row.label_before = year;
+      return {
+        element: row.element,
+        label_before: year
+      };
     };
 
     DateLabeler.prototype.parse = function(date) {

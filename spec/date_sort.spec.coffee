@@ -12,29 +12,25 @@ describe "a date labeler", ->
     date = "January 18, 2009"
     expect(@dl.parse(date)).toEqual "2009"
 
-  it "can mark a row for labeling with given year", ->
+  it "makes a labeled object from a row object", ->
     row = {datestring: "January 18, 2009", element: {}}
-    @dl.mark(row)
-    expect(row.label_before).toBe "2009"
+    labeled = @dl.labeled row
+    expect(labeled.label_before).toBe "2009"
 
-  it "marks the first row in a list of rows", ->
-    rows = [ {datestring: "January 18, 2009", element: {}} ]
-    @dl.markFirstInstanceOfEachYear rows
-    expect(rows[0].label_before).toBeDefined()
+  describe "first instance of each year", ->
+    beforeEach ->
+      rows = [
+        {datestring: "January 18, 2009", element: {}},
+        {datestring: "January 18, 2009", element: {}},
+        {datestring: "January 18, 2008", element: {}},
+        {datestring: "January 18, 2008", element: {}}]
+      @labeled = @dl.firstInstanceOfEachYear rows
 
-  it "marks the first mention of a new year", ->
-    rows = [
-      {datestring: "January 18, 2009", element: {}},
-      {datestring: "January 18, 2009", element: {}},
-      {datestring: "January 18, 2008", element: {}}]
-    @dl.markFirstInstanceOfEachYear rows
-    expect(rows[2].label_before).toBe "2008"
+    it "labels the first row in a list of rows", ->
+      expect(@labeled[0].label_before).toBe "2009"
 
-  it "doesn't mark a row after its year was already marked", ->
-    rows = [
-      {datestring: "January 18, 2009", element: {}},
-      {datestring: "January 18, 2009", element: {}},
-      {datestring: "January 18, 2009", element: {}},
-      {datestring: "January 18, 2008", element: {}}]
-    @dl.markFirstInstanceOfEachYear rows
-    expect(rows[2].label_before).toBeUndefined()
+    it "finds the first mention of a new year", ->
+      expect(@labeled[1].label_before).toBe "2008"
+
+    it "marks only one instance of each year", ->
+      expect(@labeled.length).toBe 2
