@@ -1,27 +1,27 @@
 $ ->
-  generateYearLabels()
+  generate_year_labels()
 
-generateYearLabels = ->
+generate_year_labels = ->
   dl = new DateLabeler
-  all_rows = getAllDates()
-  rows_to_label = dl.firstInstanceOfEachYear all_rows
-  rows_to_label.map writeLabel
+  all_rows = get_all_dates()
+  rows_to_label = dl.first_instance_of_each_year all_rows
+  rows_to_label.map write_label
 
-getAllDates = ->
+get_all_dates = ->
   ($ 'td.date').map ->
     datestring: ($ this).html()
     element: this
 
-writeLabel = (row) ->
+write_label = (row) ->
   element = row.element
-  ($ element).parent().before makeYearLabel(row.label_before)
+  ($ element).parent().before make_year_label(row.label_before)
 
-makeYearLabel = (year) ->
+make_year_label = (year) ->
   "<div class=\"year_label\">#{year}</div>"
 
 
 class DateLabeler
-  firstInstanceOfEachYear: (rows) ->
+  first_instance_of_each_year: (rows) ->
     newest_label = ""
     labeled_rows = []
     for row in rows

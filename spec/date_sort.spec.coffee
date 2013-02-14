@@ -24,7 +24,7 @@ describe "a date labeler", ->
         {datestring: "January 18, 2009", element: {}},
         {datestring: "January 18, 2008", element: {}},
         {datestring: "January 18, 2008", element: {}}]
-      @labeled = @dl.firstInstanceOfEachYear rows
+      @labeled = @dl.first_instance_of_each_year rows
 
     it "labels the first row in a list of rows", ->
       expect(@labeled[0].label_before).toBe "2009"
