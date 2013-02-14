@@ -56,3 +56,8 @@ blockquote p { text-indent: 0; }
 div.gist {
     font-size: 12px;
 }
+
+li {
+    list-style-type: square;
+    margin-left: 2em;
+}

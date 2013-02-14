@@ -39,12 +39,12 @@ h1 {
     margin-bottom: 0.3em;
 }
 
-li {
+#links li {
     margin-bottom: 0.6em;
     font-size: 1.2em;
 }
 
-li:before { content: "\25B5 \a0 \a0"; }
+#links li:before { content: "\25B5 \a0 \a0"; }
 
 a { color: blue; }
 
