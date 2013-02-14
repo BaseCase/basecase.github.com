@@ -52,3 +52,7 @@ blockquote {
 }
 
 blockquote p { text-indent: 0; }
+
+div.gist {
+    font-size: 12px;
+}
