@@ -24,6 +24,7 @@ To run everything, you'll need Node (which you should have already if you're usi
 * stitch
 * uglifyjs
 * jasmine-node
+
 You can run `npm install -g <NAME>` to intall each of these system-wide.
 
 
