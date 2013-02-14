@@ -1,13 +1,14 @@
 caseybrant.com ToDo
-* Content [9/17]
-- [ ] *copy blog posts from posterous blog
+* Content [10/18]
 - [ ] diclaimer about the lameness of stuff written prior to 2011
 - [ ] links to projects
 - [ ] link back to main from blog
 - [ ] blog post header and footer
 - [ ] fix links in 'vi' post
+- [ ] Cakefile post needs tightening up
 - [ ] post pimping out my GitHub issues snippet
 - [ ] post pimping out my Year Grouping Coffeescript
+- [X] copy blog posts from posterous blog
 - [X] rework intro on main page
 - [X] would be nice to give a 'year' header for each year in posts -- probably needs JS, since it's Jekyll/GitHub
 - [X] resume
