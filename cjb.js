@@ -23,10 +23,10 @@
     });
   };
 
-  writeLabel = function() {
+  writeLabel = function(row) {
     var element;
-    element = this.element;
-    return ($(element)).parent().before(makeYearLabel(this.label_before));
+    element = row.element;
+    return ($(element)).parent().before(makeYearLabel(row.label_before));
   };
 
   makeYearLabel = function(year) {

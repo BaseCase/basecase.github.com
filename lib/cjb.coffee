@@ -12,9 +12,9 @@ getAllDates = ->
     datestring: ($ this).html()
     element: this
 
-writeLabel = ->
-  element = this.element
-  ($ element).parent().before makeYearLabel(this.label_before)
+writeLabel = (row) ->
+  element = row.element
+  ($ element).parent().before makeYearLabel(row.label_before)
 
 makeYearLabel = (year) ->
   "<div class=\"year_label\">#{year}</div>"
