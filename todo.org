@@ -19,8 +19,9 @@ caseybrant.com ToDo
 - [X] extremely short bio
 - [X] photo
 
-* Styling [6/8]
+* Styling [6/9]
 - [ ] that link blue is a little too blue. maybe grey it up a bit.
+- [ ] work through [[http://kaikkonendesign.fi/typography/][this typography tutorial]] and apply to blog
 - [ ] letter-spacing on code snippets is too wide. tighten it.
 - [X] some hover style for links, maybe a very subtle shadow.
 - [X] add emphasis to key words in links on main page
@@ -29,7 +30,8 @@ caseybrant.com ToDo
 - [X] main page CSS
 - [X] blog main CSS
 
-* Features [0/2]
+* Features [0/3]
+- [ ] Google Analytics
 - [ ] RSS Feed
 - [ ] blog post comments (using Disqus?)
 
