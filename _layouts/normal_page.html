@@ -3,20 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Casey Brant {{page.title}}</title>
+
+  <link rel="shortcut icon" href="logo.png">
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7280032/715782/css/fonts.css" />
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
-{% include header.html %}
+<div id="content">
+  {% include header.html %}
 
-<h1>Casey Brant</h1>
+  <div id="main">
+    <h1>Casey Brant</h1>
 
-{{content}}
+    {{content}}
+  </div>
 
-
-{% include footer.html %}
+  {% include footer.html %}
+</div>
 
 </body>
 </html>

@@ -4,17 +4,25 @@
   <meta charset="UTF-8">
   <title>Casey Brant's Blog - {{page.title}}</title>
 
+  <link rel="shortcut icon" href="/logo.png">
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7280032/715782/css/fonts.css" />
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+
+<div id="content">
   {% include header.html %}
 
-  mah blog
-  {{content}}
+  <div id="main">
+    <h2>{{page.title}}</h2>
+
+    {{content}}
+  </div>
 
   {% include footer.html %}
+</div>
+
 </body>
 </html>
 

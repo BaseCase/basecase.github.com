@@ -1,4 +1,7 @@
-<div>
-  the header
+<div id="header">
+  <img src="/logo.png">
+  <a href="/" class="header-link{% if page.active == 'home' %} active{% endif %}">Home</a>
+  <a href="/blog.html" class="header-link{% if page.active == 'blog' %} active{% endif %}">Blog</a>
+  <a href="/about.html" class="header-link{% if page.active == 'about' %} active{% endif %}">About</a>
 </div>
 
