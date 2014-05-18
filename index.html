@@ -1,7 +1,14 @@
 ---
 title: Dot Com
-layout: base
+layout: normal_page
 ---
 
 <p>Is this thing on?</p>
 
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Casey Brant - {{page.title}}</title>
+  <title>Casey Brant {{page.title}}</title>
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7280032/715782/css/fonts.css" />
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
+{% include header.html %}
+
 <h1>Casey Brant</h1>
 
 {{content}}
+
+
+{% include footer.html %}
 
 </body>
 </html>
