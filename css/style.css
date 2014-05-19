@@ -15,7 +15,7 @@
 html, body { height: 100%; }
 
 body {
-  background: rgb(230, 230, 255);
+  background: white;
   font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B', sans-serif;
   font-size: 20px;
   line-height: 1.4em;
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 1em;
   height: 200px;
   width: 100%;
-  background: linear-gradient(to bottom, rgb(230, 230, 255), white);
+  background: linear-gradient(to bottom, white, #eee);
   position: absolute;
   bottom: 0;
 }
