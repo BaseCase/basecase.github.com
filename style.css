@@ -2,14 +2,17 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   font-size: 20px;
+  text-rendering: optimizeLegibility;
 }
 
 .container {
   margin-left: 3em;
   margin-top: 2em;
-}
-
-.container p {
   max-width: 750px;
   line-height: 1.4em;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
 }
