@@ -3,11 +3,11 @@ body {
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  width: 100%;
 }
 
 .container {
-  margin-left: 3em;
-  margin-top: 2em;
+  margin: 8%;
   max-width: 750px;
   line-height: 1.4em;
 }
