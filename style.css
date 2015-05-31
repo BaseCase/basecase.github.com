@@ -20,3 +20,46 @@ a {
 
 a:visited { color: #334ACC; }
 a:active, a:hover { color: #CC5A33; }
+
+.resume-contact-info p {
+  margin: 0;
+  font-size: 80%;
+}
+
+.resume-history .entry {
+  margin-top: 1em;
+  border-bottom: 1px solid #eee;
+}
+
+.resume-history .entry > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.resume-history .entry .title {
+  width: 29%;
+}
+
+.resume-history .entry .notes {
+  width: 69%;
+}
+
+.resume-history .entry .title .company {
+  font-size: 110%;
+  font-weight: bold;
+}
+
+.resume-history .entry .title .date {
+  font-size: 80%;
+  color: #999;
+}
+
+.resume-history .entry .notes p {
+  margin-top: 0;
+  padding-left: 1em;
+}
+
+.resume .references {
+  font-size: 80%;
+  margin-top: 1em;
+}
