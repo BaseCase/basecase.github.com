@@ -26,6 +26,33 @@ a:active, a:hover { color: #CC5A33; }
   font-size: 80%;
 }
 
+.resume-skills .entry {
+  margin-top: 1em;
+  border-bottom: 1px solid #eee;
+}
+
+.resume-skills .entry > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.resume-skills .entry .type {
+  width: 29%;
+}
+
+.resume-skills .entry .list {
+  width: 69%;
+}
+
+.resume-skills .entry .list p {
+  padding-left: 1em;
+  margin-top: 0;
+}
+
+.resume-skills .entry .type {
+  /*font-weight: bold;*/
+}
+
 .resume-history .entry {
   margin-top: 1em;
   border-bottom: 1px solid #eee;
