@@ -31,6 +31,10 @@ a:active, a:hover { color: #CC5A33; }
   border-bottom: 1px solid #eee;
 }
 
+.resume-skills .entry:last-child {
+  border: none;
+}
+
 .resume-skills .entry > div {
   display: inline-block;
   vertical-align: top;
@@ -56,6 +60,10 @@ a:active, a:hover { color: #CC5A33; }
 .resume-history .entry {
   margin-top: 1em;
   border-bottom: 1px solid #eee;
+}
+
+.resume-history .entry:last-child {
+  border: none;
 }
 
 .resume-history .entry > div {
@@ -88,5 +96,5 @@ a:active, a:hover { color: #CC5A33; }
 
 .resume .references {
   font-size: 80%;
-  margin-top: 1em;
+  margin-top: 2em;
 }
