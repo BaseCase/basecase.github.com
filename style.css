@@ -21,77 +21,46 @@ a {
 a:visited { color: #334ACC; }
 a:active, a:hover { color: #CC5A33; }
 
-.resume-contact-info p {
+.resume .contact-info p {
   margin: 0;
   font-size: 80%;
 }
 
-.resume-skills .entry {
+.resume .entry {
   margin-top: 1em;
   border-bottom: 1px solid #eee;
 }
 
-.resume-skills .entry:last-child {
+.resume .entry:last-child {
   border: none;
 }
 
-.resume-skills .entry > div {
+.resume .entry > div {
   display: inline-block;
   vertical-align: top;
 }
 
-.resume-skills .entry .type {
+.resume .entry .sidebar {
   width: 29%;
 }
 
-.resume-skills .entry .list {
+.resume .entry .body {
   width: 69%;
 }
 
-.resume-skills .entry .list p {
+.resume .entry .body p {
   padding-left: 1em;
   margin-top: 0;
 }
 
-.resume-skills .entry .type {
-  /*font-weight: bold;*/
-}
-
-.resume-history .entry {
-  margin-top: 1em;
-  border-bottom: 1px solid #eee;
-}
-
-.resume-history .entry:last-child {
-  border: none;
-}
-
-.resume-history .entry > div {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.resume-history .entry .title {
-  width: 29%;
-}
-
-.resume-history .entry .notes {
-  width: 69%;
-}
-
-.resume-history .entry .title .company {
+.resume .title .company {
   font-size: 110%;
   font-weight: bold;
 }
 
-.resume-history .entry .title .date {
+.resume .title .date {
   font-size: 80%;
   color: #999;
-}
-
-.resume-history .entry .notes p {
-  margin-top: 0;
-  padding-left: 1em;
 }
 
 .resume .references {
