@@ -2,38 +2,35 @@
 
 function make_that_map() {
   var start_pos = new google.maps.LatLng('37.6889102', '-122.4706087');
-  var cur_pos = new google.maps.LatLng('37.6889102', '-122.4706087');
+  var cur_pos = new google.maps.LatLng('40.770922', '-112.957103');
   var dest_pos = new google.maps.LatLng('43.0849935', '-89.4064204');
 
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 10,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
+    mapTypeId: google.maps.MapTypeId.TERRAIN
+  });
+
+  var cur_pos_pin = new google.maps.Marker({
+    position: cur_pos,
+    map: map
   });
 
   var destination_pin = new google.maps.Marker({
     position: dest_pos,
     icon: {url: 'badger.png', scaledSize: new google.maps.Size(55, 80)},
     map: map,
-    scale: 1
   });
 
-  set_map_bounds(map, start_pos, cur_pos, dest_pos);
+  set_map_bounds(map, [start_pos, cur_pos, dest_pos]);
   draw_route(map, start_pos, cur_pos);
 }
 
 
-function set_map_bounds(map, start, end, dest) {
+function set_map_bounds(map, bounds) {
   var lat_lng_bounds = new google.maps.LatLngBounds();
-
-  [start, end].forEach(function(bound) {
-    var marker = new google.maps.Marker({
-      position: bound,
-      map: map,
-    });
-    lat_lng_bounds.extend(marker.position);
+  bounds.forEach(function(bound) {
+    lat_lng_bounds.extend(bound);
   });
-
-  lat_lng_bounds.extend(dest);
 
   map.setCenter(lat_lng_bounds.getCenter());
   map.fitBounds(lat_lng_bounds);
@@ -44,7 +41,11 @@ function draw_route(map, start_lat_lng, end_lat_lng) {
   // mostly unaltered copypasta that I was too lazy to refactor much :/
   var path = new google.maps.MVCArray();
   var service = new google.maps.DirectionsService();
-  var poly = new google.maps.Polyline({ map: map, strokeColor: '#4986E7' });
+  var poly = new google.maps.Polyline({
+    map: map,
+    strokeColor: '#2288FF',
+    strokeWeight: 5
+  });
 
   path.push(start_lat_lng);
   poly.setPath(path);
@@ -61,6 +62,7 @@ function draw_route(map, start_lat_lng, end_lat_lng) {
     }
   });
 }
+
 
 window.make_that_map = make_that_map;
 })();
