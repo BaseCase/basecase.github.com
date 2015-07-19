@@ -12,6 +12,7 @@ function make_that_map() {
 
   var cur_pos_pin = new google.maps.Marker({
     position: cur_pos,
+    icon: {url: 'face.png', scaledSize: new google.maps.Size(40, 60)},
     map: map
   });
 
