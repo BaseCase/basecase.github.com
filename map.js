@@ -2,7 +2,7 @@
 
 function make_that_map() {
   var start_pos = new google.maps.LatLng('37.6889102', '-122.4706087');
-  var cur_pos = new google.maps.LatLng('40.814419','-96.789003');
+  var cur_pos = new google.maps.LatLng('41.588982','-93.810476');
   var dest_pos = new google.maps.LatLng('43.0849935', '-89.4064204');
 
   var map = new google.maps.Map(document.getElementById("map"), {
