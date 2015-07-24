@@ -1,11 +1,69 @@
-html, body {
-  margin: 0;
-  padding: 0;
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
   width: 100%;
-  height: 100%
 }
 
-#map {
-  width: 100%;
-  height: 100%;
+.container {
+  margin: 8%;
+  max-width: 750px;
+  line-height: 1.4em;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #334ACC;
+}
+
+a:visited { color: #334ACC; }
+a:active, a:hover { color: #CC5A33; }
+
+.resume .contact-info p {
+  margin: 0;
+  font-size: 80%;
+}
+
+.resume .entry {
+  margin-top: 1em;
+  border-bottom: 1px solid #eee;
+}
+
+.resume .entry:last-child {
+  border: none;
+}
+
+.resume .entry > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.resume .entry .sidebar {
+  width: 29%;
+}
+
+.resume .entry .body {
+  width: 69%;
+}
+
+.resume .entry .body p {
+  padding-left: 1em;
+  margin-top: 0;
+}
+
+.resume .title .company {
+  font-size: 110%;
+  font-weight: bold;
+}
+
+.resume .title .date {
+  font-size: 80%;
+  color: #999;
+}
+
+.resume .references {
+  font-size: 80%;
+  margin-top: 2em;
 }
