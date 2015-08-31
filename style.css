@@ -20,3 +20,26 @@ a {
 
 a:visited { color: #334ACC; }
 a:active, a:hover { color: #CC5A33; }
+
+h2 {
+  margin-bottom: 0;
+}
+
+.project-entry > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.project-image-col {
+  width: 24%;
+  margin-top: 1.4em;
+}
+
+.project-image-col img {
+  width: 90%;
+  vertical-align: top;
+}
+
+.project-description-col {
+  width: 74%;
+}
