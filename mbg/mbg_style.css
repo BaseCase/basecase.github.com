@@ -31,7 +31,7 @@ a {
 a:visited { color: #334ACC; }
 a:active, a:hover { color: #CC5A33; }
 
-.mbg-entry > div {
+.mbg-cell {
   display: inline-block;
   vertical-align: top;
 }
@@ -89,7 +89,7 @@ a:active, a:hover { color: #CC5A33; }
   padding: 0.5em;
 }
 
-.mbg-entry .title {           width: 20%; }
-.mbg-entry .type {            width: 5%; }
-.mbg-entry .date-completed {  width: 10%; }
-.mbg-entry .thoughts {        width: 50%; }
+.mbg-cell.title {           width: 20%; }
+.mbg-cell.type {            width: 5%; }
+.mbg-cell.date-completed {  width: 10%; }
+.mbg-cell.thoughts {        width: 50%; }

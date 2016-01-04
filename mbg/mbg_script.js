@@ -57,8 +57,14 @@ document.addEventListener('DOMContentLoaded', function() {
         '</a>' +
       '</div>' +
       '<div class="mbg-cell type">' + row.type + '</div>' +
-      '<div class="mbg-cell date-completed">' + row['date-completed'] + '</div>' +
+      '<div class="mbg-cell date-completed">' + format_date(row['date-completed']) + '</div>' +
       '<div class="mbg-cell thoughts">' + row.thoughts + '</div>';
+  }
+
+
+  function format_date(date) {
+    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    return months[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear();
   }
 
 
