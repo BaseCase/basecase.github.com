@@ -79,6 +79,4 @@ a:active, a:hover { color: #CC5A33; }
 
 @media (max-width: 700px) {
   .mbg-cell { width: 100%; }
-  #mbg-entries .type { width: 10%; }
-  #mbg-entries .date-completed { width: 30%; }
 }
