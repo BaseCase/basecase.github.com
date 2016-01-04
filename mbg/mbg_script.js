@@ -1,27 +1,41 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var forEach = Array.prototype.forEach;
-  var map = Array.prototype.map;
 
-  var mbg_data = grab_mbg_data_from_table();
+  // extract data from initial HTML just once on page load so sorting and re-rendering is easy
+  var mbg_data = [].map.call(document.getElementsByClassName("mbg-entry"), function(row) {
+    var title_el = row.getElementsByClassName('title')[0];
+    return {
+      'title': title_el.getElementsByClassName('title-text')[0].innerHTML,
+      'url': title_el.getElementsByTagName('a')[0].href,
+      'img_src': title_el.getElementsByTagName('img')[0].getAttribute('src'),
+      'type': row.getElementsByClassName('type')[0].innerHTML,
+      'date-completed': new Date(row.getElementsByClassName('date-completed')[0].innerHTML),
+      'thoughts': row.getElementsByClassName('thoughts')[0].innerHTML
+    };
+  });
 
-  var header_row = document.getElementById('mbg-header');
-  add_header_click_listeners();
+  // add click listeners to header cells
+  ["title", "type", "date-completed"].forEach(function(category) {
+    document.getElementById('mbg-header')
+            .getElementsByClassName(category)[0]
+            .addEventListener("click", function() {
+              sort_mbg_by(category);
+            });
+  });
 
 
   function sort_mbg_by(category) {
+    // sort the data we collected on page load by the selected category
     mbg_data.sort(function(a, b) {
       return a[category] < b[category] ? -1
              : a[category] > b[category] ? +1
              : 0;
     });
 
-    var new_mbg_el = render_mbg_data(mbg_data);
-    document.getElementById('mbg-entries').innerHTML = new_mbg_el.innerHTML;
-    mark_sort_by_header(category);
-  }
+    // replace the entries in the table with new ones rendered in the chosen order
+    document.getElementById('mbg-entries').innerHTML = render_mbg_data().innerHTML;
 
-
-  function mark_sort_by_header(category) {
+    // set the 'sort-by' class on the correct header cell
+    var header_row = document.getElementById('mbg-header');
     var current = header_row.getElementsByClassName('sort-by')[0];
     current.classList.remove('sort-by');
     var new_sort_by = header_row.getElementsByClassName(category)[0];
@@ -29,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 
-  function render_mbg_data(mbg_data) {
+  function render_mbg_data() {
     var new_table = document.createElement('div');
 
     mbg_data.forEach(function(row) {
@@ -44,6 +58,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   function row_html_template(row) {
+    function format_date(date) {
+      var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      return months[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear();
+    }
+
     return '' +
       '<div class="mbg-cell title">' +
         '<a href="' + row.url + '" target="_window">' +
@@ -54,42 +73,5 @@ document.addEventListener('DOMContentLoaded', function() {
       '<div class="mbg-cell type">' + row.type + '</div>' +
       '<div class="mbg-cell date-completed">' + format_date(row['date-completed']) + '</div>' +
       '<div class="mbg-cell thoughts">' + row.thoughts + '</div>';
-  }
-
-
-  function format_date(date) {
-    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    return months[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear();
-  }
-
-
-  function grab_mbg_data_from_table() {
-    return map.call(document.getElementsByClassName("mbg-entry"), function(row) {
-      var title_el = row.getElementsByClassName('title')[0];
-      var title = title_el.getElementsByClassName('title-text')[0].innerHTML;
-      var url = title_el.getElementsByTagName('a')[0].href;
-      var img_src = title_el.getElementsByTagName('img')[0].getAttribute('src');
-      var date_completed = new Date(row.getElementsByClassName('date-completed')[0].innerHTML);
-
-      return {
-        'title': title,
-        'url': url,
-        'img_src': img_src,
-        'type': row.getElementsByClassName('type')[0].innerHTML,
-        'date-completed': date_completed,
-        'thoughts': row.getElementsByClassName('thoughts')[0].innerHTML
-      };
-    });
-  }
-
-
-  function add_header_click_listeners() {
-    ["title", "type", "date-completed"].forEach(function(category) {
-      var header = document.getElementById('mbg-header')
-                           .getElementsByClassName("mbg-cell " + category)[0]
-                           .addEventListener("click", function() {
-                             sort_mbg_by(category);
-                           });
-    });
   }
 });
