@@ -34,6 +34,7 @@ a:active, a:hover { color: #CC5A33; }
 .mbg-cell {
   display: inline-block;
   vertical-align: top;
+  padding: 0.5em;
 }
 
 #mbg-header {
@@ -45,22 +46,23 @@ a:active, a:hover { color: #CC5A33; }
   text-align: center;
 }
 
-#mbg-header .title:hover, #mbg-header .date-completed:hover, #mbg-header .type:hover {
+#mbg-header .title:hover,
+#mbg-header .date-completed:hover,
+#mbg-header .type:hover {
   background-color: #f5f5f5;
   cursor: pointer;
   color: #CC5A33;
 }
 
-#mbg-header .title:hover::after, #mbg-header .date-completed:hover::after, #mbg-header .type:hover::after {
+.sort-by::after,
+#mbg-header .title:hover::after,
+#mbg-header .date-completed:hover::after,
+#mbg-header .type:hover::after {
   content: " ▾";
 }
 
-.mbg-cell.sort-by {
+.sort-by {
   color: #CC5A33;
-}
-
-.mbg-cell.sort-by::after {
-  content: " ▾";
 }
 
 #mbg-list img {
@@ -71,25 +73,21 @@ a:active, a:hover { color: #CC5A33; }
 
 .mbg-entry {
   margin: 0;
-  border-bottom: 1px solid #ddd;
   padding: 0.5em 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .mbg-entry:last-child {
   border-bottom: none;
 }
 
-.mbg-entry .type, .mbg-entry .date-completed {
-  text-align: center;
-  vertical-align: middle;
-  height: 100%;
-}
+.title {           width: 20%; }
+.type {            width: 5%; }
+.date-completed {  width: 10%; }
+.thoughts {        width: 50%; }
 
-.mbg-cell {
-  padding: 0.5em;
+@media (max-width: 700px) {
+  .mbg-cell { width: 100%; }
+  #mbg-entries .type { width: 10%; }
+  #mbg-entries .date-completed { width: 30%; }
 }
-
-.mbg-cell.title {           width: 20%; }
-.mbg-cell.type {            width: 5%; }
-.mbg-cell.date-completed {  width: 10%; }
-.mbg-cell.thoughts {        width: 50%; }

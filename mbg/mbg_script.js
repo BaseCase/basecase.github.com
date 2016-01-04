@@ -3,7 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
   var map = Array.prototype.map;
 
   var mbg_data = grab_mbg_data_from_table();
+
+  var header_row = document.getElementById('mbg-header');
   add_header_click_listeners();
+
 
   function sort_mbg_by(category) {
     mbg_data.sort(function(a, b) {
@@ -13,16 +16,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     var new_mbg_el = render_mbg_data(mbg_data);
-    new_mbg_el.getElementsByClassName(category)[0].className += " sort-by";
-    document.getElementById('mbg-list').innerHTML = new_mbg_el.innerHTML;
-    add_header_click_listeners();
+    document.getElementById('mbg-entries').innerHTML = new_mbg_el.innerHTML;
+    mark_sort_by_header(category);
+  }
+
+
+  function mark_sort_by_header(category) {
+    var current = header_row.getElementsByClassName('sort-by')[0];
+    current.classList.remove('sort-by');
+    var new_sort_by = header_row.getElementsByClassName(category)[0];
+    new_sort_by.classList.add('sort-by');
   }
 
 
   function render_mbg_data(mbg_data) {
     var new_table = document.createElement('div');
-
-    new_table.appendChild(header_html_template());
 
     mbg_data.forEach(function(row) {
       var entry = document.createElement('div');
@@ -32,19 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     return new_table;
-  }
-
-
-  function header_html_template() {
-    var header_el = document.createElement('div');
-    header_el.id = "mbg-header";
-    header_el.innerHTML = '' +
-      '<div class="mbg-cell title">Title</div>' +
-      '<div class="mbg-cell type">Type</div>' +
-      '<div class="mbg-cell date-completed">Date</div>' +
-      '<div class="mbg-cell thoughts">Thoughts</div>';
-
-    return header_el;
   }
 
 
