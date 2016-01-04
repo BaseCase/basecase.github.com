@@ -45,6 +45,24 @@ a:active, a:hover { color: #CC5A33; }
   text-align: center;
 }
 
+#mbg-header .title:hover, #mbg-header .date-completed:hover, #mbg-header .type:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+  color: #CC5A33;
+}
+
+#mbg-header .title:hover::after, #mbg-header .date-completed:hover::after, #mbg-header .type:hover::after {
+  content: " ▾";
+}
+
+.mbg-cell.sort-by {
+  color: #CC5A33;
+}
+
+.mbg-cell.sort-by::after {
+  content: " ▾";
+}
+
 #mbg-list img {
   width: 70px;
   float: left;
