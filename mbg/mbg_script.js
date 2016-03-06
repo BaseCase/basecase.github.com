@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
       'thoughts': row.getElementsByClassName('thoughts')[0].innerHTML
     };
   });
+  console.table(mbg_data);
 
   // add click listeners to header cells
   ["title", "type", "date-completed"].forEach(function(category) {
