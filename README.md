@@ -2,7 +2,7 @@
 ## TODO (2016-09-02)
 - [ ] Redo design of main page
 - [ ] Rework main page to use Flebox
-- [ ] add my photo to the page
+- [x] add my photo to the page
 - [x] Remove Attention and Over/Under
 - [x] Add Habits.email
 - [x] Add Blog section

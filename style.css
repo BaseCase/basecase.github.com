@@ -1,5 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab';
 
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -9,10 +12,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+main { width: 100%; }
+
 h1, h2, h3, h4 {
   font-family: 'Roboto Slab', serif;
   margin: 0;
   line-height: 1em;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 a, a:visited {
@@ -21,9 +31,7 @@ a, a:visited {
   color: #d73136;
 }
 
-a:hover, a:active {
-  color: #fb454a;
-}
+a:hover, a:active { color: #fb454a; }
 
 header {
   align-items: flex-end;
@@ -42,31 +50,42 @@ header h1 {
   text-align: center;
 }
 
-#content {
+p {
+  line-height: 1.3em;
+  margin: 0;
+}
+
+article {
+  margin: 0 auto;
+  padding: 1rem;
   width: 80%;
-  margin: 2rem auto;
 }
 
 @media (max-width: 600px) {
-  #content {
-    width: 100%;
+  article {
     padding: 1rem;
+    width: 100%;
   }
 }
 
+section { margin-bottom: 1.5rem; }
+
 .info ul {
+  margin: 0;
   padding: 0;
 }
 
 .info li {
+  line-height: 1.7em;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  line-height: 1.5em;
 }
 
 .info .icon {
-  display: inline-block;
-  width: 2rem;
   color: black;
+  display: inline-block;
+  font-size: 95%;
+  vertical-align: baseline;
+  width: 2rem;
 }
