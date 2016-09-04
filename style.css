@@ -61,7 +61,7 @@ article {
   margin: 0 auto;
   padding: 1rem;
   width: 80%;
-  max-width: 55rem;
+  /* max-width: 55rem; */
 }
 
 @media (max-width: 600px) {
@@ -91,4 +91,40 @@ section { margin-bottom: 1.5rem; }
   font-size: 95%;
   vertical-align: baseline;
   width: 2rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projects h2 { flex: 1 100%; }
+
+.projects .project {
+  background: #2f364c;
+  border-radius: 3px;
+  height: 15rem;
+  margin-bottom: 2rem;
+  width: 22rem;
+}
+
+.projects .project h3 {
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.projects .project h3 a {
+  color: white;
+}
+
+.projects .project p {
+  background: rgba(255, 255, 255, .5);
+  color: black;
+  font-size: 75%;
+  font-weight: normal;
+  height: 100%;
+  padding: 1rem;
 }
