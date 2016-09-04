@@ -61,6 +61,7 @@ article {
   margin: 0 auto;
   padding: 1rem;
   width: 80%;
+  max-width: 55rem;
 }
 
 @media (max-width: 600px) {
@@ -78,7 +79,7 @@ section { margin-bottom: 1.5rem; }
 }
 
 .info li {
-  line-height: 1.7em;
+  line-height: 1.5em;
   list-style-type: none;
   margin: 0;
   padding: 0;
