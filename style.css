@@ -15,6 +15,16 @@ h1, h2, h3, h4 {
   line-height: 1em;
 }
 
+a, a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: #d73136;
+}
+
+a:hover, a:active {
+  color: #fb454a;
+}
+
 header {
   align-items: flex-end;
   background: no-repeat bottom/cover url("img/party.jpg") #1c2232;
@@ -42,4 +52,21 @@ header h1 {
     width: 100%;
     padding: 1rem;
   }
+}
+
+.info ul {
+  padding: 0;
+}
+
+.info li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+}
+
+.info .icon {
+  display: inline-block;
+  width: 2rem;
+  color: black;
 }
