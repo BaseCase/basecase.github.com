@@ -50,6 +50,8 @@ header h1 {
   text-align: center;
 }
 
+.intro { margin-top: 1rem; }
+
 p {
   line-height: 1.3em;
   margin: 0;
