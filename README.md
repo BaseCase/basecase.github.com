@@ -3,9 +3,9 @@
 - [ ] Redo design of main page
 - [ ] Rework main page to use Flebox
 - [ ] add my photo to the page
-- [ ] Remove Attention and Over/Under
-- [ ] Add Habits.email
-- [ ] Add Blog section
+- [x] Remove Attention and Over/Under
+- [x] Add Habits.email
+- [x] Add Blog section
 - [ ] put a copy of rebase post in said blog section
 - [ ] finish voice talk blog post
 - [ ] add said voice talk post to blog section
