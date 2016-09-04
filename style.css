@@ -1,0 +1,30 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto Slab', serif;
+}
+
+header {
+  align-items: flex-end;
+  background: no-repeat bottom/cover url("img/party.jpg") #1c2232;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 30rem;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 7rem;
+  line-height: 1em;
+  margin-bottom: 0.2em;
+  text-align: center;
+}
