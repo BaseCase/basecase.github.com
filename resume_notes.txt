@@ -1,7 +1,0 @@
-notes from recording:
-- add a basecasemusic2016 link to index.html
-- in summary section, call out that I know both front-end and back-end web stuff
-- in summary make sure to mention i'm good at legacy saving and clean coding
-  - make sure to point to examples of this in experience too
-- "Mentoring" belongs in Pandora experience section
-- call out a couple of github repos i'm proud of, not sure if that's on resume or cover letter

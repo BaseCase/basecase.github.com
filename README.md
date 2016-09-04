@@ -1,7 +1,7 @@
 # Casey Brant's homepage
 ## TODO (2016-09-02)
-- [ ] Rework main page to use Flebox
 - [ ] Redo design of main page
+- [ ] Rework main page to use Flebox
 - [ ] add my photo to the page
 - [ ] Remove Attention and Over/Under
 - [ ] Add Habits.email
