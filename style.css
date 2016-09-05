@@ -146,3 +146,7 @@ section { margin-bottom: 1.5rem; }
 .project.delicious-ships {
   background: no-repeat top/cover url("img/delicious-ships.png");
 }
+
+.project.testdouble-chai {
+  background: no-repeat top/cover url("img/testdouble-chai.png");
+}
