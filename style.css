@@ -150,3 +150,7 @@ section { margin-bottom: 1.5rem; }
 .project.testdouble-chai {
   background: no-repeat top/cover url("img/testdouble-chai.png");
 }
+
+.project.basecasemusic {
+  background: no-repeat top/cover url("img/basecasemusic2016.png");
+}
