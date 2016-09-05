@@ -154,3 +154,7 @@ section { margin-bottom: 1.5rem; }
 .project.basecasemusic {
   background: no-repeat top/cover url("img/basecasemusic2016.png");
 }
+
+.project.trello2markdown {
+  background: no-repeat center/120% url("img/trello2markdown.png");
+}
