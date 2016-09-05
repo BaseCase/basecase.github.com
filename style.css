@@ -97,7 +97,7 @@ section { margin-bottom: 1.5rem; }
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .projects h2 { flex: 1 100%; }
@@ -105,8 +105,17 @@ section { margin-bottom: 1.5rem; }
 .projects .project {
   background: #2f364c;
   height: 15rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
   width: 22rem;
+}
+
+@media (max-width: 600px) {
+  .projects .project {
+    margin-bottom: 1rem;
+    margin-right: 0;
+    width: 100%;
+  }
 }
 
 .projects .project h3 {
