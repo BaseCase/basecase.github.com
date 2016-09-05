@@ -97,13 +97,14 @@ section { margin-bottom: 1.5rem; }
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .projects h2 { flex: 1 100%; }
 
 .projects .project {
   background: #2f364c;
+  flex-grow: 1;
   height: 15rem;
   margin-bottom: 1.5rem;
   margin-right: 1.5rem;
