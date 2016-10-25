@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: #efefea;
   color: #222;
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
 }
 
 h1 {
@@ -27,7 +33,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 3px solid #ccc;
+  border-top: 1.5rem solid #ccc;
+  border-bottom: .5rem solid #ccc;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
 }
@@ -41,6 +49,49 @@ header {
 
 p {
   margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  border-bottom: .5rem solid #ccc;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.blog-posts ul {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-posts li {
+  list-style: none;
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+}
+
+.blog-posts li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.3rem 0.6rem;
+  color: hsl(34, 82%, 30%);
+  border-radius: .3rem;
+}
+
+.blog-posts li a:hover {
+  background-color: #eaeae5;
+  color: hsl(34, 82%, 40%);
+}
+
+.blog-posts li .title {
+  font-weight: bold;
+}
+
+.blog-posts li .publish-date {
+  font-size: .8rem;
 }
 
 footer {
