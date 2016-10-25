@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+/*
+ * TODO: put all colors up here as a palette
+ */
+
 html {
   font-size: 16px;
 }
@@ -8,6 +12,7 @@ body {
   background-color: #efefea;
   color: #222;
   font-family: 'Open Sans', sans-serif;
+  line-height: 1.6em;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -16,12 +21,15 @@ body {
 
 h1 {
   font-size: 4rem;
-  margin-top: 0;
-  margin-bottom: 2rem;;
+  line-height: 1em;
+  margin: 0;
 }
 
 h2 {
   font-size: 2rem;
+  line-height: 1em;
+  margin: 0;
+  margin-bottom: 1.5rem;
 }
 
 main {
@@ -35,20 +43,30 @@ header {
   align-items: center;
   border-top: 1.5rem solid #ccc;
   border-bottom: .5rem solid #ccc;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   margin-bottom: 2rem;
 }
 
 .headshot {
   border: .45rem solid hsl(34, 82%, 72%);
   border-radius: 1000px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   width: 10rem;
+}
+
+article {
+  margin: 0;
+  padding: 0;
 }
 
 p {
   margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 a {
@@ -57,8 +75,8 @@ a {
 
 section {
   border-bottom: .5rem solid #ccc;
-  padding-top: 1rem;
   padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .blog-posts ul {
