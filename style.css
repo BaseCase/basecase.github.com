@@ -27,6 +27,7 @@ h1 {
   font-size: 4rem;
   line-height: 1em;
   margin: 0;
+  text-align: center;
 }
 
 h2 {
@@ -37,8 +38,15 @@ h2 {
 }
 
 main {
+  box-sizing: border-box;
   max-width: 35rem;
   margin: 0 auto;
+}
+
+@media (max-width: 36rem) {
+  main {
+    padding: 0 1rem;
+  }
 }
 
 header {
@@ -109,7 +117,7 @@ section {
 }
 
 .blog-posts li a:hover {
-  background-color: #eaeae5;
+  background-color: #e2e2db;
 }
 
 .blog-posts li .title {
@@ -118,6 +126,7 @@ section {
 
 .blog-posts li .publish-date {
   font-size: .8rem;
+  min-width: 6rem;
 }
 
 footer {
