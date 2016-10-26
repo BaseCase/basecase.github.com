@@ -73,8 +73,14 @@ p:last-child {
   margin-bottom: 0;
 }
 
-a {
+a, a:visited, a:active, a:hover {
   text-decoration: none;
+  font-weight: bold;
+  color: #ff9100;
+}
+
+a:hover {
+  color: #ccc907;
 }
 
 section {
@@ -90,7 +96,6 @@ section {
 
 .blog-posts li {
   list-style: none;
-  margin-bottom: 0.7rem;
   font-size: 1rem;
 }
 
@@ -98,14 +103,13 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 0.3rem 0.6rem;
-  color: hsl(34, 82%, 30%);
   border-radius: .3rem;
+  color: #4b32c5;
+  padding: .5rem 0;
 }
 
 .blog-posts li a:hover {
   background-color: #eaeae5;
-  color: hsl(34, 82%, 40%);
 }
 
 .blog-posts li .title {
@@ -118,4 +122,5 @@ section {
 
 footer {
   font-size: .7rem;
+  margin-bottom: 2rem;
 }
