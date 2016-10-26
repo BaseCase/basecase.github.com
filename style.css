@@ -37,6 +37,14 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+h3.published-date {
+  font-size: .8rem;
+  color: #888;
+  margin: 0 0 1rem 0;
+  padding: 0;
+  line-height: 1em;
+}
+
 main {
   box-sizing: border-box;
   max-width: 35rem;
