@@ -2,7 +2,6 @@
 
 /*
  * TODO: put all colors up here as a palette
- * TODO: style blog page
  * TODO: figure out RSS situation
  * TODO: pull in posts from previous blog
  * TODO: pull in drafts from blog folder and complete them
@@ -25,6 +24,7 @@ body {
 
 h1 {
   font-size: 4rem;
+  letter-spacing: .1rem;
   line-height: 1em;
   margin: 0;
   text-align: center;
@@ -78,7 +78,7 @@ article {
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   margin-top: 0;
 }
 
@@ -129,4 +129,28 @@ section {
 footer {
   font-size: .7rem;
   margin-bottom: 2rem;
+}
+
+header.blog {
+  border-top: none;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  padding: .5rem 0 .2rem 0;
+}
+
+.blog .headshot {
+  border-width: 3px;
+  margin-bottom: 0;
+  width: 2rem;
+}
+
+.blog h1 {
+  font-size: .8rem;
+  margin-left: .5rem;
+}
+
+.link-home {
+  display: block;
+  font-size: .8rem;
+  margin-bottom: 1rem;
 }
