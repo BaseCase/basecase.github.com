@@ -8,19 +8,17 @@
  * TODO: pull in drafts from blog folder and complete them
  */
 
-html {
-  font-size: 16px;
-}
+html { font-size: 16px; }
 
 body {
   background-color: #efefea;
   color: #222;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6em;
-  width: 100%;
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
+  width: 100%;
 }
 
 h1 {
@@ -33,44 +31,41 @@ h1 {
 h2 {
   font-size: 2rem;
   line-height: 1em;
-  margin: 0;
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem 0;
 }
 
 h3.published-date {
-  font-size: .8rem;
   color: #888;
+  font-size: .8rem;
+  line-height: 1em;
   margin: 0 0 1rem 0;
   padding: 0;
-  line-height: 1em;
 }
 
 main {
   box-sizing: border-box;
-  max-width: 35rem;
   margin: 0 auto;
+  max-width: 35rem;
 }
 
 @media (max-width: 36rem) {
-  main {
-    padding: 0 1rem;
-  }
+  main { padding: 0 1rem; }
 }
 
 header {
+  align-items: center;
+  border-bottom: .5rem solid #ccc;
+  border-top: 1.5rem solid #ccc;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border-top: 1.5rem solid #ccc;
-  border-bottom: .5rem solid #ccc;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   margin-bottom: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 .headshot {
-  border: .45rem solid hsl(34, 82%, 72%);
   border-radius: 1000px;
+  border: .45rem solid hsl(34, 82%, 72%);
   margin-bottom: 1rem;
   width: 10rem;
 }
@@ -81,28 +76,24 @@ article {
 }
 
 p {
-  margin-top: 0;
   margin-bottom: 1rem;
+  margin-top: 0;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
+p:last-child { margin-bottom: 0; }
 
 a, a:visited, a:active, a:hover {
-  text-decoration: none;
-  font-weight: bold;
   color: #ff9100;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-a:hover {
-  color: #ccc907;
-}
+a:hover { color: #ffa733; }
 
 section {
   border-bottom: .5rem solid #ccc;
-  padding-bottom: 2rem;
   margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .blog-posts ul {
@@ -111,26 +102,22 @@ section {
 }
 
 .blog-posts li {
-  list-style: none;
   font-size: 1rem;
+  list-style: none;
 }
 
 .blog-posts li a {
-  display: flex;
-  justify-content: space-between;
   align-items: baseline;
   border-radius: .3rem;
   color: #4b32c5;
+  display: flex;
+  justify-content: space-between;
   padding: .5rem 0;
 }
 
-.blog-posts li a:hover {
-  background-color: #e2e2db;
-}
+.blog-posts li a:hover { background-color: #e2e2db; }
 
-.blog-posts li .title {
-  font-weight: bold;
-}
+.blog-posts li .title { font-weight: bold; }
 
 .blog-posts li .publish-date {
   font-size: .8rem;
