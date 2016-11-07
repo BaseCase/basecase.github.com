@@ -124,6 +124,7 @@ section {
 .blog-posts li .publish-date {
   font-size: .8rem;
   min-width: 6rem;
+  margin-left: 1rem;
 }
 
 footer {
