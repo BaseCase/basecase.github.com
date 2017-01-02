@@ -1,0 +1,7 @@
+<h1>hi</h1>
+
+<% @entries.each do |entry| %>
+  <%= entry['title'] %> <br>
+  <%= entry['thoughts'] %> <br>
+  <img src="<%= entry['image_url'] %>">
+<% end %>
