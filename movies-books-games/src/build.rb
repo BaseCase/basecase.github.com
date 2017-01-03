@@ -6,7 +6,7 @@ require 'yaml'
 class MakeThatPage
   def initialize
     @template = ERB.new(File.open('src/template.html.erb').read)
-    @entries = YAML.load_file('src/mbg_data.yml')
+    @entries_by_month = YAML.load_file('src/mbg_data.yml')
   end
 
   def render

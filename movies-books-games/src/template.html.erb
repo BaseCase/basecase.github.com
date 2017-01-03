@@ -1,7 +1,49 @@
-<h1>hi</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<% @entries.each do |entry| %>
-  <%= entry['title'] %> <br>
-  <%= entry['thoughts'] %> <br>
-  <img src="<%= entry['image_url'] %>">
-<% end %>
+    <title>Casey Brant - 2017 Media list</title>
+
+    <link rel="stylesheet" href="mbg2017.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h2>Movies, Books, Games of 2017</h2>
+        <p>Running list of the media I consume this year. <a href="../index.html">(back to homepage)</a></p>
+      </header>
+
+      <section class="the-list">
+        <% @entries_by_month.each do |month, entries| %>
+          <section class="month">
+            <h3><%= Date::MONTHNAMES[month] %></h3>
+
+            <% entries.each do |entry| %>
+              <div class="entry">
+                <h4><%= entry['title'] %></h4>
+                <img src="<%= entry['image_url'] %>">
+
+                <%= entry['completion_date'].strftime("%B %d") %>
+
+                <br>
+
+                <%= entry['type'] %>
+
+                <br>
+
+                <%= entry['author'] if entry['type'] == 'book' %>
+
+                <br>
+
+                <%= entry['thoughts'] %>
+              </div>
+            <% end %>
+          </section>
+        <% end %>
+      </section>
+    </main>
+  </body>
+</html>

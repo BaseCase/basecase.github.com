@@ -1,22 +1,47 @@
 ---
--
-  title: Distrust That Particular Flavor
-  author: William Gibson
-  type: book
-  completion_date: 2017-01-02
-  image_url: 'img/distrust_flavor.jpg'
-  thoughts: >
-    It was very cool.
-    Also I liked it.
-    Good job William.
+01:
+  -
+    title: Distrust That Particular Flavor
+    type: book
+    author: William Gibson
+    completion_date: 2017-01-02
+    image_url: 'img/distrust_flavor.jpg'
+    thoughts: >
+      It was very cool.
+      Also I liked it.
+      Good job William.
 
--
-  title: Distrust That Particular Flavor
-  author: William Gibson
-  type: book
-  completion_date: 2017-01-02
-  image_url: 'img/distrust_flavor.jpg'
-  thoughts: >
-    It was cool.
-    Also I liked it.
-    Good job William.
+  -
+    title: Distrust That Particular Flavor
+    type: book
+    author: William Gibson
+    completion_date: 2017-01-06
+    image_url: 'img/distrust_flavor.jpg'
+    thoughts: >
+      It was very cool.
+      Also I liked it.
+      Good job William.
+
+  -
+    title: Distrust That Particular Flavor
+    type: book
+    author: William Gibson
+    completion_date: 2017-01-13
+    image_url: 'img/distrust_flavor.jpg'
+    thoughts: >
+      It was cool.
+      Also I liked it.
+      Good job William.
+
+02:
+  -
+    title: Distrust That Particular Flavor
+    type: book
+    author: William Gibson
+    completion_date: 2017-02-02
+    image_url: 'img/distrust_flavor.jpg'
+    thoughts: >
+      It was cool.
+      Also I liked it.
+      Good job William.
+
