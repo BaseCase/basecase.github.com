@@ -13,6 +13,19 @@ class MakeThatPage
     @template.result(binding)
   end
 
+  def icon_for_a(type)
+    case type
+    when 'book'
+      '📖'
+    when 'movie'
+      '🎬'
+    when 'game'
+      '🎮'
+    else
+      '🌈'
+    end
+  end
+
   private
 
   def entries_by_month

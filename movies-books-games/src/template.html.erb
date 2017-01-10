@@ -12,34 +12,34 @@
   <body>
     <main>
       <header>
-        <h2>Movies, Books, Games of 2017</h2>
-        <p>Running list of the media I consume this year. <a href="../index.html">(back to homepage)</a></p>
+        <h1>Media I Consumed in 2017</h2>
       </header>
 
-      <section class="the-list">
+      <section id="the-list">
         <% 12.times do |month| %>
           <% if @entries_by_month[month] %>
             <section class="month">
-              <h3><%= Date::MONTHNAMES[month] %></h3>
+              <h2><%= Date::MONTHNAMES[month] %></h3>
 
               <% @entries_by_month[month].each do |entry| %>
                 <div class="entry">
-                  <h4><%= entry['title'] %></h4>
-                  <img src="<%= entry['image_url'] %>">
-
-                  <%= entry['completion_date'].strftime("%B %d") %>
-
-                  <br>
-
-                  <%= entry['type'] %>
-
-                  <br>
-
-                  <%= entry['author'] if entry['type'] == 'book' %>
-
-                  <br>
-
-                  <%= entry['thoughts'] %>
+                  <div class="cover-and-title">
+                    <div class="cover">
+                      <img src="<%= entry['image_url'] %>">
+                    </div>
+                    <div class="title">
+                      <h3>
+                        <%= icon_for_a(entry['type']) %>
+                        <%= entry['title'] %>
+                      </h3>
+                    </div>
+                    <% if entry['author'] %>
+                      <div class="author">by <%= entry['author'] %></div>
+                    <% end %>
+                  </div>
+                  <div class="thoughts">
+                    <%= entry['thoughts'] %>
+                  </div>
                 </div>
               <% end %>
             </section>

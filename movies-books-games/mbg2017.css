@@ -6,7 +6,7 @@ body {
   background-color: #efefea;
   color: #222;
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.6em;
+  line-height: 1.5em;
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
@@ -15,16 +15,41 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-main {
-  padding: 3em;
+main { padding: 3rem; }
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1em;
 }
 
 h2 {
-  font-size: 2rem;
-  line-height: 1em;
-  margin: 0 0 1.5rem 0;
+  font-size: 1.2rem;
+  color: #ff9100;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-header {
-  border-bottom: 3px solid #222;
+h3 { font-size: 1.5rem; }
+
+.entry { margin-bottom: 1.7rem; }
+
+.cover-and-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cover-and-title * { box-sizing: border-box; }
+.cover-and-title div { padding-right: 1.3rem; }
+.cover-and-title .cover { width: 8rem; }
+.cover-and-title .cover img { width: 100%; }
+
+.author {
+  font-style: italic;
+  font-size: 1rem;
 }
