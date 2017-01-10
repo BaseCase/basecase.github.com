@@ -17,31 +17,33 @@
       </header>
 
       <section class="the-list">
-        <% @entries_by_month.each do |month, entries| %>
-          <section class="month">
-            <h3><%= Date::MONTHNAMES[month] %></h3>
+        <% 12.times do |month| %>
+          <% if @entries_by_month[month] %>
+            <section class="month">
+              <h3><%= Date::MONTHNAMES[month] %></h3>
 
-            <% entries.each do |entry| %>
-              <div class="entry">
-                <h4><%= entry['title'] %></h4>
-                <img src="<%= entry['image_url'] %>">
+              <% @entries_by_month[month].each do |entry| %>
+                <div class="entry">
+                  <h4><%= entry['title'] %></h4>
+                  <img src="<%= entry['image_url'] %>">
 
-                <%= entry['completion_date'].strftime("%B %d") %>
+                  <%= entry['completion_date'].strftime("%B %d") %>
 
-                <br>
+                  <br>
 
-                <%= entry['type'] %>
+                  <%= entry['type'] %>
 
-                <br>
+                  <br>
 
-                <%= entry['author'] if entry['type'] == 'book' %>
+                  <%= entry['author'] if entry['type'] == 'book' %>
 
-                <br>
+                  <br>
 
-                <%= entry['thoughts'] %>
-              </div>
-            <% end %>
-          </section>
+                  <%= entry['thoughts'] %>
+                </div>
+              <% end %>
+            </section>
+          <% end %>
         <% end %>
       </section>
     </main>
