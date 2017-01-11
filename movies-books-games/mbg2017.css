@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-html { font-size: 16px; }
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+* { box-sizing: inherit; }
 
 body {
   background-color: #efefea;
@@ -19,6 +24,10 @@ main {
   margin: 0 auto;
   max-width: 800px;
   padding: 3rem;
+}
+
+@media (max-width: 500px) {
+  main { padding: 1rem; }
 }
 
 h1, h2, h3 {
@@ -44,13 +53,18 @@ h3 { font-size: 1.5rem; }
 
 .cover-and-title {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 1rem;
 }
 
-.cover-and-title * { box-sizing: border-box; }
 .cover-and-title div { padding-right: 1.3rem; }
-.cover-and-title .cover { width: 8rem; }
+
+.cover-and-title .cover {
+  min-width: 8rem;
+  width: 8rem;
+}
+
 .cover-and-title .cover img { width: 100%; }
 
 .author {
