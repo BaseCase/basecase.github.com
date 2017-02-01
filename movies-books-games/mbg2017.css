@@ -67,6 +67,11 @@ h3 { font-size: 1.5rem; }
 
 .cover-and-title .cover img { width: 100%; }
 
+.cover-and-title a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .author {
   font-style: italic;
   font-size: 1rem;

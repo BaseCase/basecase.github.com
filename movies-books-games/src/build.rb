@@ -26,6 +26,10 @@ class MakeThatPage
     end
   end
 
+  def unique_id_for(entry)
+    entry['title'].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  end
+
   private
 
   def entries_by_month

@@ -22,16 +22,18 @@
               <h2><%= Date::MONTHNAMES[month] %></h3>
 
               <% @entries_by_month[month].each do |entry| %>
-                <div class="entry">
+                <div class="entry" id="<%= unique_id_for(entry) %>">
                   <div class="cover-and-title">
                     <div class="cover">
                       <img src="<%= entry['image_url'] %>">
                     </div>
                     <div class="title">
-                      <h3>
-                        <%= icon_for_a(entry['type']) %>
-                        <%= entry['title'] %>
-                      </h3>
+                      <a href="<%= '#' + unique_id_for(entry) %>">
+                        <h3>
+                          <%= icon_for_a(entry['type']) %>
+                          <%= entry['title'] %>
+                        </h3>
+                      </a>
                     </div>
                     <% if entry['author'] %>
                       <div class="author">by <%= entry['author'] %></div>
