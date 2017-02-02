@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/basecase
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://caseybrant.com
+  * I am basecase (https://keybase.io/basecase) on keybase.
+  * I have a public key with fingerprint 3759 4E77 378F 0679 232F  83CD 3A1E 5599 AEB9 5BFD
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01013f14bdce580f514d2eafa47c603aed96bd2009b4059256a612a10e168ba900bd0a",
+            "fingerprint": "37594e77378f0679232f83cd3a1e5599aeb95bfd",
+            "host": "keybase.io",
+            "key_id": "3a1e5599aeb95bfd",
+            "kid": "01013f14bdce580f514d2eafa47c603aed96bd2009b4059256a612a10e168ba900bd0a",
+            "uid": "a9dd7a7402b385c6480937856bf54d19",
+            "username": "basecase"
+        },
+        "service": {
+            "hostname": "caseybrant.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1486068053,
+    "expire_in": 157680000,
+    "prev": "a773fbf612bde9e5875452ab3a86862670952f51bd54d74651b9b42cf5bd8cd6",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.62
+Comment: https://keybase.io/crypto
+
+yMImAnicrVJrSBVBGL2WPbz2MCssK4Q1Cuuis4/ZxzXrR9HD7EEphJS3mZ1Z3dTd
+2969PrBSooge9MA/BQamFUUERWBQlK+SRMhCgiwqKk2sQAgsfFDNSv3rZwvD7nxz
+ztlzDvNo5mSfP6b/VmD0I4lfFtPVej7q21V7Ia+Kwzap5IJVXDGdeNESQiNuqNgk
+XJADPOBFg5cw0SlUgQF5iQgUGUhSdBmIiBJNxkQAQMMSgJoAZSTzAuIB5WUVIw0A
+TADiApxhWoXUCTum5TJZUYGaRBVFVFQDyIomiIKhijoREU8h1DREsQaxQRixyI54
+DGYOowhNN202Y5vQhL1/4P+z7+iEHNIIUZAiAQGLKtRlSQUa8w5lbECJ8JoHjFDH
+QqWUoT2jOlvcwQDHpmWmTr1ivSR/EN5pJXaQ5abrdiljhx3btXW7hJ0VuW446FHd
+yrCHLac49EclhE2LsCIZoYw6EdO2uCDPkLprerK8pMpAVgEUAxytCJsODZkeAips
+yB7vN7TMi8OaN7DBEmNCNVaQAiUoICwiVVZlQVaABgXWGSYsnSLJ7Iv1JOgGxETV
+icx5ufZbNheUmE1UyCQjZqGF3KjDQre17I71xfh9U6dM8i6Yzx+X8Pfa7bw07dfe
+kYzq9pVNq8+tOtmTv75so//ULDW1J8+uelj/tqChqXJFa3raVX+nsSZRvxFYVpMZ
+U2xu8LeMqKk/67mxxKeF3ytuWgcet6wvX1yDN81vXLgkXe6JzayNvXyPakfrnIYb
+P+ZVr83OXZf5+u6itIuz57Q1x3W/L+jomjtEcqbXv9qXf3jz58DXrtw7/Yci25OX
+0vFm7dTGhN5t3dkJyfefDea1tw6nDKeVvCtpuPDtYTSldtq2GWfbozTu5q7l50c/
+bMm4nfNy++mkcx25Hb3Xj1dPunLsy5kwGOtr6tvatuSTUZf1Qkre8+DNgiOD8FpS
+p5H13GwcUJpPDHWnDNg7nowfj/8NHFQ+yQ==
+=Lvzd
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/basecase
+
+==================================================================
