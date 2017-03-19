@@ -190,6 +190,18 @@
     Can't wait to read the second one and then join the masses clamoring for the third!
 
 -
+  title: Practical Object-Oriented Design in Ruby
+  type: book
+  author: Sandi Metz
+  completion_date: 2017-03-18
+  image_url: 'img/poodr.jpg'
+  thoughts: >
+    Hands down one of the finest programming books I've ever had the pleasure of reading.
+    Metz's writing style is clear, concise, approachable, and incredibly dense with insight.
+    I've been programming for many, many years, and I can't remember the last time a single book improved my own practice this much.
+    If you're a programmer (in any language), you owe it to yourself to study this.
+
+-
   title: The Origins of Totalitarianism
   type: book
   author: Hannah Arendt
@@ -201,4 +213,5 @@
     I got a few chapters in and just couldn't hang any more.
     I am sure it's a fantastic, deeply insightful book, but I didn't have the patience to get through such a dense, lengthy tome.
     It's me, not you, Hannah.
+
 
