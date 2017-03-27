@@ -52,6 +52,9 @@ main {
 
 @media (max-width: 36rem) {
   main { padding: 0 1rem; }
+  .blog-posts li {
+    border-bottom: 1px solid #e1e1d6;
+  }
 }
 
 header {
@@ -122,9 +125,10 @@ section {
 .blog-posts li .title { font-weight: bold; }
 
 .blog-posts li .publish-date {
-  font-size: .8rem;
+  font-size: .7rem;
   min-width: 6rem;
   margin-left: 1rem;
+  text-align: right;
 }
 
 footer {
