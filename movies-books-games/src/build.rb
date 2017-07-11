@@ -21,6 +21,8 @@ class MakeThatPage
       '🎬'
     when 'game'
       '🎮'
+    when 'tv'
+      '📺'
     else
       '🌈'
     end
