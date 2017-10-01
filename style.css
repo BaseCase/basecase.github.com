@@ -3,8 +3,6 @@
 /*
  * TODO: put all colors up here as a palette
  * TODO: figure out RSS situation
- * TODO: pull in posts from previous blog
- * TODO: pull in drafts from blog folder and complete them
  */
 
 html { font-size: 16px; }
@@ -47,10 +45,10 @@ h3.published-date {
 main {
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 35rem;
+  max-width: 45rem;
 }
 
-@media (max-width: 36rem) {
+@media (max-width: 46rem) {
   main { padding: 0 1rem; }
   .blog-posts li {
     border-bottom: 1px solid #e1e1d6;
@@ -152,6 +150,30 @@ header.blog {
 .blog h1 {
   font-size: .8rem;
   margin-left: .5rem;
+}
+
+blockquote {
+  border-left: 5px solid #ccc;
+  margin: 1rem 0;
+  padding: 1em;
+  font-style: italic;
+}
+
+figure img { width: 100%; }
+figcaption {
+  font-size: 80%;
+  color: #777;
+}
+
+code {
+  background-color: #e2e2db;
+  padding: 0 .3em;
+}
+
+code.standalone {
+  display: block;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .link-home {
