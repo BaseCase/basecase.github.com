@@ -516,6 +516,18 @@
   thoughts: >
     A beautiful, stripped-down, fresh take on the a medieval kingdom-building genre.
 
+-
+  title: "Fidel Dungeon Rescue"
+  type: game
+  author: Daniel Benmergui
+  completion_date: 2017-08-20
+  image_url: 'img/fidel.jpg'
+  thoughts: >
+    A cute, surprisingly deep puzzler that I’ve only scratched the surface of.
+    The goal is find an optimal path through randomly generated levels, with the catch that there’s a timer mechanic limiting the amount of thinking/undoing/redoing time you have.
+    One round lasts only a few minutes, so it’s a great little lunch break game.
+
+
 #
 # September
 #
@@ -629,3 +641,30 @@
   image_url: 'img/captain_toad.jpg'
   thoughts: >
     <em>(* = I wound up trading in a bunch of games for a Switch, and this was an in-progress game that I didn’t actually finish.)</em> Super cute! The puzzles are fairly engaging, but I had a hard time understanding what was happening visually sometimes. Just a little bit too much on the screen at once.
+
+-
+  title: "Blade Runner 2049"
+  type: movie
+  author: Denis Villeneuve
+  completion_date: 2017-10-25
+  image_url: 'img/blade_runner_2049.jpg'
+  thoughts: >
+    This is a stunningly beautiful movie, visually, aurally, and tonally.
+    I don’t know what else I can say about; it’s just incredible.
+    One of the finest films I’ve ever had the privilege of watching, and that’s not an exaggeration.
+
+
+#
+# November
+#
+-
+  title: "TumbleSeed"
+  type: game
+  author:
+  completion_date: 2017-11-01
+  image_url: 'img/tumbleseed.jpg'
+  thoughts: >
+    A super charming, brutally difficult roguelike with a unique control scheme.
+    I love games that are <em>about</em> their core interactions (as opposed to the core interaction being a means to a different end), and TumbleSeed leans into this idea fully.
+    Even though it’s super challenging, I think everyone should at least give this game a try, because I really have never played anything else quite like it.
+    I know I’ll be playing this for a long, long time.
