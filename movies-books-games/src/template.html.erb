@@ -16,7 +16,7 @@
       </header>
 
       <section id="the-list">
-        <% 12.times do |month| %>
+        <% (1..12).each do |month| %>
           <% if @entries_by_month[month] %>
             <section class="month">
               <h2><%= Date::MONTHNAMES[month] %></h3>
