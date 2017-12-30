@@ -129,6 +129,8 @@ section {
   text-align: right;
 }
 
+img.blog { max-width: 100%; }
+
 footer {
   font-size: .7rem;
   margin-bottom: 2rem;
