@@ -741,6 +741,39 @@
     This book won’t make any sense if you haven’t read the other Kingkiller books, but if you have, I recommend it.
 
 -
+  title: "Hungry Kraken"
+  type: game
+  author: Stephen Lavelle
+  completion_date: 2017-12-10
+  image_url: 'img/kraken.png'
+  thoughts: >
+    A nice quick but challenging PuzzleScript game.
+    I had a couple of different “That’s impossible! Oh wait, whoa...” moments that are so emblematic of increpare’s puzzles.
+    <a href="https://www.increpare.com/2017/12/hungry-kraken/">Play it for free!</a>
+
+-
+  title: "The Flames"
+  type: game
+  author: Rosden Shadow
+  completion_date: 2017-12-15
+  image_url: 'img/the_flames.png'
+  thoughts: >
+    Another really nice PuzzleScript game.
+    It’s interesting how a turn-based game can have such tight timing like this one and elicit genuinely thrilling moments.
+    <a href="https://rosden.itch.io/theflames">It’s free to play</a>, like every PuzzleScript game!
+
+-
+  title: "FRAMED"
+  type: game
+  author: Loveshack
+  completion_date: 2017-12-17
+  image_url: 'img/framed.jpg'
+  thoughts: >
+    Lots of beautiful art and animation in this comic book-style puzzler.
+    I never quite felt like I was able to predict the results of my actions ahead of time, so it wound up feeling kind of trial-and-error-y to me, which I don’t love in a puzzle game.
+    There’s so much style here, though, that I stuck with it for quite a while just to soak up the ambience.
+
+-
   title: "Stranger Things: Season 2"
   type: tv
   author: The Duffer Brothers
@@ -750,4 +783,29 @@
     The first season of this show was one of my favorite TV shows ever, so I had high hopes for its return.
     By and large, season 2 delivered.
     I think the first season was a bit better, but s2 was still engaging the entire way through.
+
+-
+  title: "Getting Over It with Bennett Foddy"
+  type: game
+  author: Bennett Foddy
+  completion_date: 2017-12-29
+  image_url: 'img/getting_over_it.jpg'
+  thoughts: >
+    A very frustrating game.
+    On purpose!
+    There’s a lot of interesting stuff here, but it’s ultimately not for me.
+    I played for a couple of hours, but I doubt I’ll ever see the end of this game.
+    Still, worth checking out for the unique experience.
+
+-
+  title: "Titan Souls"
+  type: game
+  author: Acid Nerve
+  completion_date: 2017-12-29
+  image_url: 'img/titan_souls.jpg'
+  thoughts: >
+    You could sum this up as sort of a minimalist, pixel-art-y take on Shadow of the Colossus.
+    I love the stripped-down aesthetic here, and I wanted to love this game.
+    Ultimately, though, it’s a game that’s all about boss fights, and boss fights are usually my least favorite thing to do in games, so I gave up after a couple of hours.
+    If they made another game with the same mechanics and audio/visual style but with more exploration and less combat, I’d be all over it.
 
