@@ -11,3 +11,13 @@
   thoughts: >
     I mean, I’m just going to be playing this game forever, probably.
     I already logged that I was playing this last summer, but I’m still putting lots of time into it, so it seemed appropriate to start the year off with this one :)
+
+-
+  title: "Programming Elixir 1.3"
+  type: book
+  author: Dave Thomas
+  completion_date: 2017-01-18
+  image_url: 'img/programming_elixir.jpg'
+  thoughts: >
+    A pretty decent introduction to Elixir.
+    The writing style is a bit clinical at times, but I went from zero to something with this book, so it’s definitely effective.
