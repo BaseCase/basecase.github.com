@@ -211,3 +211,21 @@
   image_url: 'img/paperclips.png'
   thoughts: >
     Instead of reading this, you should just <a href="http://www.decisionproblem.com/paperclips/">go play this game now</a>. It’s free, only takes a couple of hours, and is both hilarious and surprising throughout. I won’t say any more than that; just go play it!
+
+-
+  title: "Metro 2033"
+  type: game
+  author: 4A Games
+  completion_date: 2018-06-09
+  image_url: 'img/metro_2033.jpg'
+  thoughts: >
+    Seems kinda cool but won’t run on my PC :/
+
+-
+  title: "Spec Ops: The Line"
+  type: game
+  author: 2K Games
+  completion_date: 2018-06-09
+  image_url: 'img/spec_ops.png'
+  thoughts: >
+    Very clever, I guess? Surely there must be a way to make the point that there are some ethical problems with the “Shooting Brown People Simulator” genre of games without making one of them. I appreciate that they were aspiring for something a little higher, but the execution (so to speak) left a lot to be desired.
