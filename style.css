@@ -118,7 +118,7 @@ section {
   padding: .5rem 0;
 }
 
-.blog-posts li a:hover { background-color: #e2e2db; }
+.blog-posts li a:hover { background-color: #e6e6e6; }
 
 .blog-posts li .title { font-weight: bold; }
 
