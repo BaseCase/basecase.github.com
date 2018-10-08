@@ -410,3 +410,87 @@
   thoughts: >
     This is a super fun Metroidvania with a pretty neat mining mechanic. The levels are authored, not generated, but large portions of them are composed of destructible blocks, so as you explore, you’re literally carving your own path through the game. The gear progression is satisfying and the artwork and music are both charming, too. What a little gem!
 
+#
+# October
+#
+-
+  title: "Turning Pro"
+  type: book
+  author: Steven Pressfield
+  completion_date: 2018-10-01
+  image_url: 'img/turning_pro.jpg'
+  thoughts: >
+    Much like Pressfield’s earlier book “The War of Art”, this is a quick, motivational call to action for writers and other creative types. There wasn’t a whole lot of new material here, but it was a good little kick in the pants.
+
+-
+  title: "Quiet: The Power of Introverts in a World that Can’t Stop Talking"
+  type: book
+  author: Susan Cain
+  completion_date: 2018-10-02
+  image_url: 'img/quiet.jpg'
+  thoughts: >
+    As an introvert, this book made me feel very good by confirming a lot of biases I’ve long held about extroverts. It does the pop-sci book thing that I hate which is jam about ten million case studies in admidst the actual interesting information, but if you can wade through those awful anecdotes, there are a few nuggets of useful tips here for navigating an extrovert-dominated world.
+
+-
+  title: "Agile Estimating and Planning"
+  type: book
+  author: Mike Cohn
+  completion_date: 2018-10-03
+  image_url: 'img/agile_estimating_and_planning.jpg'
+  thoughts: >
+    Easily the best book I’ve ever read on agile software project management. It manages to summarize and explain a huge amount of agile principles and techniques without falling victim (too badly) to the temptation of agile authors for demagoguery. The writing is a bit dry, but honestly I’ll take dry and informative over the other kind of agile book: full of anecdotes and no information.
+
+-
+  title: "Changes (Dresden Files book 12)"
+  type: book
+  author: Jim Butcher
+  completion_date: 2018-10-04
+  image_url: 'img/changes.jpg'
+  thoughts: >
+    More Dresden!
+
+-
+  title: "Ghost Story (Dresden Files book 13)"
+  type: book
+  author: Jim Butcher
+  completion_date: 2018-10-05
+  image_url: 'img/ghost_story.jpg'
+  thoughts: >
+    Even more Dresden! Finally closing in on finishing my reread of the series.
+
+-
+  title: "Okami HD"
+  type: game
+  author:
+  completion_date: 2018-10-06
+  image_url: 'img/okami_hd.jpg'
+  thoughts: >
+    This game has held a special place in my memory since its launch way back when, but the nostalgia didn’t quite hold up like I had expected. While the art and music of Okami are still jaw-droppingly gorgeous, the gameplay is terrible and the characters are all aggressively annoying. Combined with literal hours of forced tutorialization and I just couldn’t stick with the replay. I should have left this game as a fond memory.
+
+-
+  title: "Gone Home"
+  type: game
+  author: Fullbright Studios
+  completion_date: 2018-10-07
+  image_url: 'img/gone_home.jpg'
+  thoughts: >
+    I played this right when it game out, but I had to grab the Switch version and give it another go. What a beautiful work of art. People describe this game as a “walking simulator”, but you really don’t do all that much walking in it. It’s more of a rummage-em-up. Anyway, incredible game. Definitely play it.
+
+-
+  title: "Picross S"
+  type: game
+  author:
+  completion_date: 2018-10-07
+  image_url: 'img/picross_s.jpg'
+  thoughts: >
+    It’s Picross. It’s on Switch.
+
+-
+  title: "Shovel Knight"
+  type: game
+  author:
+  completion_date: 2018-10-08
+  image_url: 'img/shovel_knight.jpg'
+  thoughts: >
+    A charming, challenging platformer from the school of Mega Man, but with tons of its own ideas. There is a surprising amount of heart in this game, and I’m sure I’ll be coming back to it in the future. Very good.
+
