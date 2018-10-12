@@ -494,3 +494,12 @@
   thoughts: >
     A charming, challenging platformer from the school of Mega Man, but with tons of its own ideas. There is a surprising amount of heart in this game, and I’m sure I’ll be coming back to it in the future. Very good.
 
+-
+  title: "Elixir in Action"
+  type: book
+  author: Saša Jurić
+  completion_date: 2018-10-12
+  image_url: 'img/elixir_in_action.jpg'
+  thoughts: >
+    The best Elixir introductory text that I am aware of. Actually teaches you how to think in Elixir instead of just dumping syntax like most programming tutorials.
+
