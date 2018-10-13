@@ -503,3 +503,12 @@
   thoughts: >
     The best Elixir introductory text that I am aware of. Actually teaches you how to think in Elixir instead of just dumping syntax like most programming tutorials.
 
+-
+  title: "Mad Max: Fury Road"
+  type: movie
+  author: George Miller
+  completion_date: 2018-10-12
+  image_url: 'img/fury_road.jpg'
+  thoughts: >
+    I am so upset with myself for not going to see this when it was in theaters. This is like a story out of the Bible. Holy crap.
+
