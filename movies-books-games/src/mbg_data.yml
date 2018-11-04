@@ -566,3 +566,16 @@
   thoughts: >
     A tech book unlike any I’ve read before. This is sort of a combination sci-fi story/Postgres tutorial. It sounds weird, but it actually works quite well! Each technical concept introduced is motivated by a real need in the ongoing story, so it’s easy to understand and contextualize the new information. I liked this a lot, and I hope other writers are inspired by the format!
 
+
+#
+# November
+#
+-
+  title: "Agile! The Good, the Hype, and the Ugly"
+  type: book
+  author: Bertrand Meyer
+  completion_date: 2018-11-03
+  image_url: 'img/agile_good_hype_ugly.jpg'
+  thoughts: >
+    This is a thoughtful look at the landscape of agile software development literature. I think the chief contribution of this book is the exhortation—and examples of how—to think critically and carefully about the various techniques and project management principles defined by things like Scrum. There is a lot in the agile world to criticize, and Meyer does it well. He does fall victim to some of the same fuzzy thinking he criticizes, but on balance, this is a worthwhile read.
+
