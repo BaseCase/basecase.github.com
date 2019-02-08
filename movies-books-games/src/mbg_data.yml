@@ -1,27 +1,11 @@
 ---
--
-  title: Yooka-Laylee
-  type: game
-  author: Playtonic Games
-  completion_date: 2019-01-03
-  image_url: blarp
-  thoughts: >
-    I decided to give this Banjo-Kazooie follow-up another shot, mostly because I picked up the Switch version on a whim. I’m glad I did! There’s a lot more charm and enjoyment here than I gave it a chance to show me the first time around. True, the controls and physics are pretty mushy-feeling, and there are some very annoying moments (like the quizzes), but if you can get past those, there are a lot of bright colors and fun environments to explore.
-
--
-  title: Celeste
-  type: game
-  author: Matt Makes Games
-  completion_date: 2019-01-07
-  image_url: blarp
-  thoughts: >
-    An amazingly good platformer—maybe the best tight-timing 2D platformer I’ve ever played—coupled with beautiful art and music, and a surprisingly heartfelt and personal story. This is really something special.
-
+#
+# Movies
+#
 -
   title: Pan’s Labyrinth
   type: movie
-  author: Guillermo del Toro
-  completion_date: 2019-01-09
+  watched: 2019-01-09
   image_url: blarp
   thoughts: >
     Holy cow, this was a heavy movie. I was expecting the post-civil-war Spain stuff to be kind of a light frame story around mostly the fantasy stuff, but that was not the case at all. The interplay between the two worlds, and the fact that the fantasy things were not an “escape” from Ofelia’s reality but more like an echo of it, made this one of the most immersive dark fantasy movies I’ve ever seen. Also Del Toro’s visual sense is just unmatched.
@@ -29,23 +13,227 @@
 -
   title: Spider-Man: Into the Spider-Verse
   type: movie
-  author:
-  completion_date: 2019-01-19
-  image_url: blarp
+  watched: 2019-01-19
+  image_url:
   thoughts: >
+    So awesome! I’ve gotten kind of sick of superhero movies, but this was such a fresh and stylish take on the genre that I loved it. Incredible visuals, really smart script, and a sweet soundtrack.
+
+##################
+# END movies
+##################
+
+
+#
+# Books
+#
+
+-
+  title: The Dark Tower 3: The Waste Lands
+  type: book
+  start_date: 2019-01-01
+  completion_date:
+  image_url:
+  thoughts: >
+
+-
+  title: Battle Cry of Freedom
+  type: book
+  start_date: 2019-02-02
+  completion_date:
+  image_url:
+  thoughts: >
+
+-
+  title: The Eyes of the Dragon
+  type: book
+  start_date: 2019-02-07
+  completion_date:
+  image_url:
+  thoughts: >
+
+-
+  title: The Complete Guide to Rails Performance
+  type: book
+  start_date: 2019-02-02
+  completion_date:
+  image_url:
+  thoughts: >
+
+-
+  title: Hacking with macOS
+  type: book
+  start_date: 2019-02-06
+  completion_date:
+  image_url:
+  thoughts: >
+
+##################
+# END books
+##################
+
+
+#
+# Games
+#
+
+-
+  title: Yooka-Laylee
+  type: game
+  start_date: 2019-01-01
+  completion_date:
+  image_url:
+  thoughts: >
+    I decided to give this Banjo-Kazooie follow-up another shot, mostly because I picked up the Switch version on a whim. I’m glad I did! There’s a lot more charm and enjoyment here than I gave it a chance to show me the first time around. True, the controls and physics are pretty mushy-feeling, and there are some very annoying moments (like the quizzes), but if you can get past those, there are a lot of bright colors and fun environments to explore.
+
+-
+  title: Celeste
+  type: game
+  start_date: 2019-01-01
+  completion_date: 2019-01-07
+  image_url:
+  thoughts: >
+    An amazingly good platformer—maybe the best tight-timing 2D platformer I’ve ever played—coupled with beautiful art and music, and a surprisingly heartfelt and personal story. This is really something special.
 
 -
   title: Return of the Obra Dinn
-  type: Game
-  author: Lu{k,c}as Pope
+  type: game
+  start_date: 2019-01-01
+  completion_date:
+  image_url:
+  thoughts: >
+
+-
+  title: Persona 5
+  type: game
+  start_date: 2019-01-19
   completion_date:
   image_url: blarp
   thoughts: >
 
 -
-  title: Golf Story
+  title: Deus Ex GO
   type: game
-  author:
-  completion_date:
-  image_url: blarp
+  start_date: 2019-02-01
+  completion_date: 2019-02-05
+  image_url:
   thoughts: >
+    A reasonably decent puzzler. Very much in the vein of Hitman GO. I have to say I preferred that one, but this was still enjoyable for a couple of hours.
+
+-
+  title: Cosmic Express
+  type: game
+  start_date: 2019-02-02
+  completion_date:
+  image_url:
+  thoughts: >
+
+-
+  title: Sea of Thieves
+  type: game
+  start_date: 2019-02-01
+  completion_date:
+  image_url:
+  thoughts: >
+
+-
+  title: Overcooked
+  type: game
+  start_date: 2019-01-05
+  completion_date:
+  image_url:
+  thoughts: >
+
+-
+  title: Diablo 3 (Switch version)
+  type: game
+  start_date: 2019-01-01
+  completion_date:
+  image_url:
+  thoughts: >
+
+-
+  title: Cinco Paus
+  type: game
+  start_date: 2019-02-02
+  completion_date:
+  image_url:
+  thoughts: >
+
+-
+  title: Avernum 3 HD
+  type: game
+  start_date: 2019-02-01
+  completion_date:
+  image_url:
+  thoughts: >
+
+-
+  title: Apex Legends
+  type: game
+  start_date: 2019-02-07
+  completion_date: 2019-02-07
+  image_url:
+  thoughts: >
+    Figured I’d give this a try, since everyone was talking about it and it’s free. As suspected, it wasn’t really for me. I’m just not super into the Battle Royale genre. It is beautiful, though, and the design seems very well done, it just isn’t my cup of tea.
+
+##################
+# END games
+##################
+
+
+#
+# TV
+#
+
+-
+  title: Jessica Jones s2
+  type: tv
+  start_date: 2019-02-10
+  completion_date:
+  image_url:
+  thoughts: >
+
+-
+  title: Star Trek: The Next Generation
+  type: tv
+  start_date: 2019-01-01
+  completion_date:
+  image_url:
+  thoughts: >
+
+##################
+# END TV
+##################
+
+
+#
+# Tabletop!
+#
+
+-
+  title: Root
+  type: tabletop
+  plays:
+    - 2019-02-02
+  image_url:
+  thoughts: >
+    I’ve never seen a game this drastically asymmetric that worked so well. Each faction in the game plays *wildly* different, but somehow it all coheres into a single, surprisingly tight game experience. Pretty steep learning curve, but absolutely worth it. I hope to come back to this one many times.
+
+-
+  title: Love Letter
+  type: tabletop
+  plays:
+    - 2019-02-02
+  image_url:
+  thoughts: >
+    A true classic. Easy to teach, easy to set up, quick to play, but satisfyingly deep strategy. A great game to occupy a “filler” spot in the day, but of much higher quality than a normal filler game.
+
+-
+  title: Dice Throne
+  type: tabletop
+  plays:
+    - 2019-02-02
+  image_url:
+  thoughts: >
+    Hmm, not sure about this one. This is basically Yahtzee with some D&D-esque mechanics layered on top of it. I love rolling dice, and this game delivers lots of that, but the outcomes seem maybe a bit *too* random for a competitive game. Decently fun, in spite of that.
+
