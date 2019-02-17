@@ -1,7 +1,4 @@
 ---
-#
-# Movies
-#
 -
   title: Pan’s Labyrinth
   type: movie
@@ -17,15 +14,6 @@
   image_url:
   thoughts: >
     So awesome! I’ve gotten kind of sick of superhero movies, but this was such a fresh and stylish take on the genre that I loved it. Incredible visuals, really smart script, and a sweet soundtrack.
-
-##################
-# END movies
-##################
-
-
-#
-# Books
-#
 
 -
   title: The Dark Tower 3: The Waste Lands
@@ -47,9 +35,10 @@
   title: The Eyes of the Dragon
   type: book
   start_date: 2019-02-07
-  completion_date:
+  completion_date: 2019-02-16
   image_url:
   thoughts: >
+    I had never heard of this one before, but I’m listening through the Radio Free Midworld podcast, which goes book-by-book through Stephen King’s Dark Tower series as well as books that brush up against it. I...didn’t love it. It’s quite a departure (intentionally) from King’s usualy style, and I didn’t feel like he nailed the landing.
 
 -
   title: The Complete Guide to Rails Performance
@@ -74,15 +63,7 @@
   completion_date: 2019-02-09
   image_url:
   thoughts: >
-
-##################
-# END books
-##################
-
-
-#
-# Games
-#
+    Some pretty decen tmux tips in here. Not much stuff that you can’t find in the manpage, but arranged more sensibly, I think.
 
 -
   title: Yooka-Laylee
@@ -168,14 +149,6 @@
   thoughts: >
 
 -
-  title: Avernum 3 HD
-  type: game
-  start_date: 2019-02-01
-  completion_date:
-  image_url:
-  thoughts: >
-
--
   title: Apex Legends
   type: game
   start_date: 2019-02-07
@@ -183,15 +156,6 @@
   image_url:
   thoughts: >
     Figured I’d give this a try, since everyone was talking about it and it’s free. As suspected, it wasn’t really for me. I’m just not super into the Battle Royale genre. It is beautiful, though, and the design seems very well done, it just isn’t my cup of tea.
-
-##################
-# END games
-##################
-
-
-#
-# TV
-#
 
 -
   title: Jessica Jones s2
@@ -209,14 +173,13 @@
   image_url:
   thoughts: >
 
-##################
-# END TV
-##################
 
 
-#
-# Tabletop!
-#
+
+
+
+
+
 
 -
   title: Root
