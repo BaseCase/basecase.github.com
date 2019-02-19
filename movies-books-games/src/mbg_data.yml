@@ -24,14 +24,6 @@
   thoughts: >
 
 -
-  title: Battle Cry of Freedom
-  type: book
-  start_date: 2019-02-02
-  completion_date:
-  image_url:
-  thoughts: >
-
--
   title: The Eyes of the Dragon
   type: book
   start_date: 2019-02-07
@@ -39,14 +31,6 @@
   image_url:
   thoughts: >
     I had never heard of this one before, but I’m listening through the Radio Free Midworld podcast, which goes book-by-book through Stephen King’s Dark Tower series as well as books that brush up against it. I...didn’t love it. It’s quite a departure (intentionally) from King’s usualy style, and I didn’t feel like he nailed the landing.
-
--
-  title: The Complete Guide to Rails Performance
-  type: book
-  start_date: 2019-02-02
-  completion_date:
-  image_url:
-  thoughts: >
 
 -
   title: Hacking with macOS
@@ -125,22 +109,6 @@
   thoughts: >
 
 -
-  title: Overcooked
-  type: game
-  start_date: 2019-01-05
-  completion_date:
-  image_url:
-  thoughts: >
-
--
-  title: Diablo 3 (Switch version)
-  type: game
-  start_date: 2019-01-01
-  completion_date:
-  image_url:
-  thoughts: >
-
--
   title: Cinco Paus
   type: game
   start_date: 2019-02-02
@@ -169,6 +137,14 @@
   title: Star Trek: The Next Generation
   type: tv
   start_date: 2019-01-01
+  completion_date:
+  image_url:
+  thoughts: >
+
+-
+  title: A Programmer’s Introduction to Mathematics
+  type: book
+  start_date: 2019-02-19
   completion_date:
   image_url:
   thoughts: >
