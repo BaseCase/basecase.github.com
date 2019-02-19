@@ -9,12 +9,24 @@ let data = [
     'type': 'book',
     'date_started': new Date('2019-01-03'),
     'date_completed': new Date('2019-01-05'),
+  }, {
+    'title': "Finished in one day",
+    'type': 'movie',
+    'date_started': new Date('2019-01-06'),
+    'date_completed': new Date('2019-01-10'),
+  }, {
+    'title': "Finished in one day",
+    'type': 'movie',
+    'date_started': new Date('2019-01-11'),
+    'date_completed': new Date('2019-01-11'),
   }
 ];
 
 
 const HALF_UNIT = 25;
 const BUFFER = 20;
+const MS_TO_DAYS_DIVISOR = 1000 * 60 * 60 * 24;
+const START_DATE = new Date('2019-01-01');
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -24,12 +36,34 @@ document.addEventListener('DOMContentLoaded', function() {
   ctx.fillStyle = '#ddaacc';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  data.forEach((entry, index) => {
-    let days_past_start = (entry['date_completed'] - entry['date_started']) / 1000 / 60 / 60 / 24;
+
+
+
+
+  {
+  // debug, draw day lines
+    ctx.fillStyle = '#CCC';
+    ctx.strokeStyle = '#CCC';
+    ctx.lineWidth = 1;
+    for (let i = 0; i < canvas.width; i += HALF_UNIT * 2) {
+      ctx.beginPath();
+      ctx.moveTo(i, 0);
+      ctx.lineTo(i, canvas.height);
+      ctx.closePath();
+      ctx.stroke();
+    }
+  }
+
+
+
+
+
+  data.forEach((entry) => {
+    let start_offset_days = (entry['date_started'] - START_DATE) / MS_TO_DAYS_DIVISOR;
+    let duration_in_days = (entry['date_completed'] - entry['date_started']) / MS_TO_DAYS_DIVISOR + 1;
 
     let v_center = canvas.height / 2;
-
-    let start_x = HALF_UNIT * 2 * index + BUFFER;
+    let start_x = start_offset_days * (2 * HALF_UNIT);
     let start_y = v_center;
 
     // draw the black background shape for this entry
@@ -41,11 +75,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // first upward angle
     ctx.lineTo(start_x + HALF_UNIT, start_y - HALF_UNIT);
     // top length, matching duration of entry
-    ctx.lineTo(start_x + HALF_UNIT + (HALF_UNIT * days_past_start), start_y - HALF_UNIT);
+    ctx.lineTo(start_x + (2 * HALF_UNIT * duration_in_days) - HALF_UNIT, start_y - HALF_UNIT);
     // angle down to right side
-    ctx.lineTo(start_x + HALF_UNIT + (HALF_UNIT * days_past_start) + HALF_UNIT, start_y);
+    ctx.lineTo(start_x + (2 * HALF_UNIT * duration_in_days), start_y);
     // angle down and back to bottom
-    ctx.lineTo(start_x + HALF_UNIT + (HALF_UNIT * days_past_start), start_y + HALF_UNIT);
+    ctx.lineTo(start_x + (2 * HALF_UNIT * duration_in_days) - HALF_UNIT, start_y + HALF_UNIT);
     // bottom lenth, matching duration of entry
     ctx.lineTo(start_x + HALF_UNIT, start_y + HALF_UNIT);
     ctx.closePath();
@@ -61,11 +95,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // first upward angle
     ctx.lineTo(start_x + HALF_UNIT, start_y - HALF_UNIT);
     // top length, matching duration of entry
-    ctx.lineTo(start_x + HALF_UNIT + (HALF_UNIT * days_past_start), start_y - HALF_UNIT);
+    ctx.lineTo(start_x + (2 * HALF_UNIT * duration_in_days) - HALF_UNIT, start_y - HALF_UNIT);
     // angle down to right side
-    ctx.lineTo(start_x + HALF_UNIT + (HALF_UNIT * days_past_start) + HALF_UNIT, start_y);
+    ctx.lineTo(start_x + (2 * HALF_UNIT * duration_in_days), start_y);
     // angle down and back to bottom
-    ctx.lineTo(start_x + HALF_UNIT + (HALF_UNIT * days_past_start), start_y + HALF_UNIT);
+    ctx.lineTo(start_x + (2 * HALF_UNIT * duration_in_days) - HALF_UNIT, start_y + HALF_UNIT);
     // bottom lenth, matching duration of entry
     ctx.lineTo(start_x + HALF_UNIT, start_y + HALF_UNIT);
     ctx.closePath();
