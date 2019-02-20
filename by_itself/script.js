@@ -19,6 +19,11 @@ let data = [
     'type': 'movie',
     'date_started': new Date('2019-01-11'),
     'date_completed': new Date('2019-01-11'),
+  }, {
+    'title': "Ruh roh, it's at an overlapping time",
+    'type': 'movie',
+    'date_started': new Date('2019-01-02'),
+    'date_completed': new Date('2019-01-05'),
   }
 ];
 
@@ -88,16 +93,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-  // draw backgrounds for each month
-  canvas.width = HALF_UNIT * 2 * 365;
-  let month_start_x = 0;
+  {
+    // draw backgrounds for each month
+    canvas.width = HALF_UNIT * 2 * 365;
+    let month_start_x = 0;
 
-  months.forEach(month => {
-    let month_end_x = month_start_x + HALF_UNIT*2*month.num_days;
-    ctx.fillStyle = month.color;
-    ctx.fillRect(month_start_x, 0, month_end_x, canvas.height);
-    month_start_x = month_end_x;
-  });
+    months.forEach(month => {
+      let month_end_x = month_start_x + HALF_UNIT*2*month.num_days;
+      ctx.fillStyle = month.color;
+      ctx.fillRect(month_start_x, 0, month_end_x, canvas.height);
+      month_start_x = month_end_x;
+    });
+  }
 
 
 
@@ -119,6 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+  // draw blips on the map for each entry
   data.forEach((entry) => {
     let start_offset_days = (entry['date_started'] - START_DATE) / MS_TO_DAYS_DIVISOR;
     let duration_in_days = (entry['date_completed'] - entry['date_started']) / MS_TO_DAYS_DIVISOR + 1;
@@ -127,27 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let start_x = start_offset_days * (2 * HALF_UNIT);
     let start_y = v_center;
 
-    // draw the black background shape for this entry
-    ctx.fillStyle = '#000';
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    // starting point
-    ctx.moveTo(start_x, start_y);
-    // first upward angle
-    ctx.lineTo(start_x + HALF_UNIT, start_y - HALF_UNIT);
-    // top length, matching duration of entry
-    ctx.lineTo(start_x + (2 * HALF_UNIT * duration_in_days) - HALF_UNIT, start_y - HALF_UNIT);
-    // angle down to right side
-    ctx.lineTo(start_x + (2 * HALF_UNIT * duration_in_days), start_y);
-    // angle down and back to bottom
-    ctx.lineTo(start_x + (2 * HALF_UNIT * duration_in_days) - HALF_UNIT, start_y + HALF_UNIT);
-    // bottom lenth, matching duration of entry
-    ctx.lineTo(start_x + HALF_UNIT, start_y + HALF_UNIT);
-    ctx.closePath();
-    ctx.fill();
-
-
-    // draw the white outline
+    ctx.fillStyle = '#00f';
     ctx.strokeStyle = '#fff';
     ctx.lineWidth = 3;
     ctx.beginPath();
@@ -164,6 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // bottom lenth, matching duration of entry
     ctx.lineTo(start_x + HALF_UNIT, start_y + HALF_UNIT);
     ctx.closePath();
+    ctx.fill();
     ctx.stroke();
   });
 });
