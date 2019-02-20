@@ -4,26 +4,49 @@ let data = [
     'type': 'movie',
     'date_started': new Date('2019-01-01'),
     'date_completed': new Date('2019-01-01'),
+    'lane': 0,
   }, {
     'title': "Took me three days",
     'type': 'book',
     'date_started': new Date('2019-01-03'),
     'date_completed': new Date('2019-01-05'),
+    'lane': 0,
   }, {
     'title': "Finished in one day",
     'type': 'movie',
     'date_started': new Date('2019-01-06'),
     'date_completed': new Date('2019-01-10'),
+    'lane': 0,
+  }, {
+    'title': "Finished in one day",
+    'type': 'movie',
+    'date_started': new Date('2019-01-07'),
+    'date_completed': new Date('2019-01-07'),
+    'lane': 0,
+  }, {
+    'title': "Finished in one day",
+    'type': 'movie',
+    'date_started': new Date('2019-01-04'),
+    'date_completed': new Date('2019-01-08'),
+    'lane': 0,
   }, {
     'title': "Finished in one day",
     'type': 'movie',
     'date_started': new Date('2019-01-11'),
     'date_completed': new Date('2019-01-11'),
+    'lane': 0,
+  }, {
+    'title': "Finished in one day",
+    'type': 'movie',
+    'date_started': new Date('2019-01-11'),
+    'date_completed': new Date('2019-01-11'),
+    'lane': 0,
   }, {
     'title': "Ruh roh, it's at an overlapping time",
     'type': 'movie',
     'date_started': new Date('2019-01-02'),
     'date_completed': new Date('2019-01-05'),
+    'lane': 0,
   }
 ];
 
@@ -92,6 +115,46 @@ document.addEventListener('DOMContentLoaded', function() {
   let ctx = canvas.getContext('2d');
 
 
+  {
+    // reserve vertical lanes for each event to prevent overlap
+    data.sort((a, b) => a.date_started - b.date_started);
+
+    let data_index = 0;
+
+    let lanes = [
+      {
+        occupied: false,
+        by: null,
+      }
+    ];
+
+    data.forEach(item => {
+      // check to see if we can clear any lanes
+      lanes.forEach(lane => {
+        if (lane.occupied && (lane.by.date_completed < item.date_started)) {
+          lane.occupied = false;
+          lane.by = null;
+        }
+      });
+
+      // find an empty lane for this event
+      lanes.forEach((lane, lane_index) => {
+        if (!item.lane && !lane.occupied) {
+          lane.occupied = true;
+          lane.by = item;
+          item.lane = lane_index + 1;
+        }
+      });
+
+      // if all lanes were full, make a new empty one
+      if (!item.lane) {
+        lanes.push({ occupied: true, by: item });
+        item.lane = lanes.length;
+      }
+    });
+  }
+
+
 
   {
     // draw backgrounds for each month
@@ -131,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let start_offset_days = (entry['date_started'] - START_DATE) / MS_TO_DAYS_DIVISOR;
     let duration_in_days = (entry['date_completed'] - entry['date_started']) / MS_TO_DAYS_DIVISOR + 1;
 
-    let v_center = canvas.height / 2;
+    let v_center = canvas.height / 2 + HALF_UNIT * 2 * entry.lane;
     let start_x = start_offset_days * (2 * HALF_UNIT);
     let start_y = v_center;
 
