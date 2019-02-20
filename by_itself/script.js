@@ -23,6 +23,59 @@ let data = [
 ];
 
 
+let months = [
+  {
+    'name': "January",
+    'color': "#111",
+    'num_days': 31,
+  }, {
+    'name': "February",
+    'color': "#222",
+    'num_days': 28,
+  }, {
+    'name': "March",
+    'color': "#333",
+    'num_days': 31,
+  }, {
+    'name': "April",
+    'color': "#444",
+    'num_days': 30,
+  }, {
+    'name': "May",
+    'color': "#555",
+    'num_days': 31,
+  }, {
+    'name': "June",
+    'color': "#666",
+    'num_days': 30,
+  }, {
+    'name': "July",
+    'color': "#777",
+    'num_days': 31,
+  }, {
+    'name': "August",
+    'color': "#888",
+    'num_days': 31,
+  }, {
+    'name': "September",
+    'color': "#999",
+    'num_days': 30,
+  }, {
+    'name': "October",
+    'color': "#aaa",
+    'num_days': 31,
+  }, {
+    'name': "November",
+    'color': "#bbb",
+    'num_days': 30,
+  }, {
+    'name': "December",
+    'color': "#ccc",
+    'num_days': 31,
+  }
+];
+
+
 const HALF_UNIT = 25;
 const BUFFER = 20;
 const MS_TO_DAYS_DIVISOR = 1000 * 60 * 60 * 24;
@@ -33,10 +86,18 @@ document.addEventListener('DOMContentLoaded', function() {
   let canvas = document.getElementById('canvas');
   let ctx = canvas.getContext('2d');
 
-  ctx.fillStyle = '#ddaacc';
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 
+  // draw backgrounds for each month
+  canvas.width = HALF_UNIT * 2 * 365;
+  let month_start_x = 0;
+
+  months.forEach(month => {
+    let month_end_x = month_start_x + HALF_UNIT*2*month.num_days;
+    ctx.fillStyle = month.color;
+    ctx.fillRect(month_start_x, 0, month_end_x, canvas.height);
+    month_start_x = month_end_x;
+  });
 
 
 
