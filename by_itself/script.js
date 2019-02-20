@@ -119,8 +119,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // reserve vertical lanes for each event to prevent overlap
     data.sort((a, b) => a.date_started - b.date_started);
 
-    let data_index = 0;
-
     let lanes = [
       {
         occupied: false,
@@ -146,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
 
-      // if all lanes were full, make a new empty one
+      // if all lanes were full, make a new one for this item
       if (!item.lane) {
         lanes.push({ occupied: true, by: item });
         item.lane = lanes.length;
