@@ -8,6 +8,12 @@ let data = [
   }, {
     'title': "Took me three days",
     'type': 'book',
+    'date_started': new Date('2019-01-05'),
+    'date_completed': new Date('2019-01-06'),
+    'lane': 0,
+  }, {
+    'title': "Took me three days",
+    'type': 'book',
     'date_started': new Date('2019-01-03'),
     'date_completed': new Date('2019-01-05'),
     'lane': 0,
