@@ -1,3 +1,125 @@
+let media_data = [
+  {
+    title: "Pan’s Labyrinth",
+    type: "movie",
+    date_started: new Date("2019-01-09"),
+    date_completed: new Date("2019-01-09"),
+    thoughts: `Holy cow, this was a heavy movie. I was expecting the post-civil-war Spain stuff to be kind of a light frame story around mostly the fantasy stuff, but that was not the case at all. The interplay between the two worlds, and the fact that the fantasy things were not an “escape” from Ofelia’s reality but more like an echo of it, made this one of the most immersive dark fantasy movies I’ve ever seen. Also Del Toro’s visual sense is just unmatched.`
+  }, {
+    title: "Spider-Man: Into the Spider-Verse",
+    type: "movie",
+    date_started: new Date("2019-01-19"),
+    date_completed: new Date("2019-01-19"),
+    thoughts: `So awesome! I’ve gotten kind of sick of superhero movies, but this was such a fresh and stylish take on the genre that I loved it. Incredible visuals, really smart script, and a sweet soundtrack.`
+  }, {
+    title: "The Dark Tower 3: The Waste Lands",
+    type: "book",
+    date_started: new Date("2019-01-01"),
+    date_completed: null,
+    thoughts: ``
+  }, {
+    title: "The Eyes of the Dragon",
+    type: "book",
+    date_started: new Date("2019-02-07"),
+    date_completed: new Date("2019-02-16"),
+    thoughts: `I had never heard of this one before, but I’m listening through the Radio Free Midworld podcast, which goes book-by-book through Stephen King’s Dark Tower series as well as books that brush up against it. I...didn’t love it. It’s quite a departure (intentionally) from King’s usualy style, and I didn’t feel like he nailed the landing.`
+  }, {
+    title: "Hacking with macOS",
+    type: "book",
+    date_started: new Date("2019-02-06"),
+    date_completed: null,
+    thoughts: ``
+  }, {
+    title: "tmux 2: Productive Mouse-Free Development",
+    type: "book",
+    date_started: new Date("2019-02-08"),
+    date_completed: new Date("2019-02-09"),
+    thoughts: `Some pretty decen tmux tips in here. Not much stuff that you can’t find in the manpage, but arranged more sensibly, I think.`
+  }, {
+    title: "Yooka-Laylee",
+    type: "game",
+    date_started: new Date("2019-01-01"),
+    date_completed: null,
+    thoughts: `I decided to give this Banjo-Kazooie follow-up another shot, mostly because I picked up the Switch version on a whim. I’m glad I did! There’s a lot more charm and enjoyment here than I gave it a chance to show me the first time around. True, the controls and physics are pretty mushy-feeling, and there are some very annoying moments (like the quizzes), but if you can get past those, there are a lot of bright colors and fun environments to explore.`
+  }, {
+    title: "Celeste",
+    type: "game",
+    date_started: new Date("2019-01-01"),
+    date_completed: new Date("2019-01-07"),
+    thoughts: `An amazingly good platformer—maybe the best tight-timing 2D platformer I’ve ever played—coupled with beautiful art and music, and a surprisingly heartfelt and personal story. This is really something special.`
+  }, {
+    title: "Return of the Obra Dinn",
+    type: "game",
+    date_started: new Date("2019-01-01"),
+    date_completed: null,
+    thoughts: ``
+  }, {
+    title: "Persona 5",
+    type: "game",
+    date_started: new Date("2019-01-19"),
+    date_completed: null,
+    thoughts: ``
+  }, {
+    title: "Deus Ex GO",
+    type: "game",
+    date_started: new Date("2019-02-01"),
+    date_completed: new Date("2019-02-05"),
+    thoughts: `A reasonably decent puzzler. Very much in the vein of Hitman GO. I have to say I preferred that one, but this was still enjoyable for a couple of hours.`
+  }, {
+    title: "Cosmic Express",
+    type: "game",
+    date_started: new Date("2019-02-02"),
+    date_completed: null,
+    thoughts: ``
+  }, {
+    title: "Sea of Thieves",
+    type: "game",
+    date_started: new Date("2019-02-01"),
+    date_completed: null,
+    thoughts: ``
+  }, {
+    title: "Cinco Paus",
+    type: "game",
+    date_started: new Date("2019-02-02"),
+    date_completed: null,
+    thoughts: ``
+  }, {
+    title: "Apex Legends",
+    type: "game",
+    date_started: new Date("2019-02-07"),
+    date_completed: new Date("2019-02-07"),
+    thoughts: `Figured I’d give this a try, since everyone was talking about it and it’s free. As suspected, it wasn’t really for me. I’m just not super into the Battle Royale genre. It is beautiful, though, and the design seems very well done, it just isn’t my cup of tea.`
+  }, {
+    title: "Jessica Jones s2",
+    type: "tv",
+    date_started: new Date("2019-02-10"),
+    date_completed: null,
+    thoughts: ``
+  }, {
+    title: "Star Trek: The Next Generation",
+    type: "tv",
+    date_started: new Date("2019-01-01"),
+    date_completed: null,
+    thoughts: ``
+  }, {
+    title: "A Programmer’s Introduction to Mathematics",
+    type: "book",
+    date_started: new Date("2019-02-19"),
+    date_completed: null,
+    thoughts: ``
+  }
+];
+
+
+
+
+
+
+
+
+
+
+
 let data = [
   {
     'title': "Finished in one day",
@@ -125,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   {
     // reserve vertical lanes for each event to prevent overlap
-    data.sort((a, b) => a.date_started - b.date_started);
+    media_data.sort((a, b) => a.date_started - b.date_started);
 
     let lanes = [
       {
@@ -134,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     ];
 
-    data.forEach(item => {
+    media_data.forEach(item => {
       // check to see if we can clear any lanes
       lanes.forEach(lane => {
         if (lane.occupied && ((lane.by.date_completed || TODAY) < item.date_started)) {
@@ -198,7 +320,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   // draw blips on the map for each entry
-  data.forEach((entry) => {
+  media_data.forEach((entry) => {
     let start_offset_days = (entry['date_started'] - START_DATE) / MS_TO_DAYS_DIVISOR;
     let end_date = entry['date_completed'] || TODAY;
     let duration_in_days = (end_date - entry['date_started']) / MS_TO_DAYS_DIVISOR + 1;
