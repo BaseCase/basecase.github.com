@@ -281,4 +281,20 @@ document.addEventListener('DOMContentLoaded', function() {
     ctx.fill();
     ctx.stroke();
   });
+
+
+  {
+    // draw a line on today
+    let x = HALF_UNIT * 2 * (TODAY - START_DATE) / MS_TO_DAYS_DIVISOR;
+    ctx.strokeStyle = '#f00';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.moveTo(x, 0);
+    ctx.lineTo(x, canvas.height);
+    ctx.closePath();
+    ctx.stroke();
+
+    // and scroll there? not convinced that this is a good idea.
+    window.scroll(x - 300, 0);
+  }
 });
