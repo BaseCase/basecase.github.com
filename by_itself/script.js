@@ -105,7 +105,7 @@ let months = [
 
 
 const HALF_UNIT = 25;
-const BUFFER = 20;
+const BUFFER = 10;
 const MS_TO_DAYS_DIVISOR = 1000 * 60 * 60 * 24;
 const START_DATE = new Date('2019-01-01');
 
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
-    canvas.height = HALF_UNIT * 2 * lanes.length + HALF_UNIT * 2;
+    canvas.height = HALF_UNIT * 2 * lanes.length + HALF_UNIT * 2 + BUFFER * lanes.length;
   }
 
 
@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let start_offset_days = (entry['date_started'] - START_DATE) / MS_TO_DAYS_DIVISOR;
     let duration_in_days = (entry['date_completed'] - entry['date_started']) / MS_TO_DAYS_DIVISOR + 1;
 
-    let v_center = HALF_UNIT * 2 * entry.lane;
+    let v_center = HALF_UNIT * 2 * entry.lane + BUFFER * entry.lane;
     let start_x = start_offset_days * (2 * HALF_UNIT);
     let start_y = v_center;
 
