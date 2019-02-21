@@ -114,6 +114,8 @@ const HALF_UNIT = 25;
 const BUFFER = 10;
 const MS_TO_DAYS_DIVISOR = 1000 * 60 * 60 * 24;
 const START_DATE = new Date('2019-01-01');
+const TODAY = new Date();
+TODAY.setHours(0,0,0,0);
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -135,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
     data.forEach(item => {
       // check to see if we can clear any lanes
       lanes.forEach(lane => {
-        if (lane.occupied && (lane.by.date_completed < item.date_started)) {
+        if (lane.occupied && ((lane.by.date_completed || TODAY) < item.date_started)) {
           lane.occupied = false;
           lane.by = null;
         }
@@ -198,7 +200,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // draw blips on the map for each entry
   data.forEach((entry) => {
     let start_offset_days = (entry['date_started'] - START_DATE) / MS_TO_DAYS_DIVISOR;
-    let duration_in_days = (entry['date_completed'] - entry['date_started']) / MS_TO_DAYS_DIVISOR + 1;
+    let end_date = entry['date_completed'] || TODAY;
+    let duration_in_days = (end_date - entry['date_started']) / MS_TO_DAYS_DIVISOR + 1;
 
     let v_center = HALF_UNIT * 2 * entry.lane + BUFFER * entry.lane;
     let start_x = start_offset_days * (2 * HALF_UNIT);
