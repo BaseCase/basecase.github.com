@@ -244,18 +244,14 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 
-
-
-
   // draw blips on the map for each entry
   media_data.forEach((entry) => {
     let start_offset_days = (entry['date_started'] - START_DATE) / MS_TO_DAYS_DIVISOR;
     let end_date = entry['date_completed'] || TODAY;
     let duration_in_days = (end_date - entry['date_started']) / MS_TO_DAYS_DIVISOR + 1;
 
-    let v_center = HALF_UNIT * 2 * entry.lane + BUFFER * entry.lane;
     let start_x = start_offset_days * (2 * HALF_UNIT);
-    let start_y = v_center;
+    let start_y = HALF_UNIT * 2 * entry.lane + BUFFER * entry.lane;
 
     {
       // store edges of bounding rect on each entry, for fast mouse hover detection
@@ -265,29 +261,34 @@ document.addEventListener('DOMContentLoaded', function() {
       entry.bottom = start_y + HALF_UNIT;
     }
 
-    ctx.fillStyle = '#00f';
+    draw_blip(entry, '#00f');
+  });
+
+
+  function draw_blip(item, fill_color) {
+    ctx.fillStyle = fill_color;
     ctx.strokeStyle = '#fff';
     ctx.lineWidth = 3;
+
+    let start_y = item.top + HALF_UNIT;
+
     ctx.beginPath();
     // starting point
-    ctx.moveTo(start_x, start_y);
+    ctx.moveTo(item.left, start_y);
     // first upward angle
-    ctx.lineTo(start_x + HALF_UNIT, start_y - HALF_UNIT);
+    ctx.lineTo(item.left + HALF_UNIT, start_y - HALF_UNIT);
     // top length, matching duration of entry
-    ctx.lineTo(start_x + (2 * HALF_UNIT * duration_in_days) - HALF_UNIT, start_y - HALF_UNIT);
+    ctx.lineTo(item.right - HALF_UNIT, start_y - HALF_UNIT);
     // angle down to right side
-    ctx.lineTo(start_x + (2 * HALF_UNIT * duration_in_days), start_y);
+    ctx.lineTo(item.right, start_y);
     // angle down and back to bottom
-    ctx.lineTo(start_x + (2 * HALF_UNIT * duration_in_days) - HALF_UNIT, start_y + HALF_UNIT);
+    ctx.lineTo(item.right - HALF_UNIT, start_y + HALF_UNIT);
     // bottom lenth, matching duration of entry
-    ctx.lineTo(start_x + HALF_UNIT, start_y + HALF_UNIT);
+    ctx.lineTo(item.left + HALF_UNIT, start_y + HALF_UNIT);
     ctx.closePath();
     ctx.fill();
     ctx.stroke();
-
-    // for in-progress things, draw a ragged edge at the right side instead of closing it
-
-  });
+  }
 
 
   {
@@ -311,6 +312,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const canvas_pos = canvas.getBoundingClientRect();
   const offset_x = canvas_pos.x;
   const offset_y = canvas_pos.y;
+  let highlighted_item = media_data[0];
 
   function handle_mouse_move(e) {
     let mouse_x = e.pageX - offset_x;
@@ -323,10 +325,14 @@ document.addEventListener('DOMContentLoaded', function() {
           (item.right > mouse_x) &&
           (item.top < mouse_y) &&
           (item.bottom > mouse_y)) {
+        draw_blip(highlighted_item, '#00f');
+        highlighted_item = item;
         name_el.innerHTML = item.title;
+        draw_blip(item, '#ff0');
         return;
       }
     }
+    draw_blip(highlighted_item, '#00f');
     name_el.innerHTML = "";
   }
 
