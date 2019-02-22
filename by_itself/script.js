@@ -39,7 +39,7 @@ let media_data = [
     title: "Yooka-Laylee",
     type: "game",
     date_started: new Date("2019-01-01"),
-    date_completed: null,
+    date_completed: new Date("2019-01-31"),
     thoughts: `I decided to give this Banjo-Kazooie follow-up another shot, mostly because I picked up the Switch version on a whim. I’m glad I did! There’s a lot more charm and enjoyment here than I gave it a chance to show me the first time around. True, the controls and physics are pretty mushy-feeling, and there are some very annoying moments (like the quizzes), but if you can get past those, there are a lot of bright colors and fun environments to explore.`
   }, {
     title: "Celeste",
@@ -75,13 +75,13 @@ let media_data = [
     title: "Sea of Thieves",
     type: "game",
     date_started: new Date("2019-02-01"),
-    date_completed: null,
+    date_completed: new Date("2019-02-28"),
     thoughts: ``
   }, {
     title: "Cinco Paus",
     type: "game",
     date_started: new Date("2019-02-02"),
-    date_completed: null,
+    date_completed: new Date("2019-02-09"),
     thoughts: ``
   }, {
     title: "Apex Legends",
@@ -93,12 +93,6 @@ let media_data = [
     title: "Jessica Jones s2",
     type: "tv",
     date_started: new Date("2019-02-10"),
-    date_completed: null,
-    thoughts: ``
-  }, {
-    title: "Star Trek: The Next Generation",
-    type: "tv",
-    date_started: new Date("2019-01-01"),
     date_completed: null,
     thoughts: ``
   }, {
@@ -164,7 +158,7 @@ let months = [
 ];
 
 
-const HALF_UNIT = 25;
+const HALF_UNIT = 10;
 const BUFFER = 10;
 const MS_TO_DAYS_DIVISOR = 1000 * 60 * 60 * 24;
 const START_DATE = new Date('2019-01-01');
@@ -175,6 +169,8 @@ TODAY.setHours(0,0,0,0);
 document.addEventListener('DOMContentLoaded', function() {
   let canvas = document.getElementById('canvas');
   let ctx = canvas.getContext('2d');
+
+  let name_el = document.getElementById('tmp-media-title');
 
 
   {
@@ -261,6 +257,14 @@ document.addEventListener('DOMContentLoaded', function() {
     let start_x = start_offset_days * (2 * HALF_UNIT);
     let start_y = v_center;
 
+    {
+      // store edges of bounding rect on each entry, for fast mouse hover detection
+      entry.left = start_x;
+      entry.right = start_x + (2 * HALF_UNIT * duration_in_days);
+      entry.top = start_y - HALF_UNIT;
+      entry.bottom = start_y + HALF_UNIT;
+    }
+
     ctx.fillStyle = '#00f';
     ctx.strokeStyle = '#fff';
     ctx.lineWidth = 3;
@@ -280,6 +284,9 @@ document.addEventListener('DOMContentLoaded', function() {
     ctx.closePath();
     ctx.fill();
     ctx.stroke();
+
+    // for in-progress things, draw a ragged edge at the right side instead of closing it
+
   });
 
 
@@ -295,6 +302,35 @@ document.addEventListener('DOMContentLoaded', function() {
     ctx.stroke();
 
     // and scroll there? not convinced that this is a good idea.
-    window.scroll(x - 300, 0);
+    // also seems to jank up pageX and pageY values on the mouse handler stuff :(
+    // window.scroll(x - 300, 0);
   }
+
+
+  // handle mouse movement, look for blips underneath the mouse so we can display details
+  const canvas_pos = canvas.getBoundingClientRect();
+  const offset_x = canvas_pos.x;
+  const offset_y = canvas_pos.y;
+
+  function handle_mouse_move(e) {
+    let mouse_x = e.pageX - offset_x;
+    let mouse_y = e.pageY - offset_y;
+
+    for (let i = 0; i < media_data.length; i += 1) {
+      let item = media_data[i];
+
+      if ((item.left < mouse_x) &&
+          (item.right > mouse_x) &&
+          (item.top < mouse_y) &&
+          (item.bottom > mouse_y)) {
+        name_el.innerHTML = item.title;
+        return;
+      }
+    }
+    name_el.innerHTML = "";
+  }
+
+  canvas.addEventListener('mousemove', handle_mouse_move);
 });
+
+
