@@ -54,12 +54,6 @@ let media_data = [
     date_completed: null,
     thoughts: ``
   }, {
-    title: "Persona 5",
-    type: "game",
-    date_started: new Date("2019-01-19"),
-    date_completed: null,
-    thoughts: ``
-  }, {
     title: "Deus Ex GO",
     type: "game",
     date_started: new Date("2019-02-01"),
@@ -93,18 +87,12 @@ let media_data = [
     title: "Jessica Jones s2",
     type: "tv",
     date_started: new Date("2019-02-10"),
-    date_completed: null,
+    date_completed: new Date("2019-02-23"),
     thoughts: ``
   }, {
     title: "A Programmer’s Introduction to Mathematics",
     type: "book",
     date_started: new Date("2019-02-19"),
-    date_completed: null,
-    thoughts: ``
-  }, {
-    title: "Star Trek: The Next Generation",
-    type: "tv",
-    date_started: new Date("2019-02-27"),
     date_completed: null,
     thoughts: ``
   }, {
