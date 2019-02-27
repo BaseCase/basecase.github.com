@@ -101,6 +101,24 @@ let media_data = [
     date_started: new Date("2019-02-19"),
     date_completed: null,
     thoughts: ``
+  }, {
+    title: "Star Trek: The Next Generation",
+    type: "tv",
+    date_started: new Date("2019-02-27"),
+    date_completed: null,
+    thoughts: ``
+  }, {
+    title: "Rusty Lake series",
+    type: "game",
+    date_started: new Date("2019-02-20"),
+    date_completed: null,
+    thoughts: ``
+  }, {
+    title: "Gemini Rue",
+    type: "game",
+    date_started: new Date("2019-02-26"),
+    date_completed: null,
+    thoughts: ``
   }
 ];
 
