@@ -92,7 +92,7 @@ let media_data = [
   }, {
     title: "A Programmer’s Introduction to Mathematics",
     type: "book",
-    date_started: new Date("2019-02-19"),
+    date_started: new Date("2019-03-04"),
     date_completed: null,
     thoughts: ``
   }, {
