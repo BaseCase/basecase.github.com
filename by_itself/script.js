@@ -15,7 +15,7 @@ let media_data = [
     title: "The Dark Tower 3: The Waste Lands",
     type: "book",
     date_started: new Date("2019-01-01"),
-    date_completed: null,
+    date_completed: new Date("2019-03-03"),
     thoughts: ``
   }, {
     title: "The Eyes of the Dragon",
@@ -356,5 +356,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
   canvas.addEventListener('mousemove', handle_mouse_move);
 });
-
-
