@@ -107,6 +107,18 @@ let media_data = [
     date_started: new Date("2019-02-26"),
     date_completed: null,
     thoughts: ``
+  }, {
+    title: "Game of Thrones",
+    type: "tv",
+    date_started: new Date("2019-03-03"),
+    date_completed: null,
+    thoughts: ``
+  }, {
+    title: "Clojure for the Brave and True",
+    type: "book",
+    date_started: new Date("2019-03-03"),
+    date_completed: null,
+    thoughts: ``
   }
 ];
 
