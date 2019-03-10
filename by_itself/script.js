@@ -99,8 +99,8 @@ let media_data = [
     title: "Gemini Rue",
     type: "game",
     date_started: new Date("2019-02-26"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-03-10"),
+    thoughts: `I had fun with this indie point-and-click adventure game. The writing got a little heavy-handed at points, the voice acting was kind of amateurish, and some of the puzzles were real frustrating, but it had a lot of heart. The Blade Runner-inspired pixel art and soundtrack were big pluses, too.`
   }, {
     title: "Game of Thrones",
     type: "tv",
