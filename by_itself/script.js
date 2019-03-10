@@ -51,8 +51,8 @@ let media_data = [
     title: "Return of the Obra Dinn",
     type: "game",
     date_started: new Date("2019-01-01"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-03-09"),
+    thoughts: `A very weird but amazingly well-made game. Ultimately, I decided that solving the whole thing myself was going to be too labor-intensive, so I cheated and looked up spoilers, but the parts that I played honestly I really enjoyed.`
   }, {
     title: "Deus Ex GO",
     type: "game",
