@@ -113,6 +113,12 @@ let media_data = [
     date_started: new Date("2019-03-03"),
     date_completed: null,
     thoughts: ``
+  }, {
+    title: "The Linux Programming Interface",
+    type: "book",
+    date_started: new Date("2019-03-10"),
+    date_completed: null,
+    thoughts: ``
   }
 ];
 
