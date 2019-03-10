@@ -90,12 +90,6 @@ let media_data = [
     date_completed: new Date("2019-02-23"),
     thoughts: ``
   }, {
-    title: "A Programmer’s Introduction to Mathematics",
-    type: "book",
-    date_started: new Date("2019-03-04"),
-    date_completed: null,
-    thoughts: ``
-  }, {
     title: "Rusty Lake series",
     type: "game",
     date_started: new Date("2019-02-20"),
