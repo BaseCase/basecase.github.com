@@ -119,6 +119,18 @@ let media_data = [
     date_started: new Date("2019-03-10"),
     date_completed: null,
     thoughts: ``
+  }, {
+    title: "Monument Valley",
+    type: "game",
+    date_started: new Date("2019-03-15"),
+    date_completed: null,
+    thoughts: ``
+  }, {
+    title: "Prey",
+    type: "game",
+    date_started: new Date("2019-03-15"),
+    date_completed: null,
+    thoughts: ``
   }
 ];
 
