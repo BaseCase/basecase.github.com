@@ -123,8 +123,8 @@ let media_data = [
     title: "Monument Valley",
     type: "game",
     date_started: new Date("2019-03-15"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-03-16"),
+    thoughts: `Finally got around to playing this iOS classic. It's absolutely beautiful. The gameplay is pretty straightforward but still reasonably engaging; the real draw is the artwork, though.`
   }, {
     title: "Prey",
     type: "game",
