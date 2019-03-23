@@ -24,12 +24,6 @@ let media_data = [
     date_completed: new Date("2019-02-16"),
     thoughts: `I had never heard of this one before, but I’m listening through the Radio Free Midworld podcast, which goes book-by-book through Stephen King’s Dark Tower series as well as books that brush up against it. I...didn’t love it. It’s quite a departure (intentionally) from King’s usualy style, and I didn’t feel like he nailed the landing.`
   }, {
-    title: "Hacking with macOS",
-    type: "book",
-    date_started: new Date("2019-02-06"),
-    date_completed: null,
-    thoughts: ``
-  }, {
     title: "tmux 2: Productive Mouse-Free Development",
     type: "book",
     date_started: new Date("2019-02-08"),
