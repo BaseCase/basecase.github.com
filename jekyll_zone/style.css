@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*
+ * TODO: put all colors up here as a palette
+ * TODO: figure out RSS situation
+ */
+
+html { font-size: 16px; }
+
+body {
+  background-color: #f5f5f5;
+  color: #222;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: .1rem;
+  line-height: 1em;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1em;
+  margin: 0 0 1.5rem 0;
+}
+
+h3.published-date {
+  color: #888;
+  font-size: .8rem;
+  line-height: 1em;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+main {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 45rem;
+}
+
+@media (max-width: 46rem) {
+  main { padding: 0 1rem; }
+  .blog-posts li {
+    border-bottom: 1px solid #e1e1d6;
+  }
+}
+
+header {
+  align-items: center;
+  border-bottom: .5rem solid #ccc;
+  border-top: 1.5rem solid #ccc;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.headshot {
+  border-radius: 1000px;
+  border: .45rem solid hsl(34, 82%, 72%);
+  margin-bottom: 1rem;
+  width: 10rem;
+}
+
+article {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+p:last-child { margin-bottom: 0; }
+
+a, a:visited, a:active, a:hover {
+  color: #ff9100;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover { color: #ffa733; }
+
+section {
+  border-bottom: .5rem solid #ccc;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.blog-posts ul {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-posts li {
+  font-size: 1rem;
+  list-style: none;
+}
+
+.blog-posts li a {
+  align-items: baseline;
+  border-radius: .3rem;
+  color: #2f8de2;
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 0;
+}
+
+.blog-posts li a:hover { background-color: #e6e6e6; }
+
+.blog-posts li .title { font-weight: bold; }
+
+.blog-posts li .publish-date {
+  font-size: .7rem;
+  min-width: 6rem;
+  margin-left: 1rem;
+  text-align: right;
+}
+
+img.blog { max-width: 100%; }
+
+footer {
+  font-size: .7rem;
+  margin-bottom: 2rem;
+}
+
+header.blog {
+  border-top: none;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  padding: .5rem 0 .2rem 0;
+}
+
+.blog .headshot {
+  border-width: 3px;
+  margin-bottom: 0;
+  width: 2rem;
+}
+
+.blog h1 {
+  font-size: .8rem;
+  margin-left: .5rem;
+}
+
+blockquote {
+  border-left: 5px solid #ccc;
+  margin: 1rem 0;
+  padding: 1em;
+  font-style: italic;
+}
+
+figure img { width: 100%; }
+figcaption {
+  font-size: 80%;
+  color: #777;
+}
+
+code {
+  background-color: #e2e2db;
+  padding: 0 .3em;
+}
+
+code.standalone {
+  display: block;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.link-home {
+  display: block;
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
