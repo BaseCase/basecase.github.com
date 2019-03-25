@@ -166,6 +166,30 @@ let media_data = [
     date_completed: null,
     thoughts: ``
   }
+  ,
+  {
+    title: "The Life-Changing Magic of Tidying Up",
+    type: "book",
+    date_started: new Date("2019-03-24"),
+    date_completed: null,
+    thoughts: ``
+  }
+  ,
+  {
+    title: "Mindfulness in Plain English",
+    type: "book",
+    date_started: new Date("2019-03-23"),
+    date_completed: null,
+    thoughts: ``
+  }
+  ,
+  {
+    title: "Designing Data-Intensive Applications",
+    type: "book",
+    date_started: new Date("2019-03-26"),
+    date_completed: null,
+    thoughts: ``
+  }
 ];
 
 
