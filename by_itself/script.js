@@ -5,121 +5,161 @@ let media_data = [
     date_started: new Date("2019-01-09"),
     date_completed: new Date("2019-01-09"),
     thoughts: `Holy cow, this was a heavy movie. I was expecting the post-civil-war Spain stuff to be kind of a light frame story around mostly the fantasy stuff, but that was not the case at all. The interplay between the two worlds, and the fact that the fantasy things were not an “escape” from Ofelia’s reality but more like an echo of it, made this one of the most immersive dark fantasy movies I’ve ever seen. Also Del Toro’s visual sense is just unmatched.`
-  }, {
+  }
+  ,
+  {
     title: "Spider-Man: Into the Spider-Verse",
     type: "movie",
     date_started: new Date("2019-01-19"),
     date_completed: new Date("2019-01-19"),
     thoughts: `So awesome! I’ve gotten kind of sick of superhero movies, but this was such a fresh and stylish take on the genre that I loved it. Incredible visuals, really smart script, and a sweet soundtrack.`
-  }, {
+  }
+  ,
+  {
     title: "The Dark Tower 3: The Waste Lands",
     type: "book",
     date_started: new Date("2019-01-01"),
     date_completed: new Date("2019-03-03"),
     thoughts: ``
-  }, {
+  }
+  ,
+  {
     title: "The Eyes of the Dragon",
     type: "book",
     date_started: new Date("2019-02-07"),
     date_completed: new Date("2019-02-16"),
     thoughts: `I had never heard of this one before, but I’m listening through the Radio Free Midworld podcast, which goes book-by-book through Stephen King’s Dark Tower series as well as books that brush up against it. I...didn’t love it. It’s quite a departure (intentionally) from King’s usualy style, and I didn’t feel like he nailed the landing.`
-  }, {
+  }
+  ,
+  {
     title: "tmux 2: Productive Mouse-Free Development",
     type: "book",
     date_started: new Date("2019-02-08"),
     date_completed: new Date("2019-02-09"),
     thoughts: `Some pretty decen tmux tips in here. Not much stuff that you can’t find in the manpage, but arranged more sensibly, I think.`
-  }, {
+  }
+  ,
+  {
     title: "Yooka-Laylee",
     type: "game",
     date_started: new Date("2019-01-01"),
     date_completed: new Date("2019-01-31"),
     thoughts: `I decided to give this Banjo-Kazooie follow-up another shot, mostly because I picked up the Switch version on a whim. I’m glad I did! There’s a lot more charm and enjoyment here than I gave it a chance to show me the first time around. True, the controls and physics are pretty mushy-feeling, and there are some very annoying moments (like the quizzes), but if you can get past those, there are a lot of bright colors and fun environments to explore.`
-  }, {
+  }
+  ,
+  {
     title: "Celeste",
     type: "game",
     date_started: new Date("2019-01-01"),
     date_completed: new Date("2019-01-07"),
     thoughts: `An amazingly good platformer—maybe the best tight-timing 2D platformer I’ve ever played—coupled with beautiful art and music, and a surprisingly heartfelt and personal story. This is really something special.`
-  }, {
+  }
+  ,
+  {
     title: "Return of the Obra Dinn",
     type: "game",
     date_started: new Date("2019-01-01"),
     date_completed: new Date("2019-03-09"),
     thoughts: `A very weird but amazingly well-made game. Ultimately, I decided that solving the whole thing myself was going to be too labor-intensive, so I cheated and looked up spoilers, but the parts that I played honestly I really enjoyed.`
-  }, {
+  }
+  ,
+  {
     title: "Deus Ex GO",
     type: "game",
     date_started: new Date("2019-02-01"),
     date_completed: new Date("2019-02-05"),
     thoughts: `A reasonably decent puzzler. Very much in the vein of Hitman GO. I have to say I preferred that one, but this was still enjoyable for a couple of hours.`
-  }, {
+  }
+  ,
+  {
     title: "Cosmic Express",
     type: "game",
     date_started: new Date("2019-02-02"),
     date_completed: null,
     thoughts: ``
-  }, {
+  }
+  ,
+  {
     title: "Sea of Thieves",
     type: "game",
     date_started: new Date("2019-02-01"),
     date_completed: new Date("2019-02-28"),
     thoughts: ``
-  }, {
+  }
+  ,
+  {
     title: "Cinco Paus",
     type: "game",
     date_started: new Date("2019-02-02"),
     date_completed: new Date("2019-02-09"),
     thoughts: ``
-  }, {
+  }
+  ,
+  {
     title: "Apex Legends",
     type: "game",
     date_started: new Date("2019-02-07"),
     date_completed: new Date("2019-02-07"),
     thoughts: `Figured I’d give this a try, since everyone was talking about it and it’s free. As suspected, it wasn’t really for me. I’m just not super into the Battle Royale genre. It is beautiful, though, and the design seems very well done, it just isn’t my cup of tea.`
-  }, {
+  }
+  ,
+  {
     title: "Jessica Jones s2",
     type: "tv",
     date_started: new Date("2019-02-10"),
     date_completed: new Date("2019-02-23"),
     thoughts: ``
-  }, {
+  }
+  ,
+  {
     title: "Rusty Lake series",
     type: "game",
     date_started: new Date("2019-02-20"),
     date_completed: null,
     thoughts: ``
-  }, {
+  }
+  ,
+  {
     title: "Gemini Rue",
     type: "game",
     date_started: new Date("2019-02-26"),
     date_completed: new Date("2019-03-10"),
     thoughts: `I had fun with this indie point-and-click adventure game. The writing got a little heavy-handed at points, the voice acting was kind of amateurish, and some of the puzzles were real frustrating, but it had a lot of heart. The Blade Runner-inspired pixel art and soundtrack were big pluses, too.`
-  }, {
+  }
+  ,
+  {
     title: "Game of Thrones",
     type: "tv",
     date_started: new Date("2019-03-03"),
     date_completed: null,
     thoughts: ``
-  }, {
+  }
+  ,
+  {
     title: "Clojure for the Brave and True",
     type: "book",
     date_started: new Date("2019-03-03"),
     date_completed: null,
     thoughts: ``
-  }, {
+  }
+  ,
+  {
     title: "The Linux Programming Interface",
     type: "book",
     date_started: new Date("2019-03-10"),
     date_completed: null,
     thoughts: ``
-  }, {
+  }
+  ,
+  {
     title: "Monument Valley",
     type: "game",
     date_started: new Date("2019-03-15"),
     date_completed: new Date("2019-03-16"),
     thoughts: `Finally got around to playing this iOS classic. It's absolutely beautiful. The gameplay is pretty straightforward but still reasonably engaging; the real draw is the artwork, though.`
-  }, {
+  }
+  ,
+  {
     title: "Prey",
     type: "game",
     date_started: new Date("2019-03-15"),
