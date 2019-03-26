@@ -18,11 +18,14 @@ title: Casey Brant dot com
     <section class="blog-posts">
     <h2>Blog Posts</h2>
     <ul>
-        {% for post in site.posts %}
+      {% for post in site.posts %}
         <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
+          <a href="{{ post.url }}">
+            <span class="title">{{ post.title }}</span>
+            <span class="publish-date">{{ post.publish_date }}</span>
+          </a>
         </li>
-        {% endfor %}
+      {% endfor %}
         <!-- <li><a href="blog/overtime_is_unethical.html"> -->
         <!--   <span class="title">Overtime is Unethical</span> -->
         <!--   <span class="publish-date">Aug 26, 2018</span> -->
@@ -46,11 +49,6 @@ title: Casey Brant dot com
         <!-- <li><a href="blog/tips_for_gaming_experts.html"> -->
         <!--   <span class="title">Tips for Experts at Gaming Conventions</span> -->
         <!--   <span class="publish-date">Nov 25, 2017</span> -->
-        <!-- </a></li> -->
-
-        <!-- <li><a href="blog/simple_notes_with_fzf.html"> -->
-        <!--   <span class="title">Simple Note-taking with fzf and Vim</span> -->
-        <!--   <span class="publish-date">Oct 01, 2017</span> -->
         <!-- </a></li> -->
 
         <!-- <li><a href="blog/notes_from_poodr.html"> -->

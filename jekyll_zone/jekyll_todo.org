@@ -9,7 +9,7 @@
 
 *** TODO Posts to migrate to Jekyll markdown [0/1]
 - [ ] Overtime is Unethical
-- [ ] others
+- [ ] Simple Note Taking with FZF
 
 *** TODO URLs to preserve [0/3]
 - [ ] /blog/*
