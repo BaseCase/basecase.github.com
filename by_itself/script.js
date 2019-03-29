@@ -139,8 +139,8 @@ let media_data = [
     title: "Clojure for the Brave and True",
     type: "book",
     date_started: new Date("2019-03-03"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-03-28"),
+    thoughts: `At first, the humor style grated on me, but once I got used to it, I found this to be a pretty entertaining and also helpful introduction to the Clojure language. Related: Clojure is super awesome and I really want to do a project in it soon.`
   }
   ,
   {
@@ -187,6 +187,14 @@ let media_data = [
     title: "Designing Data-Intensive Applications",
     type: "book",
     date_started: new Date("2019-03-26"),
+    date_completed: null,
+    thoughts: ``
+  }
+  ,
+  {
+    title: "Hacking With macOS",
+    type: "book",
+    date_started: new Date("2019-03-29"),
     date_completed: null,
     thoughts: ``
   }
