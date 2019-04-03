@@ -147,8 +147,8 @@ let media_data = [
     title: "The Linux Programming Interface",
     type: "book",
     date_started: new Date("2019-03-10"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-04-01"),
+    thoughts: `A surprisingly accessible book about a topic I had long thought of as arcane and unapproachable. Equally impressive is the fact that this book serves both as an introduction to the topic as well as a fairly comprehensive reference. A great book!`
   }
   ,
   {
