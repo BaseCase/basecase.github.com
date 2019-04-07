@@ -198,6 +198,14 @@ let media_data = [
     date_completed: null,
     thoughts: ``
   }
+  ,
+  {
+    title: "William Gibson's Alien 3",
+    type: "book",
+    date_started: new Date("2019-04-06"),
+    date_completed: null,
+    thoughts: ``
+  }
 ];
 
 
