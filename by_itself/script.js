@@ -163,8 +163,8 @@ let media_data = [
     title: "Prey",
     type: "game",
     date_started: new Date("2019-03-15"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-04-05"),
+    thoughts: `Basically Dishonored but futuristic Sci-Fi. Really good! I felt like the first half of the game was amazingly good, and things got a little sketchy in the back half or third or so. Still, I played all the way to the end and had a great time.`
   }
   ,
   {
