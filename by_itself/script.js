@@ -75,8 +75,8 @@ let media_data = [
     title: "Cosmic Express",
     type: "game",
     date_started: new Date("2019-02-02"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-04-08"),
+    thoughts: `I think it's time to admit once again to myself that I will probably never finish this game. It's delightful, but it's just too damn hard. Something about it does not fit into my brain the way other puzzlers do. Anyway, it's great. I'm sad I won't see the end of it.`
   }
   ,
   {
