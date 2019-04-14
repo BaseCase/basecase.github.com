@@ -171,8 +171,8 @@ let media_data = [
     title: "The Life-Changing Magic of Tidying Up",
     type: "book",
     date_started: new Date("2019-03-24"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-04-14"),
+    thoughts: `I watched a bit of KonMari's Netflix show and decided that I wanted to reread this one. I read it when it came out but never really gave her techniques an honest try, so now I think I want to really give it a shot at home and see how things go.`
   }
   ,
   {
