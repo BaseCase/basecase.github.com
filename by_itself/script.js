@@ -115,8 +115,8 @@ let media_data = [
     title: "Rusty Lake series",
     type: "game",
     date_started: new Date("2019-02-20"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-04-21"),
+    thoughts: `A really interesting series of small point-and-click adventure games. They are explicitly inspired by and an homage to Twin Peaks, and it shows. At points it starts to feel a bit like Twin Peaks fan fiction, which is not really a complaint. They're really great at setting a creepy and mysterious mood, and I'm looking forward to more entries in the series that will flesh out the mythos even more.`
   }
   ,
   {
