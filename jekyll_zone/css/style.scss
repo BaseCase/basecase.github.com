@@ -1,0 +1,32 @@
+---
+---
+
+body {
+  background-color: white;
+}
+
+header {
+  background-color: #111;
+}
+
+main {
+  background-color: #555;
+}
+
+footer {
+  background-color: #999;
+}
+
+main .about-me {
+  background-color: #fff;
+}
+
+main .projects {
+  background-color: #ccc;
+}
+
+main .blog-posts {
+  background-color: #aaa;
+}
+
+@import "test_partial";
