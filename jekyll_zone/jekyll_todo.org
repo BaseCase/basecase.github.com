@@ -1,13 +1,13 @@
 * Jekyll migration
-** To Do [0/6]
-- [ ] Get basic Jekyll setup running
-- [ ] Update photo to be my cartoon avatar
+** To Do [4/6]
+- [X] Update photo to be my cartoon avatar
+- [X] Rewrite styles in SASS
 - [ ] Update site color scheme to go with new avatar
-- [ ] Bump copyright notice
 - [ ] Put some stuff in Projects section
-- [ ] Refactor CSS - if it's not using Flexbox, update it to do so
+- [X] Get basic Jekyll setup running
+- [X] Bump copyright notice
 
-*** TODO Posts to migrate to Jekyll markdown [0/1]
+*** TODO Posts to migrate to Jekyll markdown [0/2]
 - [ ] Overtime is Unethical
 - [ ] Simple Note Taking with FZF
 
