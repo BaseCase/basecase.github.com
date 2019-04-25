@@ -206,6 +206,14 @@ let media_data = [
     date_completed: new Date("2019-04-06"),
     thoughts: `This is a pretty interesting thing. Apparently Gibson wrote a screenplay for the Aliens 3 movie, but it wound up not getting used. But now they decided to make a comic book based on that screenplay. To be honest, it's...fine. Not amazing, I don't think, but decent enough.`
   }
+  ,
+  {
+    title: "The Secret Lives of Color",
+    type: "book",
+    date_started: new Date("2019-04-23"),
+    date_completed: null,
+    thoughts: ``
+  }
 ];
 
 
