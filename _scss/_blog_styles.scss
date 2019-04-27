@@ -1,0 +1,33 @@
+.blog-post {
+  header {
+    width: 100%;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $color-avatar-purple;
+
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: $color-foreground;
+      text-decoration: none;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 1.7rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .headshot {
+      width: 5rem;
+      margin-right: 1rem;
+    }
+  }
+
+  article {
+    img {
+      max-width: 100%;
+    }
+  }
+}

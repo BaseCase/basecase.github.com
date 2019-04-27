@@ -116,7 +116,7 @@ main {
       margin: 0;
     }
 
-    .post {
+    .post-link {
       border-bottom: 1px solid white;
       display: flex;
       justify-content: space-between;
@@ -136,3 +136,5 @@ main {
     }
   }
 }
+
+@import "blog_styles";

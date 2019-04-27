@@ -8,14 +8,22 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
 
-  <body>
+  <body class="blog-post">
     <header>
-      <img class="headshot" src="/img/avatar.jpg">
-      <h1>Casey Brant</h1>
+      <a href="/">
+        <img class="headshot" src="/img/avatar.jpg">
+        <h1>Casey Brant</h1>
+      </a>
     </header>
 
     <main>
-      {{ content }}
+      <article>
+        {{ content }}
+      </article>
+
+      <section class="postlude">
+        HEY thamks for reading.
+      </section>
     </main>
 
     <footer>
