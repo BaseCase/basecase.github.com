@@ -50,6 +50,11 @@
       margin-left: 2rem;
       margin-bottom: 2rem;
 
+      @media screen and (max-width: $breakpoint-small) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
       p {
         margin: 0;
         padding: 0;
