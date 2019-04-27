@@ -1,11 +1,8 @@
 ---
-layout: post
+layout: blog_post
 title: Simple Note-Taking with FZF and Vim
 publish_date: Oct 01, 2017
 ---
-<article>
-<a class="link-home" href="../index.html">⬅︎ back to blog index</a>
-
 <section>
 <h2>Simple Note-Taking with fzf and Vim</h2>
 <h4>Improve your life with fuzzy finding</h4>
@@ -18,7 +15,7 @@ publish_date: Oct 01, 2017
 <p>I first learned about fuzzy file finding from <a href="https://www.destroyallsoftware.com/screencasts/catalog/file-navigation-in-vim">Destroy All Software</a>. Gary used the <a href="https://github.com/wincent/command-t">Command-T Vim plugin</a> for file navigation, and it was kind of mind-blowing to see how fast he was able to switch between files. I was accustomed to laboriously typing out full file paths or clicking through directory trees in my editor, and finding out that I could instead simply type a hotkey and 4 or 5 letters changed how I approached navigating file trees.</p>
 
 <figure>
-<img src="fzf_notes_img/ctrlp.gif" />
+<img src="/img/fzf_notes_img/ctrlp.gif" />
 <figcaption>
 (Fuzzy file finding in action (this is CtrlP, not Command-T, but same idea)
 </figcaption>
@@ -44,7 +41,7 @@ brew install fzf
 <p>If you run it without any arguments, <code>fzf</code> will default to recursively finding all files in the current directory.</p>
 
 <figure>
-<img src="fzf_notes_img/fzf_default.gif" />
+<img src="/img/fzf_notes_img/fzf_default.gif" />
 <figcaption>
 fzf default behavior — find files
 </figcaption>
@@ -57,7 +54,7 @@ grep -r animal . | fzf
 </code>
 
 <figure>
-<img src="fzf_notes_img/fzf_grep.gif" />
+<img src="/img/fzf_notes_img/fzf_grep.gif" />
 <figcaption>
 fzf with piped stdin
 </figcaption>
@@ -77,7 +74,7 @@ fzf --preview="cat {}" --preview-window=right:70%:wrap
 <p>and get this result:</p>
 
 <figure>
-<img src="fzf_notes_img/fzf_pretty.gif" />
+<img src="/img/fzf_notes_img/fzf_pretty.gif" />
 <figcaption>
 fzf with preview and some presentation options
 </figcaption>
@@ -90,7 +87,7 @@ vim `fzf --preview="cat {}" --preview-window=right:70%:wrap`
 </code>
 
 <figure>
-<img src="fzf_notes_img/fzf_to_vim.gif" />
+<img src="/img/fzf_notes_img/fzf_to_vim.gif" />
 <figcaption>
 Give fzf result to Vim
 </figcaption>
@@ -100,14 +97,14 @@ Give fzf result to Vim
 
 <h3>fuz.sh</h3>
 
-<script src="https://gist.github.com/BaseCase/c45299e4f8474119881d708a4b728fbf.js"></script>
+<!-- <script src="https://gist.github.com/BaseCase/c45299e4f8474119881d708a4b728fbf.js"></script> -->
 
 <p>You can put this script in the root of your notes folder, or do what I did and place it in your <code>PATH</code> so that it’s globally accessible. I also renamed it to just <code>fuz</code> on my machine so it feels more like a normal Unix command.</p>
 
 <p>And the whole thing looks like this:</p>
 
 <figure>
-<img src="fzf_notes_img/fuz.gif" />
+<img src="/img/fzf_notes_img/fuz.gif" />
 <figcaption>
 fuz.sh in action
 </figcaption>
@@ -121,4 +118,3 @@ fuz.sh in action
 
 <p><em>This post originally appeared on the <a href="https://medium.com/adorableio/simple-note-taking-with-fzf-and-vim-2a647a39cfa">Adorable blog</a>.</em></p>
 </section>
-</article>
