@@ -25,6 +25,19 @@
     }
   }
 
+  .front-matter {
+    padding-bottom: 0;
+
+    h3.publish-date {
+      font-size: 1rem;
+      font-style: italic;
+      margin: 0;
+      margin-top: 1rem;
+      padding: 0;
+      color: lighten($color-foreground, 20%);
+    }
+  }
+
   article {
     img {
       max-width: 100%;
