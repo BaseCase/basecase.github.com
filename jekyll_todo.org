@@ -15,7 +15,7 @@
 - [X] Get basic Jekyll setup running
 - [X] Bump copyright notice
 
-*** TODO Posts to migrate to Jekyll markdown [0/2]
+*** TODO Posts to migrate to Jekyll markdown [1/12]
 - [ ] Overtime is Unethical
 - [ ] Simple Note Taking with FZF
 - [ ] 2018 books, movies, games list
@@ -27,7 +27,7 @@
 - [ ] Speaking Up: A How-To Guide
 - [ ] Hello, World
 - [ ] 2016 books, movies, games list
-- [ ] Ludum Dare 33
+- [X] Ludum Dare 33
 
 *** TODO URLs to preserve [0/3]
 - [ ] /blog/* (ehhhhh probably not this one)
