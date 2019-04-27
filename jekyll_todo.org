@@ -1,17 +1,35 @@
 * Jekyll migration
-** To Do [4/6]
+** To Do [8/14]
+- [X] Style blog template
+- [X] Rewrite front page copy
+- [X] Flesh out postlude section - tweet link, email link, index link
+- [ ] Port over blog posts
+- [ ] Tidy up blog post styles (don't worry too much about code yet)
+- [ ] Finish 2019 media page
+- [ ] Restore legacy URLs that should be there
+- [ ] Put some stuff in Projects section
+- [ ] Figure out something clever to do for code snippets in posts
+- [X] Update site color scheme to go with new avatar
 - [X] Update photo to be my cartoon avatar
 - [X] Rewrite styles in SASS
-- [ ] Update site color scheme to go with new avatar
-- [ ] Put some stuff in Projects section
 - [X] Get basic Jekyll setup running
 - [X] Bump copyright notice
 
 *** TODO Posts to migrate to Jekyll markdown [0/2]
 - [ ] Overtime is Unethical
 - [ ] Simple Note Taking with FZF
+- [ ] 2018 books, movies, games list
+- [ ] 2017 books, movies, games list
+- [ ] Ludum Dare 40: SHOPPOTRON
+- [ ] Tips for Experts at Gaming Conventions
+- [ ] Notes from POODR
+- [ ] Debugging Like a Pro
+- [ ] Speaking Up: A How-To Guide
+- [ ] Hello, World
+- [ ] 2016 books, movies, games list
+- [ ] Ludum Dare 33
 
 *** TODO URLs to preserve [0/3]
-- [ ] /blog/*
+- [ ] /blog/* (ehhhhh probably not this one)
 - [ ] /movies-books-games.html
 - [ ] /movies-books-games/*
