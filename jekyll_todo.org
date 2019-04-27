@@ -13,16 +13,16 @@
 - [X] Get basic Jekyll setup running
 - [X] Bump copyright notice
 
-*** TODO Posts to migrate to Jekyll markdown [4/14]
+*** TODO Posts to migrate to Jekyll markdown [6/14]
 - [ ] Overtime is Unethical
-- [ ] Simple Note Taking with FZF
+- [X] Simple Note Taking with FZF
 - [ ] 2018 books, movies, games list
 - [ ] 2017 books, movies, games list
 - [ ] Ludum Dare 40: SHOPPOTRON
 - [X] Tips for Experts at Gaming Conventions
 - [ ] Notes from POODR
 - [ ] Debugging Like a Pro
-- [ ] Speaking Up: A How-To Guide
+- [X] Speaking Up: A How-To Guide
 - [X] Hello, World (did not do)
 - [X] 2016 books, movies, games list
 - [X] Ludum Dare 33
