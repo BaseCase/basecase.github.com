@@ -1,8 +1,10 @@
 * Jekyll migration
-** To Do [9/12]
+** To Do [9/14]
 - [ ] Port over blog posts
 - [ ] Put some stuff in Projects section
 - [ ] Figure out something clever to do for code snippets in posts
+- [ ] Update project README with future todo list and then delete this file
+- [ ] Tags/categories for posts
 - [X] Style blog template
 - [X] Rewrite front page copy
 - [X] Flesh out postlude section - tweet link, email link, index link
@@ -13,11 +15,11 @@
 - [X] Get basic Jekyll setup running
 - [X] Bump copyright notice
 
-*** TODO Posts to migrate to Jekyll markdown [9/14]
+*** TODO Posts to migrate to Jekyll markdown [11/14]
 - [ ] Overtime is Unethical
 - [X] Simple Note Taking with FZF
-- [ ] 2018 books, movies, games list
-- [ ] 2017 books, movies, games list
+- [X] 2018 books, movies, games list
+- [X] 2017 books, movies, games list
 - [X] Ludum Dare 40: SHOPPOTRON
 - [X] Tips for Experts at Gaming Conventions
 - [X] Notes from POODR
