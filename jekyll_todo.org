@@ -1,10 +1,13 @@
 * Jekyll migration
-** To Do [9/14]
-- [ ] Port over blog posts
+** To Do [10/17]
+- [X] Port over blog posts
+- [ ] Scrape up anything else I want in old_site, then remove it
 - [ ] Put some stuff in Projects section
 - [ ] Figure out something clever to do for code snippets in posts
 - [ ] Update project README with future todo list and then delete this file
 - [ ] Tags/categories for posts
+- [ ] Port these, then shut it down: https://caseybrant.blogspot.com/
+- [ ] Port these, then shut it down: https://basecase.wordpress.com/
 - [X] Style blog template
 - [X] Rewrite front page copy
 - [X] Flesh out postlude section - tweet link, email link, index link
@@ -14,19 +17,3 @@
 - [X] Rewrite styles in SASS
 - [X] Get basic Jekyll setup running
 - [X] Bump copyright notice
-
-*** TODO Posts to migrate to Jekyll markdown [11/14]
-- [ ] Overtime is Unethical
-- [X] Simple Note Taking with FZF
-- [X] 2018 books, movies, games list
-- [X] 2017 books, movies, games list
-- [X] Ludum Dare 40: SHOPPOTRON
-- [X] Tips for Experts at Gaming Conventions
-- [X] Notes from POODR
-- [X] Debugging Like a Pro
-- [X] Speaking Up: A How-To Guide
-- [X] Hello, World (did not do)
-- [X] 2016 books, movies, games list
-- [X] Ludum Dare 33
-- [ ] Port these, then shut it down: https://caseybrant.blogspot.com/
-- [ ] Port these, then shut it down: https://basecase.wordpress.com/
