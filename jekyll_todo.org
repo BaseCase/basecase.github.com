@@ -15,19 +15,21 @@
 - [X] Get basic Jekyll setup running
 - [X] Bump copyright notice
 
-*** TODO Posts to migrate to Jekyll markdown [1/12]
+*** TODO Posts to migrate to Jekyll markdown [3/14]
 - [ ] Overtime is Unethical
 - [ ] Simple Note Taking with FZF
 - [ ] 2018 books, movies, games list
 - [ ] 2017 books, movies, games list
 - [ ] Ludum Dare 40: SHOPPOTRON
-- [ ] Tips for Experts at Gaming Conventions
+- [X] Tips for Experts at Gaming Conventions
 - [ ] Notes from POODR
 - [ ] Debugging Like a Pro
 - [ ] Speaking Up: A How-To Guide
-- [ ] Hello, World
+- [X] Hello, World (did not do)
 - [ ] 2016 books, movies, games list
 - [X] Ludum Dare 33
+- [ ] Port these, then shut it down: https://caseybrant.blogspot.com/
+- [ ] Port these, then shut it down: https://basecase.wordpress.com/
 
 *** TODO URLs to preserve [0/3]
 - [ ] /blog/* (ehhhhh probably not this one)
