@@ -2,6 +2,7 @@
 title: Debugging Like a Pro
 publish_date: Mar 12, 2017
 layout: blog_post
+description: "Some thoughts about debugging mindset"
 ---
 
 *NOTE: This was originally published on [the Adorable blog](http://adorable.io/post/debugging-like-a-pro).*

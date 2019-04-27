@@ -2,6 +2,7 @@
 title: Notes from Practical Object-Oriented Design in Ruby
 publish_date: Mar 20, 2017
 layout: blog_post
+description: "Braindump notes from when I read POODR by Sandi Metz"
 ---
 
 <p><em>This is a braindump of the notes I took while reading this excellent book by Sandi Metz. No attempt was made to structure or summarize beyond what I personally found useful as reference material. I'm publishing it here in case someone else finds it useful, but really, you owe it to yourself to just <a href="http://www.poodr.com/">read the whole book</a>!</em></p>

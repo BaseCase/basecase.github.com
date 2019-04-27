@@ -2,6 +2,7 @@
 layout: blog_post
 title: Simple Note-Taking with FZF and Vim
 publish_date: Oct 01, 2017
+description: "A cute little hack using the super cool fzf program"
 ---
 
 <h4>Improve your life with fuzzy finding</h4>

@@ -2,6 +2,7 @@
 title: Overtime is Unethical
 layout: blog_post
 publish_date: Aug 26, 2018
+description: "A rant about how you should limit your work hours"
 ---
 
 Working overtime is unethical. I’m not talking about management demanding extra hours from you or office cultures that expect people to stay late. Those things are obviously unethical; it’s not even up for debate.

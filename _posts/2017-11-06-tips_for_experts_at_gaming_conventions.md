@@ -2,6 +2,7 @@
 title: Tips for Experts at Gaming Conventions
 publish_date: Nov 06, 2017
 layout: blog_post
+description: "Basically a rant about an annoying guy who messed up my True Dungeon experience"
 ---
 
 > I had the pleasure of experiencing [True Dungeon](http://truedungeon.com/) for the first time this past weekend, and while it was awesome, we had a party member whose actions were not in alignment with his stated intentions. I wrote this post planning to put it on the True Dungeon forums, but I think the advice is applicable to many kinds of games you might play at a gaming convention, so I’m putting it here instead.
