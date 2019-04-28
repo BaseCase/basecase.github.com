@@ -116,7 +116,7 @@ main {
       padding-bottom: 1rem;
 
       a {
-        color: lighten($color-foreground, 20%);
+        color: $color-secondary;
       }
     }
 
@@ -141,7 +141,7 @@ main {
 
       .publish-date {
         font-size: .8rem;
-        color: lighten($color-foreground, 20%);
+        color: $color-secondary;
       }
     }
   }
