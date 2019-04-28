@@ -111,6 +111,15 @@ main {
   }
 
   .blog-posts {
+    .subscribe-link {
+      font-size: .8rem;
+      padding-bottom: 1rem;
+
+      a {
+        color: lighten($color-foreground, 20%);
+      }
+    }
+
     ul {
       list-style: none;
       padding: 0;

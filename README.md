@@ -1,7 +1,8 @@
 # Casey Brant's homepage
 ## To Do
-Time-stamp: <2019-04-27 17:42:11 cjb>
+Time-stamp: <2019-04-28 12:15:49 cjb>
 
+- [x] Add a link to the RSS feed on the homepage
 - [ ] Put some things in Projects section and style it
 - [ ] Add tags or categories for posts and show a list of them
 - [x] Add an RSS feed for blog posts
