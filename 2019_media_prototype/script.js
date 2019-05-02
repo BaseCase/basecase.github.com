@@ -230,6 +230,14 @@ let media_data = [
     date_completed: new Date("2019-04-28"),
     thoughts: `A pretty solid follow-up to the landmark Gone Home. The voice actors and solid writing are really the stars of the show here. I felt like the rummaging around part was less compelling than in Gone Home, but the storytelling was quite good.`
   }
+  ,
+  {
+    title: "Lara Croft GO",
+    type: "game",
+    date_started: new Date("2019-04-29"),
+    date_completed: null,
+    thoughts: ``
+  }
 ];
 
 
