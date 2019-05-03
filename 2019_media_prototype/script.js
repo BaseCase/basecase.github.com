@@ -192,14 +192,6 @@ let media_data = [
   }
   ,
   {
-    title: "Hacking With macOS",
-    type: "book",
-    date_started: new Date("2019-03-29"),
-    date_completed: null,
-    thoughts: ``
-  }
-  ,
-  {
     title: "William Gibson's Alien 3",
     type: "book",
     date_started: new Date("2019-04-06"),
