@@ -176,14 +176,6 @@ let media_data = [
   }
   ,
   {
-    title: "Mindfulness in Plain English",
-    type: "book",
-    date_started: new Date("2019-03-23"),
-    date_completed: null,
-    thoughts: ``
-  }
-  ,
-  {
     title: "Designing Data-Intensive Applications",
     type: "book",
     date_started: new Date("2019-03-26"),
@@ -203,8 +195,8 @@ let media_data = [
     title: "The Secret Lives of Color",
     type: "book",
     date_started: new Date("2019-04-23"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-05-04"),
+    thoughts: `This was a lot of fun! Very well-researched and engagingly written stories about a huge palette of colors, from the commonplace to ones I'd never heard of before.`
   }
   ,
   {
@@ -227,8 +219,16 @@ let media_data = [
     title: "Lara Croft GO",
     type: "game",
     date_started: new Date("2019-04-29"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-05-04"),
+    thoughts: `Another GO game. Better than Deus Ex GO. Not quite as good as Hitman GO.`
+  }
+  ,
+  {
+    title: "REMOTE: Office Not Required",
+    type: "book",
+    date_started: new Date("2019-05-04"),
+    date_completed: new Date("2019-05-04"),
+    thoughts: `Another decent book from the Basecamp guys. It's a quick read that challenges a lot of the assumptions many modern office workers and managers have about remote working. It also validates a lot of my own personal beliefs, so of course I found it enjoyable to read.`
   }
 ];
 
