@@ -230,6 +230,14 @@ let media_data = [
     date_completed: new Date("2019-05-04"),
     thoughts: `Another decent book from the Basecamp guys. It's a quick read that challenges a lot of the assumptions many modern office workers and managers have about remote working. It also validates a lot of my own personal beliefs, so of course I found it enjoyable to read.`
   }
+  ,
+  {
+    title: "Pillars of Creation",
+    type: "book",
+    date_started: new Date("2019-05-05"),
+    date_completed: null,
+    thoughts: ``
+  }
 ];
 
 
