@@ -232,9 +232,25 @@ let media_data = [
   }
   ,
   {
-    title: "Pillars of Creation",
-    type: "book",
-    date_started: new Date("2019-05-05"),
+    title: "STEEP",
+    type: "game",
+    date_started: new Date("2019-05-18"),
+    date_completed: new Date("2019-05-18"),
+    thoughts: `Grabbed this because it was free on UPlay and looked kind of cool. Wound up not really being my cup of tea, although I still think the idea has lots of promise.`
+  }
+  ,
+  {
+    title: "Star Wars: The Old Republic",
+    type: "game",
+    date_started: new Date("2019-05-19"),
+    date_completed: new Date("2019-05-19"),
+    thoughts: `Thought I'd give this MMO a try, but it won't run on my computer for some reason and I'm not ravenous enough for it to figure out why :/`
+  }
+  ,
+  {
+    title: "To Sell is Human",
+    type: "boo",
+    date_started: new Date("2019-05-19"),
     date_completed: null,
     thoughts: ``
   }
