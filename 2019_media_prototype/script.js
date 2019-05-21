@@ -249,8 +249,16 @@ let media_data = [
   ,
   {
     title: "To Sell is Human",
-    type: "boo",
+    type: "book",
     date_started: new Date("2019-05-19"),
+    date_completed: null,
+    thoughts: ``
+  }
+  ,
+  {
+    title: "Campfire Cooking",
+    type: "game",
+    date_started: new Date("2019-05-20"),
     date_completed: null,
     thoughts: ``
   }
