@@ -262,6 +262,14 @@ let media_data = [
     date_completed: null,
     thoughts: ``
   }
+  ,
+  {
+    title: "Elder Scrolls Blades",
+    type: "game",
+    date_started: new Date("2019-05-22"),
+    date_completed: null,
+    thoughts: `A surprisingly decent realization of the Elder Scrolls world for mobile devices. The combat feels pretty good, which is the first time I've been able to say that about an Elder Scrolls game. The town-building mechanic is pretty fun too. It's all hamstrung, unfortunately, by awful F2P mechanics :(`
+  }
 ];
 
 
