@@ -267,8 +267,24 @@ let media_data = [
     title: "Elder Scrolls Blades",
     type: "game",
     date_started: new Date("2019-05-22"),
-    date_completed: null,
+    date_completed: new Date("2019-05-26"),
     thoughts: `A surprisingly decent realization of the Elder Scrolls world for mobile devices. The combat feels pretty good, which is the first time I've been able to say that about an Elder Scrolls game. The town-building mechanic is pretty fun too. It's all hamstrung, unfortunately, by awful F2P mechanics :(`
+  }
+  ,
+  {
+    title: "Detective Pikachu",
+    type: "movie",
+    date_started: new Date("2019-05-25"),
+    date_completed: new Date("2019-05-25"),
+    thoughts: `This was lots of fun! The premise of live-action Pokemon sounds like a disaster waiting to happen, but they applied just enough self-awareness to keep things light and enjoyable.`
+  }
+  ,
+  {
+    title: "Obduction",
+    type: "game",
+    date_started: new Date("2019-05-25"),
+    date_completed: new Date("2019-05-28"),
+    thoughts: `Advertised as a spiritual successor to Myst, and delivers on that promise quite well. Aside from one very tedious puzzle near the end that involved a million long load screens, I loved this.`
   }
 ];
 
