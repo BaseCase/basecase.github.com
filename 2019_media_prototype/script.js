@@ -251,16 +251,16 @@ let media_data = [
     title: "To Sell is Human",
     type: "book",
     date_started: new Date("2019-05-19"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-06-04"),
+    thoughts: `An okay pop overview of some ideas about salespersonship in the modern era. This is in that genre of pop psych book that annoyingly alternates between actual information and definitely-fabricated case studies, which means it's about twice as long as it should be. Still had some somewhat useful info in it, though.`
   }
   ,
   {
     title: "Campfire Cooking",
     type: "game",
     date_started: new Date("2019-05-20"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-05-30"),
+    thoughts: `Cute and clever! It takes a lot of inspiration from Stephen's Sausage Roll, and while it's not nearly as brilliant as that game is, it's still fun and challenging.`
   }
   ,
   {
@@ -285,6 +285,14 @@ let media_data = [
     date_started: new Date("2019-05-25"),
     date_completed: new Date("2019-05-28"),
     thoughts: `Advertised as a spiritual successor to Myst, and delivers on that promise quite well. Aside from one very tedious puzzle near the end that involved a million long load screens, I loved this.`
+  }
+  ,
+  {
+    title: "Delivered from Distraction at Work",
+    type: "book",
+    date_started: new Date("2019-06-05"),
+    date_completed: null,
+    thoughts: ``
   }
 ];
 
