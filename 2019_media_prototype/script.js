@@ -176,14 +176,6 @@ let media_data = [
   }
   ,
   {
-    title: "Designing Data-Intensive Applications",
-    type: "book",
-    date_started: new Date("2019-03-26"),
-    date_completed: null,
-    thoughts: ``
-  }
-  ,
-  {
     title: "William Gibson's Alien 3",
     type: "book",
     date_started: new Date("2019-04-06"),
