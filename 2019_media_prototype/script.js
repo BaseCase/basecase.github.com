@@ -280,6 +280,14 @@ let media_data = [
   }
   ,
   {
+    title: "Sigil",
+    type: "game",
+    date_started: new Date("2019-06-02"),
+    date_completed: null,
+    thoughts: `John Romero released a new level pack for the original DOOM to celebrate its 25th anniversary. It's pretty fun!`
+  }
+  ,
+  {
     title: "Delivered from Distraction at Work",
     type: "book",
     date_started: new Date("2019-06-05"),
