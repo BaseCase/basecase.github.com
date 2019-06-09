@@ -286,6 +286,30 @@ let media_data = [
     date_completed: null,
     thoughts: ``
   }
+  ,
+  {
+    title: "The Expanse 1: Leviathan",
+    type: "book",
+    date_started: new Date("2019-06-05"),
+    date_completed: null,
+    thoughts: ``
+  }
+  ,
+  {
+    title: "John Wick 3",
+    type: "movie",
+    date_started: new Date("2019-06-08"),
+    date_completed: new Date("2019-06-08"),
+    thoughts: `Fun times! It's more John Wick. Doesn't really do anything the previous 2 didn't do, but the fight scenes keeps getting amped up. Super impressive fight choreography.`
+  }
+  ,
+  {
+    title: "The Room 1–4",
+    type: "game",
+    date_started: new Date("2019-06-08"),
+    date_completed: null,
+    thoughts: ``
+  }
 ];
 
 
