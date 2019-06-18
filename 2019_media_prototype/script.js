@@ -318,6 +318,14 @@ let media_data = [
     date_completed: new Date("2019-06-17"),
     thoughts: `A great series of very satisfying puzzle box interactions, plus a nice spooky gaslamp/Lovecraft-y style atmosphere. They're not reeealllllyy puzzle games in the common sense, because they're focused primarily around these object manipulations, but there are a few legit puzzles sprinkled in amidst the other stuff. Very good!`
   }
+  ,
+  {
+    title: "Distributed Systems for Fun and Profit",
+    type: "book",
+    date_started: new Date("2019-06-13"),
+    date_completed: null,
+    thoughts: ``
+  }
 ];
 
 
