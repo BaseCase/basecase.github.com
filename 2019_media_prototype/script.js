@@ -288,11 +288,11 @@ let media_data = [
   }
   ,
   {
-    title: "Delivered from Distraction at Work",
+    title: "Driven to Distraction at Work",
     type: "book",
     date_started: new Date("2019-06-05"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-06-20"),
+    thoughts: `Not super useful, unfortunately. Intends to be a guide for people with ADHD-like symptoms, but didn't really teach me anything new. I think it could be a good guide if you haven't previously researched the topic.`
   }
   ,
   {
@@ -325,6 +325,22 @@ let media_data = [
     date_started: new Date("2019-06-13"),
     date_completed: null,
     thoughts: ``
+  }
+  ,
+  {
+    title: "Hollow Knight",
+    type: "book",
+    date_started: new Date("2019-06-21"),
+    date_completed: null,
+    thoughts: ``,
+  }
+  ,
+  {
+    title: "White Fragility",
+    type: "book",
+    date_started: new Date("2019-06-21"),
+    date_completed: null,
+    thoughts: ``,
   }
 ];
 
