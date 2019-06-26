@@ -339,8 +339,8 @@ let media_data = [
     title: "White Fragility",
     type: "book",
     date_started: new Date("2019-06-21"),
-    date_completed: null,
-    thoughts: ``,
+    date_completed: new Date("2019-06-24"),
+    thoughts: `Lots to think about here. I don't think I'll know how I really feel about this book until I take some time to digest it.`,
   }
 ];
 
