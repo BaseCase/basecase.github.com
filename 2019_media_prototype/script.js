@@ -323,8 +323,8 @@ let media_data = [
     title: "Distributed Systems for Fun and Profit",
     type: "book",
     date_started: new Date("2019-06-13"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-06-26"),
+    thoughts: `A pretty good overview of the kinds of things you need to think about when working in distributed systems. As a beginner in the topic, I found this helpful in getting my head into the right space.`
   }
   ,
   {
