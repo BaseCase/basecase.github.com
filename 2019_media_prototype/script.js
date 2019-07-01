@@ -280,14 +280,6 @@ let media_data = [
   }
   ,
   {
-    title: "Sigil",
-    type: "game",
-    date_started: new Date("2019-06-02"),
-    date_completed: null,
-    thoughts: `John Romero released a new level pack for the original DOOM to celebrate its 25th anniversary. It's pretty fun!`
-  }
-  ,
-  {
     title: "Driven to Distraction at Work",
     type: "book",
     date_started: new Date("2019-06-05"),
@@ -296,11 +288,11 @@ let media_data = [
   }
   ,
   {
-    title: "The Expanse 1: Leviathan",
+    title: "The Expanse 1: Leviathan Wakes",
     type: "book",
     date_started: new Date("2019-06-05"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-06-30"),
+    thoughts: `A really fun space opera with some clear George R.R. Martin influences. I bounced off this book a while back but I'm glad I gave it another shot, because it's very enjoyable! I'll definitely check out the next entry in the series.`
   }
   ,
   {
@@ -341,6 +333,22 @@ let media_data = [
     date_started: new Date("2019-06-21"),
     date_completed: new Date("2019-06-24"),
     thoughts: `Lots to think about here. I don't think I'll know how I really feel about this book until I take some time to digest it.`,
+  }
+  ,
+  {
+    title: "Call of Cthulhu",
+    type: "game",
+    date_started: new Date("2019-06-30"),
+    date_completed: null,
+    thoughts: ``,
+  }
+  ,
+  {
+    title: "Neon Genesis Evangelion",
+    type: "tv",
+    date_started: new Date("2019-06-28"),
+    date_completed: null,
+    thoughts: ``
   }
 ];
 
