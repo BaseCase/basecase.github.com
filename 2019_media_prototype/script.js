@@ -350,6 +350,14 @@ let media_data = [
     date_completed: null,
     thoughts: ``
   }
+  ,
+  {
+    title: "Enterprise Integration Patterns",
+    type: "book",
+    date_started: new Date("2019-06-26"),
+    date_completed: null,
+    thoughts: ``,
+  }
 ];
 
 
