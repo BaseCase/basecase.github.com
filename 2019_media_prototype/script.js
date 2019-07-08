@@ -339,8 +339,8 @@ let media_data = [
     title: "Call of Cthulhu",
     type: "game",
     date_started: new Date("2019-06-30"),
-    date_completed: null,
-    thoughts: ``,
+    date_completed: new Date("2019-07-04"),
+    thoughts: `Like Lovecraft's writing, this game is at its best when it's developing a spooky atmosphere and playing with your perceptions of what's real and what's imagined, and it's at its worst when trying to develop characters and present dialogue. Overall I liked it, and there are some cool surprises that are paced really well, but I was cringing through a lot of the acting and writing.`,
   }
   ,
   {
