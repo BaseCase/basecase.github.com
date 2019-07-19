@@ -323,7 +323,7 @@ let media_data = [
     title: "Hollow Knight",
     type: "book",
     date_started: new Date("2019-06-21"),
-    date_completed: null,
+    date_completed: new Date("2019-07-13"),
     thoughts: ``,
   }
   ,
@@ -352,11 +352,27 @@ let media_data = [
   }
   ,
   {
-    title: "Enterprise Integration Patterns",
-    type: "book",
-    date_started: new Date("2019-06-26"),
+    title: "Los Espookys",
+    type: "tv",
+    date_started: new Date("2019-06-14"),
+    date_completed: new Date("2019-07-19"),
+    thoughts: ``
+  }
+  ,
+  {
+    title: "Xenoblade Chronicles 2",
+    type: "game",
+    date_started: new Date("2019-07-14"),
     date_completed: null,
     thoughts: ``,
+  }
+  ,
+  {
+    title: "Exapunks",
+    type: "game",
+    date_started: new Date("2019-07-15"),
+    date_completed: null,
+    thoughts: ``
   }
 ];
 
