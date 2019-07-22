@@ -374,6 +374,14 @@ let media_data = [
     date_completed: null,
     thoughts: ``
   }
+  ,
+  {
+    title: "Hacking With MacOS",
+    type: "book",
+    date_started: new Date("2019-07-22"),
+    date_completed: null,
+    thoughts: ``,
+  }
 ];
 
 
