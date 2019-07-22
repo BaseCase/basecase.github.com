@@ -362,7 +362,7 @@ let media_data = [
   {
     title: "Xenoblade Chronicles 2",
     type: "game",
-    date_started: new Date("2019-07-14"),
+    date_started: new Date("2019-07-23"),
     date_completed: null,
     thoughts: ``,
   }
