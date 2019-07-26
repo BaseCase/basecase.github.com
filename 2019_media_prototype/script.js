@@ -360,9 +360,9 @@ let media_data = [
   }
   ,
   {
-    title: "Xenoblade Chronicles 2",
+    title: "Fire Emblem: Three Houses",
     type: "game",
-    date_started: new Date("2019-07-23"),
+    date_started: new Date("2019-07-26"),
     date_completed: null,
     thoughts: ``,
   }
