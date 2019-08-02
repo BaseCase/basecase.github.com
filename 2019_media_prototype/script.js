@@ -382,6 +382,30 @@ let media_data = [
     date_completed: null,
     thoughts: ``,
   }
+  ,
+  {
+    title: "City of Darkness Revisited",
+    type: "book",
+    date_started: new Date("2019-07-26"),
+    date_completed: null,
+    thoughts: ``,
+  }
+  ,
+  {
+    title: "The Peripheral",
+    type: "book",
+    date_started: new Date("2019-08-01"),
+    date_completed: null,
+    thoughts: ``,
+  }
+  ,
+  {
+    title: "The Elements of Computing Systems",
+    type: "book",
+    date_started: new Date("2019-07-31"),
+    date_completed: null,
+    thoughts: ``,
+  }
 ];
 
 
