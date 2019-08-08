@@ -406,6 +406,14 @@ let media_data = [
     date_completed: null,
     thoughts: ``,
   }
+  ,
+  {
+    title: "Shape Up",
+    type: "book",
+    date_started: new Date("2019-07-30"),
+    date_completed: new Date("2019-08-08"),
+    thoughts: `It's good! More wisdom from the Basecamp crew.`,
+  }
 ];
 
 
