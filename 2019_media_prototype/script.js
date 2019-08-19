@@ -131,8 +131,8 @@ let media_data = [
     title: "Game of Thrones",
     type: "tv",
     date_started: new Date("2019-03-03"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-08-18"),
+    thoughts: `Holy cow what a show. I don't have anything smart to add about this that a million other people haven't already said, but just...holy cow.`
   }
   ,
   {
