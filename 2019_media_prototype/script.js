@@ -371,8 +371,8 @@ let media_data = [
     title: "Exapunks",
     type: "game",
     date_started: new Date("2019-07-15"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-08-15"),
+    thoughts: `Another awesome hacking game from Zachtronics. I didn't get super far in this one, but I know I'll come back to it in the future. It's super good.`
   }
   ,
   {
@@ -416,9 +416,17 @@ let media_data = [
   }
   ,
   {
-    title: "Darkest Dungeon",
-    type: "game",
-    date_started: new Date("2019-08-15"),
+    title: "Dark Crystal",
+    type: "movie",
+    date_started: new Date("2019-08-31"),
+    date_completed: new Date("2019-08-31"),
+    thoughts: `Classic Jim Henson Studios weird 80s movie. I rewatched this to get ready to check out the Netflix series that just came out. Good times.`,
+  }
+  ,
+  {
+    title: "Hip Hop Evolution",
+    type: "tv",
+    date_started: new Date("2019-08-31"),
     date_completed: null,
     thoughts: ``,
   }
