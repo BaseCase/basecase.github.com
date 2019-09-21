@@ -400,14 +400,6 @@ let media_data = [
   }
   ,
   {
-    title: "Hip Hop Evolution",
-    type: "tv",
-    date_started: new Date("2019-08-31"),
-    date_completed: null,
-    thoughts: ``,
-  }
-  ,
-  {
     title: "Control",
     type: "game",
     date_started: new Date("2019-09-05"),
