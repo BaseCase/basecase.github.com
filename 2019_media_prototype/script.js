@@ -411,14 +411,38 @@ let media_data = [
     title: "Control",
     type: "game",
     date_started: new Date("2019-09-05"),
-    date_completed: null,
-    thoughts: ``,
+    date_completed: new Date("2019-09-21"),
+    thoughts: `Super cool visual style and lots of awesome 1960s US government-style typography all over the places. Also great conspiracy/supernatural themes and story. Actual gameplay was pretty meh; way too much combat for my taste. Overall still super cool though.`,
   }
   ,
   {
     title: "Thinking in Systems",
     type: "book",
     date_started: new Date("2019-09-12"),
+    date_completed: null,
+    thoughts: ``
+  }
+  ,
+  {
+    title: "Dragalia Lost",
+    type: "game",
+    date_started: new Date("2019-09-15"),
+    date_completed: null,
+    thoughts: ``
+  }
+  ,
+  {
+    title: "Dr. Mario World",
+    type: "game",
+    date_started: new Date("2019-09-15"),
+    date_completed: null,
+    thoughts: ``
+  }
+  ,
+  {
+    title: "Untitled Goose Game",
+    type: "game",
+    date_started: new Date("2019-09-20"),
     date_completed: null,
     thoughts: ``
   }
