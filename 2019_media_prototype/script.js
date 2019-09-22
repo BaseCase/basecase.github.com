@@ -419,16 +419,16 @@ let media_data = [
     title: "Dragalia Lost",
     type: "game",
     date_started: new Date("2019-09-15"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-09-15"),
+    thoughts: `(marking this as one day b/c it's a phone game I play while pooping) I'm not really sure how I feel about this one yet, but I'm going to keep playing it for a while to find out. I think ultimately it might feel a little too grindy, but for now it's a good time-waster when I need to kill like 3 minutes.`
   }
   ,
   {
     title: "Dr. Mario World",
     type: "game",
     date_started: new Date("2019-09-15"),
-    date_completed: null,
-    thoughts: ``
+    date_completed: new Date("2019-09-15"),
+    thoughts: `(marking this as one day b/c it's a phone game I play while pooping) A nice take on Dr. Mario, following in the same console-game-ported-well-to-a-phone mold as Super Mario Run. It's good!`
   }
   ,
   {
