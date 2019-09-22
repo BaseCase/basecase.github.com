@@ -347,7 +347,7 @@ let media_data = [
     title: "Neon Genesis Evangelion",
     type: "tv",
     date_started: new Date("2019-06-28"),
-    date_completed: null,
+    date_completed: new Date("2019-09-21"),
     thoughts: ``
   }
   ,
