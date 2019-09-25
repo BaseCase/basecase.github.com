@@ -435,7 +435,7 @@ let media_data = [
     title: "Untitled Goose Game",
     type: "game",
     date_started: new Date("2019-09-20"),
-    date_completed: null,
+    date_completed: new Date("2019-09-23"),
     thoughts: ``
   }
 ];
