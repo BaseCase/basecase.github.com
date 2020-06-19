@@ -43,6 +43,15 @@
       max-width: 100%;
     }
 
+    li {
+      margin-bottom: .5rem;
+    }
+
+    strong {
+      font-weight: 900;
+      background-color: darken($color-background, 3%);
+    }
+
     blockquote {
       background-color: darken($color-background, 7%);
       padding: 1rem;
