@@ -5,3 +5,5 @@ url: https://caseybrant.com
 
 sass:
   sass_dir: _scss
+
+disable_disk_cache: true
