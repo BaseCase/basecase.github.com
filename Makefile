@@ -11,4 +11,4 @@ dev_server :
 	cd ${SRC} && bundle exec jekyll serve
 
 build :
-	cd ${SRC} && jekyll build -d ../${DEST}
+	cd ${SRC} && jekyll build -d ../${DEST} --disable-disk-cache
