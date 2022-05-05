@@ -2,14 +2,42 @@
 layout: base
 ---
 
-<div class="posts">
-  This is just to demonstrate post building working.
+<div class="homepage-container">
+  <header>
+    <h1>Casey Brant</h1>
+    <span>fancy lines go here</span>
+  </header>
 
-  <ul>
-    {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
+  <div class="column about-me">
+    <p>Hi, I'm Casey. Blah blah blah!</p>
+
+    <h2>Contact Me</h2>
+    <ul>
+      <li>Twitter</li>
+      <li>Email</li>
+      <li>Behance???</li>
+      <li>Others?</li>
+    </ul>
+  </div>
+
+  <div class="column recent-blog-posts">
+    <h2>Recent Blog Posts</h2>
+    <ul>
+      {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="column selected-projects">
+    <h2>Projects</h2>
+    project list here
+  </div>
+
+  <footer>
+    fancy lines for the bottom.
+    also copyright.
+  </footer>
 </div>

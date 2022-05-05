@@ -1,0 +1,45 @@
+/* putting everything in here up front, then later we'll break it up into smaller files */
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.homepage-container {
+  width: 1000px;
+  border: 1px solid red;
+  margin-top: 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px 10px;
+
+
+  header {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    border: 1px solid red;
+  }
+
+  .column {
+    border: 1px solid red;
+  }
+
+  footer {
+    border: 1px solid red;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+  }
+}
