@@ -15,6 +15,30 @@ body {
   justify-content: center;
   padding: 0;
   margin: 0;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  font-family: nobel,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1, h2 {
+  font-family: mala-condensed, serif;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
 }
 
 .homepage-container {
