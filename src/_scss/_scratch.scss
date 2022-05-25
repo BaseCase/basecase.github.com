@@ -74,6 +74,11 @@ p {
     grid-column-start: 1;
     grid-column-end: span 3;
     display: flex;
+    align-items: baseline;
+
+    .avatar {
+      height: 40px;
+    }
   }
 }
 
