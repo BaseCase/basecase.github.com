@@ -30,12 +30,31 @@ layout: base
 
   <div class="column recent-blog-posts">
     <h2>Recent Blog Posts</h2>
+    <a href="">Full archive</a>
+    <a href="">RSS feed</a>
     <ul>
       {% for post in site.posts %}
-      <li>
+      <li class="blog-post-link">
         <a href="{{ post.url }}">{{ post.title }}</a>
+        <p>{{ post.description }}</p>
       </li>
       {% endfor %}
+      <li class="blog-post-link">
+        <a href="">A Fake Blog Post</a>
+        <p>This is a fake blog post. I hope you enjoy not reading it.</p>
+      </li>
+      <li class="blog-post-link">
+        <a href="">Another Fake Blog Post</a>
+        <p>Another fake blog post. Actually this one would be earlier in the timeline but I typed it second.</p>
+      </li>
+      <li class="blog-post-link">
+        <a href="">Heard You Like Fake Posts</a>
+        <p>You probably don't, though.</p>
+      </li>
+      <li class="blog-post-link">
+        <a href="">Whatever!</a>
+        <p>Gotta wrap this up since work is starting!</p>
+      </li>
     </ul>
   </div>
 
