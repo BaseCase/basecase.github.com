@@ -35,11 +35,12 @@ h1 {
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.02em;
   font-weight: 600;
   line-height: 1;
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5em;
   padding: 0;
 }
 
@@ -74,8 +75,12 @@ li {
     grid-column-end: span 3;
     // border: 1px solid red;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     margin-bottom: 1rem;
+
+    .brand-stripes {
+      margin-left: 0.5em;
+    }
   }
 
   .column {
@@ -87,16 +92,17 @@ li {
     grid-column-start: 1;
     grid-column-end: span 3;
     display: flex;
-    align-items: baseline;
+    align-items: center;
 
     .avatar {
       height: 40px;
+      margin-left: 0.5em;
     }
   }
 }
 
 .brand-stripes {
-  height: 20px;
+  height: 10px;
 
   svg {
     float: left;
