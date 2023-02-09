@@ -1,88 +1,49 @@
 ---
 layout: base
+title: Casey Brant design portfolio
 ---
 
-<div class="homepage-container">
+<div id="portfolio-container">
   <header>
-    <h1>Casey&nbsp;Brant</h1>
-    <div class="brand-stripes">
-      <svg
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg">
-        <rect width="100%" height="50%" fill="black" />
-        <rect x="0" y="50%" width="100%" height="50%" fill="grey" />
-      </svg>
-    </span>
+    <h1>Casey Brant</h1>
+
+    <nav>
+      <ul>
+        <li><a href="/">Portfolio</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/resume">Resume</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <div class="column about-me">
-    <h2>Hi There</h2>
+  <main>
+    <h2>Portfolio</h2>
 
-    <p>Hi, I’m Casey. I’m a designer and programmer in Wisconsin. This page is for my blog posts and personal projects. I’m currently finishing a degree at Madison College.</p>
+    <article>
+      <div class="portfolio-image">pic</div>
+      <div class="portfolio-description">
+        <h3>A Project</h3>
+        <p>It went well.</p>
+      </div>
+    </article>
 
-    <p>I’d love to hear from you! Feel free to connect using any of the methods listed below. Thanks for stopping by :)</p>
+    <article>
+      <div class="portfolio-image">pic</div>
+      <div class="portfolio-description">
+        <h3>A Project</h3>
+        <p>It went well.</p>
+      </div>
+    </article>
 
-    <ul>
-      <li>Twitter</li>
-      <li>Email</li>
-      <li>Behance???</li>
-      <li>Others?</li>
-    </ul>
-  </div>
+    <article>
+      <div class="portfolio-image">pic</div>
+      <div class="portfolio-description">
+        <h3>A Project</h3>
+        <p>It went well.</p>
+      </div>
+    </article>
+  </main>
 
-  <div class="column recent-blog-posts">
-    <h2>Recent Blog Posts</h2>
-    <a href="">Full archive</a>
-    <a href="">RSS feed</a>
-    <ul>
-      {% for post in site.posts %}
-      <li class="blog-post-link">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <div class="post-date">{{ post.date | date_to_string }}</div>
-        <div class="post-description">{{ post.description }}</div>
-      </li>
-      {% endfor %}
-      <li class="blog-post-link">
-        <a href="">A Fake Blog Post</a>
-        <div class="post-date">19 Feb 1985</div>
-        <div class="post-description">This is a fake blog post. I hope you enjoy not reading it.</div>
-      </li>
-      <li class="blog-post-link">
-        <a href="">Another Fake Blog Post</a>
-        <div class="post-date">01 Jan 2020</div>
-        <div class="post-description">Another fake blog post. Actually this one would be earlier in the timeline but I typed it second.</div>
-      </li>
-      <li class="blog-post-link">
-        <a href="">Heard You Like Fake Posts</a>
-        <div class="post-date">25 Dec 2015</div>
-        <div class="post-description">You probably don’t, though.</div>
-      </li>
-      <li class="blog-post-link">
-        <a href="">Whatever!</a>
-        <div class="post-date">08 Nov 2010</div>
-        <div class="post-description">Gotta wrap this up since work is starting!</div>
-      </li>
-    </ul>
-  </div>
-
-  <div class="column selected-projects">
-    <h2>Projects</h2>
-    project list here
-  </div>
-
-  <footer>
-    <div class="brand-stripes">
-      <svg
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg">
-        <rect width="100%" height="50%" fill="grey" />
-        <rect x="0" y="50%" width="100%" height="50%" fill="black" />
-      </svg>
-    </div>
-    <img class="avatar" alt="my head" src="/assets/avatar.svg"/>
-  </footer>
-
-  <div class="copyright">
-    copyright me!
-  </div>
+  <footer>Copyright 2023 Casey Brant</footer>
 </div>
