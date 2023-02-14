@@ -5,6 +5,9 @@
 @import "variables";
 @import "scratch"; /* remember to replace this with broken up files later */
 
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
 html {
   font-family: brando-sans, sans-serif;
   font-weight: 400;
@@ -15,6 +18,8 @@ html {
 
 body {
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -39,6 +44,10 @@ h3 {
   font-size: 1.5em;
 }
 
+strong {
+  font-weight: 800;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -59,15 +68,16 @@ a {
 #portfolio-container {
   width: 1300px;
   margin: auto;
+  background: white;
 
   header {
     padding-top: 4rem;
   }
 }
 
-$colwidth: 73px;
-$gutter: 20px;
-
+$colwidth: 73px;  // 876
+$gutter: 20px;    // 220
+// 1096 total, 204 empty
 .row {
   width: 100%;
   display: flex;
@@ -75,6 +85,8 @@ $gutter: 20px;
   flex-wrap: nowrap;
   column-gap: $gutter;
   align-items: flex-start;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .gap-column {}   // empty, just a communicative class
@@ -96,11 +108,16 @@ $gutter: 20px;
   width: 100%;
 }
 
-header nav {
-  padding-top: 3rem;
+header {
+  margin-bottom: 3rem;
 }
 
-header nav ul {
+nav {
+  position: sticky;
+  top: 1rem;
+}
+
+nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -118,4 +135,37 @@ header nav ul {
 
 a.active {
   border-bottom: 2px solid black;
+}
+
+main {
+  padding-top: 4rem;
+}
+
+
+.portfolio-entry {
+  height: 15rem;
+  margin-top: 5rem;
+
+  .portfolio-image {
+    background: grey;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      display: inline-block;
+    }
+  }
+
+  .portfolio-description {
+    height: 100%;
+  }
+}
+
+
+
+footer {
+  margin-top: 5rem;
 }
