@@ -6,26 +6,22 @@ title: Casey Brant design portfolio
 <div id="portfolio-container">
   <header>
     <div class="row">
-      <img id="logo" class="cols-2" src="assets/logo.svg" alt="Casey Brant logo">
-      <div class="gap-column cols-1"></div>
-      <h1 class="cols-3">Casey Brant</h1>
-      <div class="gap-column cols-1"></div>
-      <ul class="cols-2 centered">
-        <li><a href="#">◼️ Instagram</a></li>
-        <li><a href="#">◼️ Behance</a></li>
-        <li><a href="#">◼️ Twitter</a></li>
-      </ul>
+      <h1 class="cols-7">casey brant</h1>
+      <div class="cols-2">
+        <img src="assets/logo.svg" alt="Casey Brant logo">
+      </div>
     </div>
 
     <div class="row">
-      <div class="gap-column cols-1"></div>
-      <p class="cols-7 introduction">I’m <strong>Casey Brant</strong>, a designer and programmer in Madison, Wisconsin. Here are some more words about my creative mission statement (not too many though).!</p>
+      <p class="cols-9 introduction">I’m <strong>Casey Brant</strong>, a designer and programmer in Madison, Wisconsin. Here are some more words about my creative mission statement (not too many though)! Here are some more words about my creative mission statement (not too many though)!</p>
     </div>
   </header>
 
   <nav>
     <div class="row">
-      <div class="gap-column cols-1"></div>
+      <div class="cols-1">
+        <img class="navbar-logo hide" src="assets/logo.svg" alt="Casey Brant logo">
+      </div>
       <ul class="cols-4">
         <li><a class="active" href="/">Portfolio</a></li>
         <li><a href="/about">About</a></li>
@@ -37,7 +33,7 @@ title: Casey Brant design portfolio
 
   <main>
     <div class="row">
-      <h2>Work</h2>
+      <h2>My Work</h2>
     </div>
 
     <article class="row portfolio-entry">
@@ -123,3 +119,15 @@ title: Casey Brant design portfolio
 
   <footer>yeah</footer>
 </div>
+
+
+<script>
+  let logo = document.querySelector('.navbar-logo')
+  document.addEventListener('scroll', function() {
+    if (logo.getBoundingClientRect().top < 20) {
+      logo.classList.remove('hide')
+    } else {
+      logo.classList.add('hide')
+    }
+  })
+</script>
