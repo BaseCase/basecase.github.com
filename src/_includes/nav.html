@@ -1,0 +1,59 @@
+<nav>
+  <div class="row">
+    <div class="cols-1">
+      <img class="navbar-logo hide" src="/assets/logo.svg" alt="Casey Brant logo">
+    </div>
+    <ul class="cols-4">
+      <li>
+        <a href="/"
+           class="{% if include.page == "portfolio" %}active{% endif %}">
+          Portfolio
+        </a>
+      </li>
+      <li>
+        <a href="/about"
+           class="{% if include.page == "about" %}active{% endif %}">
+          About
+        </a>
+      </li>
+      <li>
+        <a href="/resume"
+           class="{% if include.page == "resume" %}active{% endif %}">
+          Resume
+        </a>
+      </li>
+      <li>
+        <a href="/contact"
+           class="{% if include.page == "contact" %}active{% endif %}">
+          Contact
+        </a>
+      </li>
+    </ul>
+    <div class="cols-7">
+      <ul class="socials">
+        <li><a href="https://www.instagram.com/casey.brant/"
+               target="_blank"
+               title="Instagram">
+          <img src="/assets/instagram.png" alt="Instagram">
+        </a></li>
+        <li><a href="https://www.behance.net/caseybrant"
+               target="_blank"
+               title="Behance">
+          <img src="/assets/behance.png" alt="Behance">
+        </a></li>
+        <li><a href="https://www.linkedin.com/in/casey-brant/"
+               target="_blank"
+               title="LinkedIn">
+          <img src="/assets/linkedin.png" alt="LinkedIn">
+        </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+{% if include.page != "portfolio" %}
+<script>
+  let small_logo = document.querySelector('.navbar-logo')
+  small_logo.classList.remove('hide')
+</script>
+{% endif %}
