@@ -14,7 +14,9 @@ title: Casey Brant design portfolio
     </div>
 
     <div class="row">
-      <p class="cols-9 introduction">I’m <strong>Casey Brant</strong>, a designer and programmer in Madison, Wisconsin. Here are some more words about my creative mission statement (not too many though)! Here are some more words about my creative mission statement (not too many though)!</p>
+      <p class="cols-9 introduction">
+        Hi, I’m <strong>Casey</strong>, a designer and programmer in Madison, Wisconsin. Here’s another sentence about myself. And one more, because three is a good amount for this header.
+      </p>
     </div>
   </header>
 
@@ -29,6 +31,25 @@ title: Casey Brant design portfolio
         <li><a href="/resume">Resume</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
+      <div class="cols-7">
+        <ul class="socials">
+          <li><a href="https://www.instagram.com/casey.brant/"
+                 target="_blank"
+                 title="Instagram">
+            <img src="assets/instagram.png" alt="Instagram">
+          </a></li>
+          <li><a href="https://www.behance.net/caseybrant"
+                 target="_blank"
+                 title="Behance">
+            <img src="assets/behance.png" alt="Behance">
+          </a></li>
+          <li><a href="https://www.linkedin.com/in/casey-brant/"
+                 target="_blank"
+                 title="LinkedIn">
+            <img src="assets/linkedin.png" alt="LinkedIn">
+          </a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -118,17 +139,22 @@ title: Casey Brant design portfolio
     </article>
   </main>
 
-  <footer>yeah</footer>
+  <footer>
+    <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/behance" title="behance icons">Behance icons created by Bogdan Rosu - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>
+  </footer>
 </div>
 
 
 <script>
-  let logo = document.querySelector('.navbar-logo')
+  let big_logo = document.querySelector('header h1')
+  let small_logo = document.querySelector('.navbar-logo')
   document.addEventListener('scroll', function() {
-    if (logo.getBoundingClientRect().top < 20) {
-      logo.classList.remove('hide')
+    if (big_logo.getBoundingClientRect().bottom < 0) {
+      small_logo.classList.remove('hide')
     } else {
-      logo.classList.add('hide')
+      small_logo.classList.add('hide')
     }
   })
 </script>

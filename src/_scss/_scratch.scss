@@ -123,6 +123,8 @@ nav {
   margin-bottom: 5rem;
 }
 
+// TODO: hover on small logo and nav links should change color
+
 nav .row {
   align-items: center;
 }
@@ -134,8 +136,20 @@ nav ul {
   font-size: .8rem;
 }
 
+nav .socials {
+  justify-content: flex-start;
+
+  li {
+    margin-left: 1rem;
+  }
+
+  img {
+    width: 25px;
+  }
+}
+
 .navbar-logo {
-  transition: opacity 1s ease-out;
+  transition: opacity 0.75s ease-out;
 }
 
 .hide {
