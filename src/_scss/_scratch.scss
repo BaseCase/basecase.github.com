@@ -67,6 +67,7 @@ a {
 
 p {
   margin: 0;
+  line-height: 1.4;
 }
 
 #portfolio-container {
@@ -171,11 +172,32 @@ a.active {
 }
 
 .portfolio-entry {
-  height: 15rem;
-  margin-top: 5rem;
+  height: 300px;
+  margin-top: 3rem;
 
-  &:first-of-type {
-    margin-top: 0;
+  .row {
+    column-gap: 0;
+  }
+
+  &:hover {
+    .portfolio-description {
+      color: white;
+      background: black;
+    }
+
+    .portfolio-image {
+      .hovered {
+        display: block;
+      }
+
+      .non-hovered {
+        display: none;
+      }
+    }
+  }
+
+  .row {
+    height: 100%;
   }
 
   .portfolio-image {
@@ -189,10 +211,21 @@ a.active {
       width: 100%;
       display: inline-block;
     }
+
+    .hovered {
+      display: none;
+    }
+
+    .non-hovered {
+      display: block;
+    }
   }
 
   .portfolio-description {
     height: 100%;
+    transition: background-color 0.5s ease-out;
+    padding-left: $gutter;
+    padding-right: $gutter;
   }
 }
 
