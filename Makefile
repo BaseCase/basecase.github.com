@@ -1,4 +1,3 @@
-SRC = ./src
 DEST = ./site
 
 .SILENT: greeting
@@ -8,7 +7,7 @@ greeting :
 	cat Makefile | grep ":" | grep -Ev "(grep|SILENT|greeting)" | cut -d ":" -f 1
 
 dev_server :
-	cd ${SRC} && bundle exec jekyll serve
+	bundle exec jekyll serve
 
 build :
-	cd ${SRC} && jekyll build -d ../${DEST} --disable-disk-cache
+	jekyll build -d ./${DEST} --disable-disk-cache
