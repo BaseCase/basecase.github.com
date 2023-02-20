@@ -5,6 +5,12 @@ header {
   .row {
     align-items: center;
   }
+
+  .introduction {
+    padding-top: 3rem;
+    font-size: 1.6em;
+    line-height: 1.5em;
+  }
 }
 
 .portfolio-entry {
@@ -63,10 +69,4 @@ header {
     padding-left: $gutter;
     padding-right: $gutter;
   }
-}
-
-.introduction {
-  padding-top: 3rem;
-  font-size: 1.6em;
-  line-height: 1.5em;
 }
