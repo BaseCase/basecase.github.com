@@ -15,35 +15,14 @@ header {
 
 .portfolio-entry {
   height: 300px;
-  margin-top: 3rem;
-
-  .row {
-    column-gap: 0;
-  }
-
-  &:hover {
-    .portfolio-description {
-      color: white;
-      background: black;
-    }
-
-    .portfolio-image {
-      .hovered {
-        display: block;
-      }
-
-      .non-hovered {
-        display: none;
-      }
-    }
-  }
+  margin-top: 4rem;
+  transition: background-color 0.5s ease-out, transform 0.5s ease-out;
 
   .row {
     height: 100%;
   }
 
   .portfolio-image {
-    background: grey;
     height: 100%;
     overflow: hidden;
 
@@ -54,19 +33,23 @@ header {
       display: inline-block;
     }
 
-    .hovered {
-      display: none;
-    }
-
-    .non-hovered {
-      display: block;
-    }
+    .portfolio-image-focused { display: none; }
+    .portfolio-image-normal { display: block; }
   }
 
-  .portfolio-description {
-    height: 100%;
-    transition: background-color 0.5s ease-out;
-    padding-left: $gutter;
-    padding-right: $gutter;
+  &:hover {
+    background: $color_fg;
+    transform: scale(1.02);
+
+    .portfolio-description {
+      color: $color_bg;
+    }
+
+    .portfolio-image-focused { display: block; }
+    .portfolio-image-normal { display: none; }
+  }
+
+  &:nth-of-type(even) {
+    .portfolio-description { padding-left: $gutter; }
   }
 }
