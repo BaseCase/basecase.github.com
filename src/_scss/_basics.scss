@@ -1,6 +1,3 @@
-//
-// basics
-//
 html {
   box-sizing: border-box;
 }
@@ -15,22 +12,9 @@ body {
   margin: 0;
 }
 
-
-//
-// misc. global styles
-//
 ul {
   list-style-type: none;
   margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: $color_fg;
-
-  &:visited {
-    color: $color_fg;
-  }
 }
 
 //

@@ -1,16 +1,14 @@
+$colwidth: 73px;
+$gutter: 20px;
 
-//
-// layout and grid system
-//
 #container {
   width: 1300px;
   margin: auto;
   background: white;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-$colwidth: 73px;  // 876
-$gutter: 20px;    // 220
-// 1096 total, 204 empty
 .row {
   width: 100%;
   display: flex;
@@ -18,8 +16,6 @@ $gutter: 20px;    // 220
   flex-wrap: nowrap;
   column-gap: $gutter;
   align-items: flex-start;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 .gap-column {}   // empty, just a communicative class

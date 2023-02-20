@@ -1,44 +1,40 @@
-
-//
-// typography
-//
 html {
   font-family: brando-sans, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
   text-rendering: optimizeLegibility;
   width: 100%;
 }
 
 h1 {
   font-family: puffin-display, sans-serif;
+  font-size: 6em;
+  font-style: normal;
   font-variant: small-caps;
   font-weight: 800;
-  font-style: normal;
-  font-size: 6em;
-  margin: 0;
   letter-spacing: -0.01em;
+  margin: 0;
 }
 
 h2 {
   font-family: puffin-display, sans-serif;
-  font-weight: 700;
-  font-style: normal;
   font-size: 2em;
+  font-style: normal;
+  font-weight: 700;
   letter-spacing: 0.01em;
   margin: 0;
 }
 
 h3 {
   font-family: puffin-display, sans-serif;
-  font-weight: 700;
-  font-style: normal;
   font-size: 1.1em;
+  font-style: normal;
+  font-weight: 700;
   letter-spacing: 0.03em;
-  padding-top: 1em;
-  padding-bottom: 0.5em;
   margin: 0;
+  padding-top: 1em;
+  padding-bottom: 0.75em;
 }
 
 strong {
@@ -48,4 +44,13 @@ strong {
 p {
   line-height: 1.4;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $color_fg;
+
+  &:visited {
+    color: $color_fg;
+  }
 }
