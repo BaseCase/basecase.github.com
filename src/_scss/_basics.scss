@@ -1,0 +1,45 @@
+//
+// basics
+//
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+//
+// misc. global styles
+//
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $color_fg;
+
+  &:visited {
+    color: $color_fg;
+  }
+}
+
+//
+// utility classes
+//
+.hide {
+  opacity: 0;
+}
+
+.centered {
+  align-self: center;
+}

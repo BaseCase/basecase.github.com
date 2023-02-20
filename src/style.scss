@@ -2,4 +2,10 @@
 ---
 
 @import "normalize";
-@import "scratch"; /* remember to replace this with broken up files later */
+@import "colors";
+@import "basics";
+@import "typography";
+@import "grid";
+@import "partial_navbar";
+@import "partial_footer";
+@import "page_portfolio";

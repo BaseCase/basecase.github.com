@@ -1,0 +1,43 @@
+
+//
+// navbar on every page
+//
+nav {
+  position: sticky;
+  top: 1rem;
+  margin-bottom: 5rem;
+}
+
+// TODO: hover on small logo and nav links should change color
+// TODO: small logo should be link to index
+
+nav .row {
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: .8rem;
+}
+
+nav .socials {
+  justify-content: flex-start;
+
+  li {
+    margin-left: 1rem;
+  }
+
+  img {
+    width: 25px;
+  }
+}
+
+.navbar-logo {
+  transition: opacity 0.75s ease-out;
+}
+
+a.active {
+  border-bottom: 2px solid black;
+}

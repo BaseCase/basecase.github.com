@@ -1,0 +1,76 @@
+
+//
+// Portfolio page "/"
+//
+header {
+  padding-bottom: 4rem;
+  padding-top: 3rem;
+
+  .row {
+    align-items: center;
+  }
+}
+
+.portfolio-entry {
+  height: 300px;
+  margin-top: 3rem;
+
+  .row {
+    column-gap: 0;
+  }
+
+  &:hover {
+    .portfolio-description {
+      color: white;
+      background: black;
+    }
+
+    .portfolio-image {
+      .hovered {
+        display: block;
+      }
+
+      .non-hovered {
+        display: none;
+      }
+    }
+  }
+
+  .row {
+    height: 100%;
+  }
+
+  .portfolio-image {
+    background: grey;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      display: inline-block;
+    }
+
+    .hovered {
+      display: none;
+    }
+
+    .non-hovered {
+      display: block;
+    }
+  }
+
+  .portfolio-description {
+    height: 100%;
+    transition: background-color 0.5s ease-out;
+    padding-left: $gutter;
+    padding-right: $gutter;
+  }
+}
+
+.introduction {
+  padding-top: 3rem;
+  font-size: 1.6em;
+  line-height: 1.5em;
+}
