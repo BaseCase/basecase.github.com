@@ -53,3 +53,32 @@ header {
     .portfolio-description { padding-left: $gutter; }
   }
 }
+
+.additional-portfolio-entries {
+  .row {
+    margin-top: $gutter;
+  }
+
+  .additional-portfolio-item {
+    height: calc(#{$colwidth} * 3);
+    transition: transform 0.5s ease-out;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.02);
+
+      .portfolio-image-focused { display: block; }
+      .portfolio-image-normal { display: none; }
+    }
+  }
+
+  img {
+    object-fit: fill;
+    object-position: right bottom;
+    display: inline-block;
+    width: auto;
+  }
+
+  .portfolio-image-focused { display: none; }
+  .portfolio-image-normal { display: block; }
+}
