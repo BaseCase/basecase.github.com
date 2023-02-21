@@ -6,6 +6,10 @@ header {
     align-items: center;
   }
 
+  .big-logo {
+    transition: opacity 0.75s ease-out;
+  }
+
   .introduction {
     padding-top: 3rem;
     font-size: 1.6em;

@@ -8,7 +8,7 @@ title: Casey Brant design portfolio
     <div class="row">
       <h1 class="cols-2">casey</h1>
       <div class="cols-2">
-        <img src="assets/logo.svg" alt="Casey Brant logo">
+        <img class="big-logo" src="assets/logo.svg" alt="Casey Brant logo">
       </div>
       <h1 class="cols-2">brant</h1>
     </div>
@@ -106,13 +106,15 @@ title: Casey Brant design portfolio
 
 
 <script>
-  let big_logo = document.querySelector('header h1')
+  let big_logo = document.querySelector('.big-logo')
   let small_logo = document.querySelector('.navbar-logo')
   document.addEventListener('scroll', function() {
     if (big_logo.getBoundingClientRect().bottom < 0) {
       small_logo.classList.remove('hide')
+      big_logo.classList.add('hide')
     } else {
       small_logo.classList.add('hide')
+      big_logo.classList.remove('hide')
     }
   })
 </script>
