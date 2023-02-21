@@ -1,9 +1,10 @@
 footer {
+  width: 100%;
   margin-top: 5rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
   font-size: 0.7em;
-  width: 100%;
+  letter-spacing: 0.04em;
 
   &, .container, a, a:visited {
     background-color: $color_fg;
