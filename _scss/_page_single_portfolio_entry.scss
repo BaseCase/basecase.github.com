@@ -1,0 +1,39 @@
+.single-portfolio-page {
+  main {
+    padding-top: 4rem;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  p.project-overview {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    font-size: 1.6em;
+  }
+
+  .dark {
+    background: $color_fg;
+    color: $color_bg;
+
+    p {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .row {
+    align-items: center;
+  }
+
+  .end {
+    padding-top: 3rem;
+
+    a {
+      text-decoration: underline;
+      font-size: 130%;
+    }
+  }
+}
