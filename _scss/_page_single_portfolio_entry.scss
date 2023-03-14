@@ -1,6 +1,10 @@
 .single-portfolio-page {
   main {
     padding-top: 4rem;
+
+    a {
+      text-decoration: underline;
+    }
   }
 
   h1 {
@@ -32,7 +36,6 @@
     padding-top: 3rem;
 
     a {
-      text-decoration: underline;
       font-size: 130%;
     }
   }
