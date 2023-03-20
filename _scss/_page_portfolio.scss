@@ -14,16 +14,16 @@ header {
     font-size: 1.6em;
     line-height: 1.5em;
   }
-
-  a {
-    text-decoration: underline;
-  }
 }
 
 .portfolio-entry {
   height: 300px;
   margin-top: 4rem;
   transition: background-color 0.5s ease-out, transform 0.5s ease-out;
+
+  a {
+    text-decoration: none;
+  }
 
   .row {
     height: 100%;

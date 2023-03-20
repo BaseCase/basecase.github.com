@@ -4,8 +4,12 @@ nav {
   position: sticky;
   top: 1rem;
 
-  a.active {
-    border-bottom: 2px solid black;
+  a {
+    text-decoration: none;
+
+    .active {
+      border-bottom: 2px solid black;
+    }
   }
 
   .row {
