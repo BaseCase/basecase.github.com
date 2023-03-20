@@ -17,6 +17,10 @@ ul, menu {
   margin: 0;
 }
 
+main {
+  margin-top: 1rem;
+}
+
 //
 // utility classes
 //
@@ -28,6 +32,7 @@ ul, menu {
   align-self: center;
 }
 
-main {
-  margin-top: 1rem;
+.spaced-out {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }

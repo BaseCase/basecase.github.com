@@ -44,6 +44,10 @@ strong {
 p {
   line-height: 1.4;
   margin: 0;
+
+  &:not(:first-of-type) {
+    margin-top: 1.5rem;
+  }
 }
 
 a {
