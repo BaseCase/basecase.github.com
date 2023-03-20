@@ -16,6 +16,10 @@ $gutter: 20px;
   flex-wrap: nowrap;
   column-gap: $gutter;
   align-items: flex-start;
+
+  img, video {
+    width: 100%;
+  }
 }
 
 .gap-column {}   // empty, just a communicative class
@@ -32,7 +36,3 @@ $gutter: 20px;
 .cols-10 {flex-basis: calc((#{$colwidth} * 10) + (#{$gutter} * 9));}
 .cols-11 {flex-basis: calc((#{$colwidth} * 11) + (#{$gutter} * 10));}
 .cols-12 {flex-basis: calc((#{$colwidth} * 12) + (#{$gutter} * 11));}
-
-.row img {
-  width: 100%;
-}
