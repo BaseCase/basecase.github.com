@@ -63,11 +63,11 @@ header {
 
 .additional-portfolio-entries {
   .row {
-    margin-top: $gutter;
+    margin-top: calc(#{$gutter * 2});
   }
 
   .additional-portfolio-item {
-    height: calc(#{$colwidth} * 3);
+    height: calc(#{$colwidth} * 4);
     transition: transform 0.5s ease-out;
     overflow: hidden;
 
