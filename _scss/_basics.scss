@@ -42,3 +42,9 @@ main {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+.photo-caption {
+  color: lighten($color_fg, 50%);
+  font-size: 75%;
+  font-style: italic;
+}
