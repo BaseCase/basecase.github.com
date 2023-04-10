@@ -17,8 +17,13 @@ $gutter: 20px;
   column-gap: $gutter;
   align-items: flex-start;
 
-  img, video {
+  img {
     width: 100%;
+  }
+
+  video {
+    width: 100%;
+    display: inherit;
   }
 }
 
