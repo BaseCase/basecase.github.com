@@ -1,0 +1,30 @@
+.contact-page {
+  margin-top: 5rem;
+
+  h1 {
+    margin-bottom: 2.5rem;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      margin-bottom: 0.2em;
+
+      a {
+        text-decoration: none;
+        vertical-align: middle;
+
+        img {
+          width: 1.5rem;
+          vertical-align: middle;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
