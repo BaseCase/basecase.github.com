@@ -1,0 +1,78 @@
+---
+layout: base
+title: Casey Brant - Badger app design
+permalink: /portfolio/badger/
+---
+
+<div class="container single-portfolio-page">
+  {% include nav.html page="portfolio_item" %}
+
+  <main>
+    <div class="row">
+      <h1>Interaction Design</h1>
+    </div>
+
+    <div class="row">
+      <img src="/assets/badger_hero.png" alt="Screenshot of Badger in action">
+    </div>
+
+    <div class="row">
+      <p class="project-overview">
+        This is a small web app I built called Badger. <a href="https://badger.caseybrant.com/" target="_blank">It’s up and running, so please check it out</a>! This project was an exercise in interaction design at the finest level of detail, and it taught me a lot about designing with subtle (and some not-so-subtle) animation to direct attention and enhance user experience from moment to moment. It was also fun to follow the design phase with some programming!
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="cols-4">
+        <p>My starting point was “app that generates colorful badges, with gamification elements.” From that simple idea, I started with some ideation about user flows.</p>
+
+        <p>After getting a rough idea of the flows, I moved into sketching possibilities for how these interactions might look.</p>
+      </div>
+      <div class="cols-4">
+        <img src="/assets/badger_user_flow.jpg" alt="Badger user flow sketches">
+      </div>
+      <div class="cols-4">
+        <img src="/assets/badger_sketch.jpg" alt="Badger UI sketches">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="cols-8">
+        <img src="/assets/badger_figma_designs.jpeg" alt="Badger designs in Figma">
+      </div>
+      <div class="cols-4">
+        <p>I decided to get some practice with Figma for making higher-fidelity mockups of the screens and the transitions between various app states based on user actions. This was my first time using Figma for a real project! There was a bit of a learning curve, but I managed.</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cols-6">
+        <p>After getting the basic idea down in Figma, I went right into code. I used the <a
+            href="https://rubyonrails.org/" target="_blank">Ruby on Rails framework</a> for the back end, but since the bulk of this project is about interactions, I spent most of my time writing JavaScript and
+          <a href="https://sass-lang.com/" target="_blank">SCSS</a>.</p>
+        
+        <p>This screenshot is part of the code responsible for animating the progress bar when creating a new badge. The full codebase
+          <a href="https://github.com/BaseCase/badger" target="_blank">is available on Github</a>.</p>
+      </div>
+      <div class="cols-6">
+        <img src="/assets/badger_code.jpg" alt="Badger's code">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="cols-8">
+        <img src="/assets/badger_gallery_screenshot.jpg" alt="Badger badge gallery">
+      </div>
+      <div class="cols-4">
+        <p>Ultimately, it’s hard to get a sense of animated interactions from static screenshots and text. I hope you’ll
+          <a href="https://badger.caseybrant.com" target="_blank">check out the live app</a>!</p>
+      </div>
+    </div>
+
+    <div class="row end">
+      <a href="/">See more of my work</a>
+    </div>
+  </main>
+</div>
+
+{% include footer.html %}
