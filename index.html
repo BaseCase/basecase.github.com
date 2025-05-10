@@ -67,7 +67,36 @@
 
     <article>
       <h2>Topic Lords Webring</h2>
-      <p>It 'Slords</p>
+
+      <noscript>
+        <p>Topic Lords!</p>
+      </noscript>
+
+      <script type="text/javascript" src="https://eslee.dev/tl-ring/tl-lords.js"></script>
+      <script>
+        try {
+          // `lordList: Array<{url: string}>` added from above script
+          const urls = lordList.map(l => l.url)
+          const me = urls.findIndex(u => u === window.location.origin)
+          if (me > -1) {
+            const left = (me - 1 + urls.length) % urls.length
+            const right = (me + 1) % urls.length
+            const rand = Math.floor(Math.random() * urls.length)
+            document.currentScript.outerHTML = `
+              <ul>
+                <li><a href="${urls[left]}">Prev Lord</a></li>
+                <li><a href="${urls[rand]}">Random Lord</a></li>
+                <li><a href="${urls[right]}">Next Lord</a></li>
+              </ul>
+            `
+          } else {
+            throw new Error("ope")
+          }
+        } catch (err) {
+          console.error(err)
+          document.currentScript.outerHTML = '<p>TOPIC LORDS</p>'
+        }
+      </script>
     </article>
   </main>
 </body>
